@@ -1,0 +1,108 @@
+.message {
+  width: 100%;
+  height: 80%;
+}
+
+.wrapper.message {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: $transparent;
+  padding: 0;
+  form {
+    width: 100%;
+  }
+}
+
+fieldset {
+  width: 100%;
+  border: none;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include Domi(1.8rem, normal, $charcoal, 1.5, 1.6, left);
+  position: relative;
+  top: -600px;
+  label {
+    @include Ossie(2rem, normal, $font, normal, normal, center);
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 20px;
+    width: 100%;
+    span {
+      color: $alert;
+    }
+  }
+  input {
+    padding: 15px 20px;
+    width: 100%;
+    border: 2px solid $dark-grey;
+    background-color: white;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 15px 20px;
+    resize: vertical;
+    border: 2px solid $dark-grey;
+  }
+  button {
+    width: 47%;
+    border: 2px solid $season;
+    background-color: white;
+    text-transform: uppercase;
+    margin-top: 10px;
+    display: inline-block;
+    transition: all 1s;
+    height: 50px;
+    &:hover,
+    &:focus {
+      background-color: $season;
+    }
+    &:hover h3,
+    &:focus h3 {
+      color: $tint;
+    }
+  }
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: lighten($charcoal, 20);
+  opacity: 1;
+}
+
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  background-color: $charcoal;
+  color: $tint;
+  background-image: none;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: darken($tint, 10);
+}
+
+.formButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formBox {
+  height: 115px;
+}
+
+.formBox.theMessage {
+  height: 185px;
+}
+
+.error {
+  margin-top: 0;
+  font-size: 1.6rem;
+  color: $alert;
+}

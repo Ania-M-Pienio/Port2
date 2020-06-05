@@ -1,0 +1,103 @@
+.wrapper.home {
+  background-color: darken($tint, 5);
+}
+
+.home .splash {
+  background-color: white;
+  ul {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+
+    li {
+      border: 2px solid $season;
+      position: relative;
+    }
+  }
+  li.window {
+    background-color: white;
+    background-image: url(../assets/home/birch.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-row: 1 / 3;
+    grid-column: 2 / 2;
+    top: -600px;
+    opacity: 0.2;
+    @include tablet-port {
+      grid-row: 1/2;
+    }
+  }
+
+  li.grey2 {
+    @include tablet-port {
+      // 960
+      display: none;
+    }
+  }
+
+  li.window2 {
+    grid-row: 2 / 4;
+    grid-column: 1 / 1;
+    background-color: white;
+    top: 700px;
+    opacity: 0.2;
+    @include tablet-port {
+      // 960
+      grid-column: 1 / 3;
+    }
+  }
+  li:not(.window):not(.window2) {
+    border: 2px solid $grey;
+  }
+  h5 {
+    font-size: 8rem;
+    color: $grey;
+    opacity: 0;
+    transition: all 1s;
+    @include tablet-land {
+      // 1300
+      font-size: 7rem;
+    }
+    @include tablet-port {
+      margin-top: 50px;
+    }
+  }
+}
+
+.info {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  p {
+    text-align: center;
+  }
+}
+
+.social {
+  margin: 20px 0 0;
+  ul {
+    display: flex;
+    justify-content: center;
+    li {
+      margin: 0 10px;
+      a {
+        &:focus ion-icon,
+        &:hover ion-icon,
+        &:active ion-icon {
+          transform: scale(1.5);
+          color: $season;
+        }
+        ion-icon {
+          font-size: 2.2rem;
+          transition: all 1s;
+        }
+      }
+    }
+  }
+}
+
+

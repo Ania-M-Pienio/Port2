@@ -1,0 +1,52 @@
+.wrapper.contact {
+  background-color: darken($tint, 5);
+}
+
+.contact .splash {
+  background-color: $tint;
+  padding: 50px 90px;
+  display: flex;
+  flex-direction: column;
+}
+
+.messageTitle {
+  width: 100%;
+  opacity: 0;
+  h5 {
+    color: $season;
+    opacity: 0.8;
+    font-size: 8rem;
+  }
+  a.email {
+    display: flex;
+    justify-content: center;
+    &:hover ion-icon,
+    &:focus ion-icon,
+    &:active ion-icon {
+      transform: scale(1.2);
+      position: relative;
+      left: 1px;
+      color: $season;
+    }
+    &:hover p,
+    &:focus p,
+    &:active p {
+      color: $season;
+    }
+    p {
+      width: auto;
+      text-align: center;
+      color: lighten($font, 20);
+      font-size: 2rem;
+    }
+    ion-icon {
+      font-size: 2rem;
+      transition: all 0.5s;
+    }
+  }
+}
+
+.contact textarea#email {
+  position: absolute;
+  left: -2000px;
+}

@@ -1,0 +1,84 @@
+// FONTS
+@mixin Ossie($size, $weight, $color, $ltr-spacing, $ln-height, $align) {
+  font-family: "Oswald", sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  letter-spacing: $ltr-spacing;
+  line-height: $ln-height;
+  text-align: $align;
+}
+
+@mixin Domi($size, $weight, $color, $ltr-spacing, $ln-height, $align) {
+  font-family: "Domine", serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  letter-spacing: $ltr-spacing;
+  line-height: $ln-height;
+  text-align: $align;
+}
+
+@mixin Monti($size, $weight, $color, $ltr-spacing, $ln-height, $align) {
+  font-family: "Montserrat", sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  letter-spacing: $ltr-spacing;
+  line-height: $ln-height;
+  text-align: $align;
+}
+
+
+// horizontal x-axis
+
+@mixin tablet-land {
+  @media (max-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin tablet-landS {
+  @media (max-width: 1250px) {
+    @content;
+  }
+}
+
+@mixin tablet-landXS {
+  @media (max-width: 1070px) {
+    @content;
+  }
+}
+
+@mixin tablet-port {
+  @media (max-width: 960px) {
+    @content;
+  }
+}
+
+@mixin mobile-land {
+  @media (max-width: 690px) {
+    @content;
+  }
+}
+
+@mixin mobile-port {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin mobile-tiny {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+
+
+// reduced motion option ON for accessibility
+
+@mixin reduce {
+  @media (prefers-reduced-motion: reduce) {
+    @content;
+  }
+}

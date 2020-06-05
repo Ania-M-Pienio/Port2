@@ -1,0 +1,200 @@
+@keyframes CENTER {
+  0% {
+    width: 400px;
+    height: 310px;
+    top: 0;
+    left: 175px;
+    opacity: 1;
+  }
+  100% {
+    width: 250px;
+    height: 210px;
+    top: 60px;
+    left: 500px;
+    z-index: 500;
+    opacity: 0.2;
+  }
+}
+
+@keyframes CENTER_REV {
+  0% {
+    width: 400px;
+    height: 310px;
+    top: 0;
+    left: 175px;
+    opacity: 1;
+  }
+  100% {
+    width: 250px;
+    height: 210px;
+    top: 60px;
+    left: 0px;
+    z-index: 500;
+    opacity: 0.2;
+  }
+}
+
+@keyframes LEFT {
+  0% {
+    width: 250px;
+    height: 210px;
+    opacity: 0.5;
+    top: 60px;
+    left: 0;
+  }
+  100% {
+    width: 400px;
+    height: 310px;
+    top: 0px;
+    left: 175px;
+    z-index: 1000;
+    opacity: 1;
+  }
+}
+
+@keyframes LEFT_REV {
+  0% {
+    left: 0px;
+    transform: scale(0.5);
+  }
+  10% {
+    transform: scale(0.7);
+  }
+  20% {
+    transform: scale(0.5);
+  }
+  30% {
+    transform: scale(0.3);
+  }
+  40% {
+    transform: scale(0);
+  }
+  92% {
+    transform: scale(0.2);
+  }
+  94% {
+    transform: scale(0.4);
+  }
+  96% {
+    transform: scale(0.6);
+  }
+  98% {
+    transform: scale(0.8);
+  }
+  100% {
+    z-index: 500;
+    left: 500px;
+    transform: scale(1);
+    opacity: 0.2;
+  }
+}
+
+@keyframes RIGHT {
+  0% {
+    left: 500px;
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.7);
+  }
+  20% {
+    transform: scale(0.5);
+  }
+  30% {
+    transform: scale(0.3);
+  }
+  40% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0.1);
+  }
+  60% {
+    transform: scale(0.2);
+  }
+  70% {
+    transform: scale(0.3);
+  }
+  80% {
+    transform: scale(0.4);
+  }
+  90% {
+    transform: scale(0.5);
+  }
+  92% {
+    transform: scale(0.6);
+  }
+  94% {
+    transform: scale(0.7);
+  }
+  96% {
+    transform: scale(0.8);
+  }
+  98% {
+    transform: scale(0.9);
+  }
+  100% {
+    z-index: 500;
+    left: 0px;
+    transform: scale(1);
+    opacity: 0.2;
+    z-index: 500;
+  }
+}
+
+@keyframes RIGHT_REV {
+  0% {
+    width: 250px;
+    height: 210px;
+    top: 60px;
+    left: 500px;
+  }
+  100% {
+    width: 400px;
+    height: 310px;
+    top: 0px;
+    z-index: 1000;
+    left: 175px;
+    opacity: 1;
+  }
+}
+
+@keyframes FADE_OUT {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes FADE_IN {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes SWOOP_DOWN {
+  0% {
+    top: -600px;
+    opacity: 0.2;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes SWOOP_UP {
+  0% {
+    top: 700px;
+    opacity: 0.2;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}

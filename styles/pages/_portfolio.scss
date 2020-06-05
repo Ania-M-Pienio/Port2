@@ -1,0 +1,396 @@
+.wrapper.portfolio {
+  background-color: darken($tint, 5);
+}
+
+.wrapper.portfolio article {
+  width: 20%;
+}
+
+.wrapper.portfolio aside {
+  width: 80%;
+  border: 2px solid $season;
+}
+
+.portfolio .splash {
+  background-color: $tint;
+  background-image: none;
+  padding-right: 20px;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  border: none;
+  position: relative;
+  @include tablet-land {
+    // 1250
+    padding: 30px;
+  }
+}
+
+.projects {
+  width: 20%;
+  height: 350px;
+  margin-top: 60px;
+  padding-top: 20px;
+  position: relative;
+  transition: all 0.5s;
+  top: 0;
+  border-right: 2px solid $grey;
+  @include tablet-land {
+    // 1300
+    opacity: 0;
+    position: absolute;
+    top: -600px;
+  }
+  p {
+    text-align: center;
+  }
+  ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+    margin-top: 20px;
+    li {
+      width: 80%;
+      margin: 0 auto;
+      height: 40px;
+      button {
+        width: 100%;
+        &:hover h3,
+        &:focus h3 {
+          color: $season;
+        }
+        h3 {
+          transition: all 0.5s;
+          width: 100%;
+          display: block;
+          text-align: center;
+          @include tablet-land {
+            font-size: 2rem;
+          }
+          span {
+            visibility: hidden;
+            transition: all 0.5s;
+          }
+        }
+      }
+      button.selected {
+        h3 {
+          font-size: 2.3rem;
+          color: $season;
+          span {
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+}
+
+.projects.mobile {
+  position: absolute;
+  width: 100%;
+  height: 110px;
+  margin-top: 0;
+  padding-top: 0;
+  opacity: 0;
+  transition: all 0.5s;
+  border-right: none;
+  @include tablet-land {
+    // 1300
+    position: static;
+    opacity: 1;
+  }
+  h2 {
+    margin-top: 0px;
+  }
+  ul {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+    border-top: 2px solid $grey;
+    border-bottom: 2px solid $grey;
+    li {
+      width: 20%;
+    }
+  }
+  button.selected {
+    h3 {
+      font-size: 2.15rem;
+      color: $season;
+      span {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.gallery {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  @include tablet-land {
+    // 1300
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.rotationContainer {
+  height: 300px;
+  width: 750px;
+  position: relative;
+  top: -600px;
+  transition: all 1s;
+  margin: 0 auto;
+  @include tablet-land {
+    // 1300
+    margin: 0 auto;
+    height: 290px;
+  }
+  .board {
+    border: 2px solid $dark-grey;
+    background-color: white;
+    box-shadow: $shadow;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 1s;
+  }
+  .side {
+    width: 250px;
+    height: 210px;
+    z-index: 500;
+    top: 60px;
+    background-size: 85%;
+    opacity: 0.2;
+  }
+  .center {
+    background-image: url(../assets/portfolio/2.png);
+    background-size: 85%;
+    z-index: 1000;
+    width: 400px;
+    height: 310px;
+    left: 175px;
+  }
+}
+
+.board.right {
+  background-image: url(../assets/portfolio/1.png);
+  left: 500px;
+}
+
+.board.left {
+  background-image: url(../assets/portfolio/3.png);
+}
+
+.rotationControl {
+  width: 750px;
+  position: relative;
+  top: -150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  z-index: 900;
+  opacity: 0;
+  button {
+    border: 2px solid $charcoal;
+    background-color: $charcoal;
+    box-shadow: $shadow;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $season;
+      border: 2px solid $season;
+    }
+    &:hover ion-icon,
+    &:focus ion-icon,
+    &:active ion-icon {
+      transform: scale(1.2);
+      color: white;
+    }
+    ion-icon {
+      color: white;
+      transition: all 0.5s;
+      font-size: 6rem;
+    }
+  }
+}
+
+.projectInfo {
+  width: 750px;
+  height: auto;
+  margin: 0 auto;
+  transition: all 0.5s;
+  margin-top: 10px;
+  opacity: 0;
+  @include tablet-land {
+    // 1300
+    width: 100%;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  // PROJECT TITLE
+  .titleContainer {
+    order: 1;
+    height: 40px;
+    min-height: 40px;
+    @include tablet-land {
+      // 1300
+      display: none;
+    }
+    h2 {
+      text-align: left;
+    }
+  }
+  // PROJECT DESCRIPTION
+  .paragraphContainer {
+    order: 2;
+    margin-top: 15px;
+    height: 110px;
+    min-height: 110px;
+    @include tablet-land {
+      // 1300
+      margin-top: 10px;
+      padding-left: 15px;
+    }
+    p {
+      font-size: 1.55rem;
+      color: $font;
+      @include tablet-land {
+        // 1300
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  // PROJECT LINKS
+  .projectLinks {
+    order: 3;
+    width: 50%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+    @include tablet-land {
+      // 1300
+      margin-top: 0px;
+      padding: 15px 0;
+      padding-left: 10px;
+    }
+  }
+
+  .projectLinks a:first-child {
+    margin-right: 15px;
+  }
+
+  a.linkButton {
+    width: 120px;
+    padding: 5px 0;
+    background-color: white;
+    border: 2px solid $season;
+    &:focus,
+    &:hover,
+    &:active {
+      background-color: $season;
+      color: white;
+    }
+    &:focus h3,
+    &:hover h3,
+    &:active h3 {
+      color: white;
+    }
+    h3 {
+      font-size: 1.8rem;
+      transition: all 0.5s;
+    }
+  }
+
+  // PROJECT SKILLS
+  .projectSkills {
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    order: 4;
+    @include tablet-land {
+      // 1300
+      margin-top: 15px;
+      padding: 10px 0;
+      height: 80px;
+      order: 0;
+    }
+    ul {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-auto-flow: column;
+      grid-gap: 10px;
+      margin-left: -5px;
+      @include tablet-land {
+        // 1300
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      li {
+        @include tablet-land {
+          margin: 0 20px; 
+        }
+        .icon {
+          width: 30px;
+          display: flex;
+          justify-content: space-between;
+        }
+        .iconImage {
+          width: 30px;
+        }
+        h4 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+.portfolio nav.expand {
+  height: 90%;
+}
+
+// CAROUSEL
+
+.centerANIM {
+  animation: CENTER 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.leftANIM {
+  animation: LEFT 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.rightANIM {
+  animation: RIGHT 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.centerANIMrev {
+  animation: CENTER_REV 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.leftANIMrev {
+  animation: LEFT_REV 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.rightANIMrev {
+  animation: RIGHT_REV 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}

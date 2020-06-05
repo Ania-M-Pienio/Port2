@@ -1,0 +1,249 @@
+// IMPORTS
+
+//setup
+@import url("https://fonts.googleapis.com/css?family=Domine:400,700|Montserrat:700|Oswald&display=swap");
+@import "../setup/setup";
+@import "../setup/variables";
+@import "../setup/mixins";
+
+//components
+@import "../components/logo";
+@import "../components/icon";
+@import "../components/nav";
+@import "../components/animations";
+@import "../components/form";
+
+//pages
+@import "../pages/home";
+@import "../pages/about";
+@import "../pages/skills";
+@import "../pages/portfolio";
+@import "../pages/skills";
+@import "../pages/portfolio";
+@import "../pages/next";
+@import "../pages/contact";
+
+// GLOBALS
+
+// settings
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+body {
+  background-color: $dark-grey;
+  padding: 40px 0;
+}
+
+// wrappers
+.wrapper {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 30px 30px 80px 30px;
+  display: flex;
+  height: 100%;
+  background-color: white;
+  position: relative;
+  background-color: $tint;
+}
+
+.wrapper:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  right: 10px;
+  left: auto;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  box-shadow: 0 20px 10px #777;
+  transform: rotate(3deg);
+}
+
+// headings
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+// lists
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// images
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+// ion icons
+ion-icon {
+  font-size: 5rem;
+  color: darken($dark-grey, 30);
+}
+
+// links
+a {
+  text-emphasis: none;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+  &:focus,
+  &:hover {
+    outline: 0;
+  }
+  @include Domi(1.7rem, normal, lighten($charcoal, 30), 1.6, 1.7, left);
+}
+
+a.selected {
+  color: $season;
+  cursor: auto;
+  font-size: 4rem;
+  @include tablet-landXS {
+    font-size: 3.5rem;
+  }
+}
+
+//buttons
+button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  margin: 0;
+  padding: 0;
+  &:hover,
+  &:focus {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+// TYPOGRAPHY
+
+// main title
+h1 {
+  @include Ossie(4rem, normal, $font, normal, 1.2, center);
+  text-transform: uppercase;
+}
+
+// section title
+h2 {
+  @include Ossie(2.8rem, normal, $font, normal, normal, center);
+  text-transform: uppercase;
+}
+
+// sub section title
+h3 {
+  @include Ossie(2rem, normal, $font, normal, normal, center);
+  text-transform: uppercase;
+}
+
+// icon title
+h4 {
+  @include Ossie(1.6rem, normal, lighten($font, 20), normal, normal, center);
+}
+
+// creative title
+h5 {
+  @include Monti(12rem, normal, $tint, normal, normal, center);
+  text-transform: lowercase;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  @include Domi(1.6rem, normal, $dark-grey, 1.5, 1.6, left);
+}
+
+// LAYOUT
+
+// headers
+header {
+  height: 90vh;
+  max-height: 900px;
+  min-height: 900px;
+}
+
+article {
+  width: 35%;
+  height: 100%;
+  padding-right: 20px;
+}
+
+aside {
+  width: 65%;
+  height: 100%;
+}
+
+.splash {
+  height: 100%;
+  box-shadow: $shadow;
+  border: 2px solid $grey;
+  padding: 10px;
+}
+
+.pagination a {
+  z-index: 100;
+  position: absolute;
+  display: flex;
+  &:hover ion-icon,
+  &:focus ion-icon,
+  &:active ion-icon {
+    transform: scale(1.3);
+  }
+  p {
+    height: 20%;
+    font-size: 1.8rem;
+    align-self: center;
+    color: $font;
+  }
+  ion-icon {
+    color: $season;
+    font-size: 3.9rem;
+    transition: all 1s;
+  }
+}
+
+// PAGINATION
+
+.pagination.right a {
+  bottom: 30px;
+  right: 30px;
+  p {
+    margin-right: 10px;
+  }
+}
+
+.pagination.left a {
+  bottom: 30px;
+  left: 30px;
+  p {
+    margin-left: 10px;
+  }
+}
+
+.downANIM {
+  animation: SWOOP_DOWN 2s cubic-bezier(0.67, 0.38, 0, 0.97);
+  animation-fill-mode: forwards;
+}
+
+.upANIM {
+  animation: SWOOP_UP 2s cubic-bezier(0.67, 0.38, 0, 0.97);
+  animation-fill-mode: forwards;
+}
+
+.fadeInANIM {
+  animation: FADE_IN 1s ease-in;
+  animation-fill-mode: forwards;
+}
