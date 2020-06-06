@@ -215,13 +215,24 @@
 .overflowShadow {
   display: none;
   position: absolute;
-  height: 70px;
+  height: 100px;
   width: calc(100% - 4px);
   bottom: 2px;
   left: 2px;
   background: linear-gradient(rgba(255, 255, 255, 0), black);
-  @include mobile-port {
-    // 520
+  @include tablet-landXS {
+    // 1070
     display: block;
+  }
+  div {
+    height: 100%;
+    ion-icon {
+      display: block;
+      margin: 0 auto;
+      font-size: 2.2rem;
+      color: $dark-grey;
+      opacity: 0.75;
+      margin-top: 70px;
+    }
   }
 }

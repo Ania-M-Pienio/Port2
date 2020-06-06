@@ -1651,7 +1651,7 @@ textarea:focus::placeholder {
 .overflowShadow {
   display: none;
   position: absolute;
-  height: 70px;
+  height: 100px;
   width: calc(100% - 4px);
   bottom: 2px;
   left: 2px;
@@ -1659,10 +1659,23 @@ textarea:focus::placeholder {
   background: linear-gradient(rgba(255, 255, 255, 0), black);
 }
 
-@media (max-width: 520px) {
+@media (max-width: 1070px) {
   .overflowShadow {
     display: block;
   }
+}
+
+.overflowShadow div {
+  height: 100%;
+}
+
+.overflowShadow div ion-icon {
+  display: block;
+  margin: 0 auto;
+  font-size: 2.2rem;
+  color: #979696;
+  opacity: 0.75;
+  margin-top: 70px;
 }
 
 .wrapper.skills {
