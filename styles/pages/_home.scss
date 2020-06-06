@@ -1,5 +1,16 @@
 .wrapper.home {
   background-color: darken($tint, 5);
+  @include tablet-landXS {
+    // 1070
+  }
+  @include mobile-land {
+    // 690
+    background-color: white;
+    background-image: url(../assets/home/birchH.jpg);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .home .splash {
@@ -29,10 +40,17 @@
     grid-column: 2 / 2;
     top: -600px;
     opacity: 0.2;
+    transition: all 1s;
+    @include tablet-landXS {
+      // 1070
+      background-position: right center;
+    }
+    @include tablet-portXL {
+      background-image: none;
+    }
     @include tablet-port {
       // 960
       grid-row: 1 / 2;
-      background-image: none;
     }
   }
 
@@ -65,8 +83,8 @@
       // 1300
       font-size: 7rem;
     }
-    @include tablet-port {
-      // 960
+    @include tablet-landXS {
+      // 1070
       display: none;
     }
   }
@@ -117,8 +135,8 @@
     align-content: center;
     justify-content: center;
     transition: all 1.5s;
-    @include tablet-port {
-      // 960
+    @include tablet-landXS {
+      // 1070
       transform: scale(1);
       position: static;
     }

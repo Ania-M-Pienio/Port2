@@ -21,33 +21,33 @@
 }
 
 .about aside {
-  @include tablet-port {
-    // 960
-    height: 75%;
+  @include tablet-landXS {
+    // 1070
+    height: 70%;
   }
 }
 
 .meContainer {
   height: 100%;
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  grid-template-rows: 1fr 1.3fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.8fr 1.2fr;
   grid-auto-flow: row;
   grid-gap: 10px;
   position: relative;
   @include tablet-landS {
     // 1250
-    grid-template-columns: 1.5fr 0.8fr;
-    grid-template-rows: 1fr 1.3fr;
+    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-rows: 0.7fr 1.3fr;
   }
   @include tablet-landXS {
     // 1070
     grid-template-columns: 0.5fr 1.5fr;
-    grid-template-rows: 0.1fr 1.9fr;
+    grid-template-rows: 0.7fr 1.3fr;
   }
   @include tablet-port {
     // 960
-    grid-template-columns: 0.7fr 1.3fr;
+    grid-template-columns: 0.6fr 1.4fr;
     grid-template-rows: 0.5fr 1.5fr;
   }
   @include mobile-land {
@@ -56,7 +56,7 @@
     grid-template-rows: 0.1fr 1.9fr;
   }
   li {
-    padding: 30px;
+    padding: 30px 30px 0 30px;
     border: 2px solid $season;
     transition: all 1s;
     p {
@@ -94,8 +94,13 @@
       // 1250
       grid-column: 1 / 3;
     }
-    @include mobile-port {
-      // 520
+    @include tablet-landXS {
+      // 1070
+      overflow-y: scroll;
+      scrollbar-color: $season rgba(0, 128, 0, 0);
+      scrollbar-width: thin;
+    }
+    @include mobile-land-h {
       overflow-y: scroll;
       scrollbar-color: $season rgba(0, 128, 0, 0);
       scrollbar-width: thin;
@@ -116,8 +121,11 @@
     .spacer {
       display: none;
       min-height: 100px;
-      @include mobile-port {
-        // 520
+      @include tablet-landXS {
+        // 1070
+        display: block;
+      }
+      @include mobile-land-h {
         display: block;
       }
     }
@@ -147,11 +155,10 @@
       color: $season;
       opacity: 0;
       position: relative;
+      text-align: left;
       @include tablet-landXS {
         // 1070
-        height: 80%;
-        width: 80%;
-        text-align: left;
+        font-size: 6rem;
       }
       @include tablet-port {
         // 960
@@ -169,12 +176,6 @@
         position: absolute;
         @include tablet-landXS {
           // 1070
-          font-size: 4.5rem;
-          bottom: 0;
-          right: 0;
-        }
-        @include tablet-port {
-          // 960
           position: static;
           display: inline-block;
         }

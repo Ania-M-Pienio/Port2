@@ -1110,6 +1110,16 @@ textarea:focus::placeholder {
   background-color: #eaeaea;
 }
 
+@media (max-width: 690px) {
+  .wrapper.home {
+    background-color: white;
+    background-image: url(../assets/home/birchH.jpg);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
 .home .splash {
   background-color: white;
 }
@@ -1150,6 +1160,20 @@ textarea:focus::placeholder {
   grid-column: 2 / 2;
   top: -600px;
   opacity: 0.2;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+@media (max-width: 1070px) {
+  .home .splash li.window {
+    background-position: right center;
+  }
+}
+
+@media (max-width: 800px) {
+  .home .splash li.window {
+    background-image: none;
+  }
 }
 
 @media (max-width: 960px) {
@@ -1157,7 +1181,6 @@ textarea:focus::placeholder {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
-    background-image: none;
   }
 }
 
@@ -1198,7 +1221,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1070px) {
   .home .splash h5 {
     display: none;
   }
@@ -1275,7 +1298,7 @@ textarea:focus::placeholder {
   transition: all 1.5s;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1070px) {
   .splash a.mobile {
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -1351,9 +1374,9 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1070px) {
   .about aside {
-    height: 75%;
+    height: 70%;
   }
 }
 
@@ -1361,10 +1384,10 @@ textarea:focus::placeholder {
   height: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1.3fr 1fr;
-      grid-template-columns: 1.3fr 1fr;
-  -ms-grid-rows: 1fr 1.3fr;
-      grid-template-rows: 1fr 1.3fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 0.8fr 1.2fr;
+      grid-template-rows: 0.8fr 1.2fr;
   grid-auto-flow: row;
   grid-gap: 10px;
   position: relative;
@@ -1372,10 +1395,10 @@ textarea:focus::placeholder {
 
 @media (max-width: 1250px) {
   .meContainer {
-    -ms-grid-columns: 1.5fr 0.8fr;
-        grid-template-columns: 1.5fr 0.8fr;
-    -ms-grid-rows: 1fr 1.3fr;
-        grid-template-rows: 1fr 1.3fr;
+    -ms-grid-columns: 1.2fr 0.8fr;
+        grid-template-columns: 1.2fr 0.8fr;
+    -ms-grid-rows: 0.7fr 1.3fr;
+        grid-template-rows: 0.7fr 1.3fr;
   }
 }
 
@@ -1383,15 +1406,15 @@ textarea:focus::placeholder {
   .meContainer {
     -ms-grid-columns: 0.5fr 1.5fr;
         grid-template-columns: 0.5fr 1.5fr;
-    -ms-grid-rows: 0.1fr 1.9fr;
-        grid-template-rows: 0.1fr 1.9fr;
+    -ms-grid-rows: 0.7fr 1.3fr;
+        grid-template-rows: 0.7fr 1.3fr;
   }
 }
 
 @media (max-width: 960px) {
   .meContainer {
-    -ms-grid-columns: 0.7fr 1.3fr;
-        grid-template-columns: 0.7fr 1.3fr;
+    -ms-grid-columns: 0.6fr 1.4fr;
+        grid-template-columns: 0.6fr 1.4fr;
     -ms-grid-rows: 0.5fr 1.5fr;
         grid-template-rows: 0.5fr 1.5fr;
   }
@@ -1407,7 +1430,7 @@ textarea:focus::placeholder {
 }
 
 .meContainer li {
-  padding: 30px;
+  padding: 30px 30px 0 30px;
   border: 2px solid #FF8585;
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -1465,7 +1488,15 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 1070px) {
+  .meContainer li.today {
+    overflow-y: scroll;
+    scrollbar-color: #FF8585 rgba(0, 128, 0, 0);
+    scrollbar-width: thin;
+  }
+}
+
+@media (max-height: 900px) and (max-width: 960px) {
   .meContainer li.today {
     overflow-y: scroll;
     scrollbar-color: #FF8585 rgba(0, 128, 0, 0);
@@ -1496,7 +1527,13 @@ textarea:focus::placeholder {
   min-height: 100px;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 1070px) {
+  .meContainer li.today .spacer {
+    display: block;
+  }
+}
+
+@media (max-height: 900px) and (max-width: 960px) {
   .meContainer li.today .spacer {
     display: block;
   }
@@ -1537,13 +1574,12 @@ textarea:focus::placeholder {
   color: #FF8585;
   opacity: 0;
   position: relative;
+  text-align: left;
 }
 
 @media (max-width: 1070px) {
   .meContainer li.hello h5 {
-    height: 80%;
-    width: 80%;
-    text-align: left;
+    font-size: 6rem;
   }
 }
 
@@ -1568,14 +1604,6 @@ textarea:focus::placeholder {
 }
 
 @media (max-width: 1070px) {
-  .meContainer li.hello h5 span {
-    font-size: 4.5rem;
-    bottom: 0;
-    right: 0;
-  }
-}
-
-@media (max-width: 960px) {
   .meContainer li.hello h5 span {
     position: static;
     display: inline-block;
@@ -3413,8 +3441,8 @@ header {
 
 @media (max-height: 900px) and (max-width: 960px) {
   header {
-    max-height: 700px;
-    min-height: 700px;
+    max-height: 750px;
+    min-height: 750px;
   }
 }
 
@@ -3478,7 +3506,7 @@ aside {
   display: flex;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1070px) {
   .pagination a {
     display: none;
   }

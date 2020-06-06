@@ -181,8 +181,9 @@ header {
   min-height: 900px;
   transition: all 1s;
   @include mobile-land-h {
-    max-height: 700px;
-    min-height: 700px;
+    // 960 x 960
+    max-height: 750px;
+    min-height: 750px;
   }
 }
 
@@ -210,10 +211,12 @@ aside {
   width: 65%;
   height: 100%;
   @include tablet-landXS {
+    // 1070
     width: 100%;
     z-index: 900;
   }
   @include mobile-land-h {
+    // 960 x 960
     height: 50%;
   }
 }
@@ -229,8 +232,8 @@ aside {
   z-index: 100;
   position: absolute;
   display: flex;
-  @include tablet-port {
-    // 960
+  @include tablet-landXS {
+    // 1070
     display: none;
   }
   &:hover ion-icon,
