@@ -1114,7 +1114,7 @@ textarea:focus::placeholder {
   .wrapper.home {
     background-color: white;
     background-image: url(../assets/home/birchH.jpg);
-    background-size: 110%;
+    background-size: 120%;
     background-repeat: no-repeat;
     background-position: center;
   }
