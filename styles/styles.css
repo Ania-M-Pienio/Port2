@@ -1373,6 +1373,7 @@ textarea:focus::placeholder {
       grid-template-rows: 1fr 1.3fr;
   grid-auto-flow: row;
   grid-gap: 10px;
+  position: relative;
 }
 
 @media (max-width: 1250px) {
@@ -1435,6 +1436,12 @@ textarea:focus::placeholder {
   }
 }
 
+@media (max-width: 520px) {
+  .meContainer li p {
+    font-size: 1.4rem;
+  }
+}
+
 .meContainer li p span {
   font-size: 3rem;
 }
@@ -1466,7 +1473,9 @@ textarea:focus::placeholder {
 
 @media (max-width: 520px) {
   .meContainer li.today {
-    overflow-x: scroll;
+    overflow-y: scroll;
+    scrollbar-color: #FF8585 rgba(0, 128, 0, 0);
+    scrollbar-width: thin;
   }
 }
 
@@ -1592,6 +1601,23 @@ textarea:focus::placeholder {
 
 .about nav.expand {
   height: 100%;
+}
+
+.overflowShadow {
+  display: none;
+  position: absolute;
+  height: 70px;
+  width: calc(100% - 4px);
+  bottom: 2px;
+  left: 2px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(black));
+  background: linear-gradient(rgba(255, 255, 255, 0), black);
+}
+
+@media (max-width: 520px) {
+  .overflowShadow {
+    display: block;
+  }
 }
 
 .wrapper.skills {

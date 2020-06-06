@@ -38,6 +38,7 @@
   grid-template-rows: 1fr 1.3fr;
   grid-auto-flow: row;
   grid-gap: 10px;
+  position: relative;
   @include tablet-landS {
     // 1250
     grid-template-columns: 1.5fr 0.8fr;
@@ -70,8 +71,12 @@
         font-size: 1.5rem;
       }
       @include tablet-port {
-        // 1250
+        // 960
         font-size: 1.3rem;
+      }
+      @include mobile-port {
+        // 520
+        font-size: 1.4rem;
       }
       span {
         font-size: 3rem;
@@ -95,7 +100,9 @@
     }
     @include mobile-port {
       // 520
-      overflow-x: scroll;
+      overflow-y: scroll;
+      scrollbar-color: $season rgba(0, 128, 0, 0);
+      scrollbar-width: thin;
     }
     p {
       color: white;
@@ -190,4 +197,18 @@
 
 .about nav.expand {
   height: 100%;
+}
+
+.overflowShadow {
+  display: none;
+  position: absolute;
+  height: 70px;
+  width: calc(100% - 4px);
+  bottom: 2px;
+  left: 2px;
+  background: linear-gradient(rgba(255, 255, 255, 0), black);
+  @include mobile-port {
+    // 520
+    display: block;
+  }
 }
