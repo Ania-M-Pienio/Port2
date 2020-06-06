@@ -75,7 +75,7 @@
 }
 
 @mixin mobile-tiny {
-  @media (max-width: 320px) {
+  @media (max-width: 365px) {
     @content;
   }
 }

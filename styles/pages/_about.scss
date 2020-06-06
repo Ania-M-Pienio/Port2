@@ -48,7 +48,7 @@
   @include tablet-port {
     // 960
     grid-template-columns: 0.6fr 1.4fr;
-    grid-template-rows: 0.5fr 1.5fr;
+    grid-template-rows: 0.7fr 1.3fr;
   }
   @include mobile-land {
     // 690
@@ -170,6 +170,10 @@
         // 520
         font-size: 3rem;
       }
+      @include mobile-tiny {
+        // 520
+        font-size: 2.5rem;
+      }
       span {
         display: block;
         font-size: 5rem;
@@ -182,6 +186,10 @@
         @include mobile-port {
           // 520
           font-size: 3rem;
+        }
+        @include mobile-tiny {
+          // 520
+          font-size: 2.5rem;
         }
       }
     }

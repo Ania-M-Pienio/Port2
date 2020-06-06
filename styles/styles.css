@@ -1415,8 +1415,8 @@ textarea:focus::placeholder {
   .meContainer {
     -ms-grid-columns: 0.6fr 1.4fr;
         grid-template-columns: 0.6fr 1.4fr;
-    -ms-grid-rows: 0.5fr 1.5fr;
-        grid-template-rows: 0.5fr 1.5fr;
+    -ms-grid-rows: 0.7fr 1.3fr;
+        grid-template-rows: 0.7fr 1.3fr;
   }
 }
 
@@ -1597,6 +1597,12 @@ textarea:focus::placeholder {
   }
 }
 
+@media (max-width: 365px) {
+  .meContainer li.hello h5 {
+    font-size: 2.5rem;
+  }
+}
+
 .meContainer li.hello h5 span {
   display: block;
   font-size: 5rem;
@@ -1613,6 +1619,12 @@ textarea:focus::placeholder {
 @media (max-width: 520px) {
   .meContainer li.hello h5 span {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 365px) {
+  .meContainer li.hello h5 span {
+    font-size: 2.5rem;
   }
 }
 
