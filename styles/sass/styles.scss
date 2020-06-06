@@ -182,8 +182,8 @@ header {
   transition: all 1s;
   @include mobile-land-h {
     // 960 x 960
-    max-height: 750px;
-    min-height: 750px;
+    max-height: 700px;
+    min-height: 700px;
   }
 }
 
