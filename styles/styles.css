@@ -1334,12 +1334,6 @@ textarea:focus::placeholder {
   background-color: #eaeaea;
 }
 
-@media (max-width: 520px) {
-  .wrapper.about {
-    padding: 30px 0px 80px;
-  }
-}
-
 .about .splash {
   background-color: white;
   background-image: none;
@@ -1495,6 +1489,17 @@ textarea:focus::placeholder {
 
 .meContainer li.today p.later span {
   color: white;
+}
+
+.meContainer li.today .spacer {
+  display: none;
+  min-height: 100px;
+}
+
+@media (max-width: 520px) {
+  .meContainer li.today .spacer {
+    display: block;
+  }
 }
 
 .meContainer li.hello {
@@ -3539,4 +3544,24 @@ aside {
           animation: FADE_IN 1s ease-in;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FF8585;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

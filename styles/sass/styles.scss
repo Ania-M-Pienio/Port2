@@ -283,3 +283,26 @@ aside {
   animation: FADE_IN 1s ease-in;
   animation-fill-mode: forwards;
 }
+
+
+// SCROLLBARS (WEBKIT)
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $season; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

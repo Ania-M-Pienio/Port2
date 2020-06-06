@@ -1,9 +1,5 @@
 .wrapper.about {
   background-color: darken($tint, 5);
-  @include mobile-port {
-    // 520
-    padding: 30px 0px 80px;
-  }
 }
 
 .about .splash {
@@ -115,6 +111,14 @@
       }
       span {
         color: white;
+      }
+    }
+    .spacer {
+      display: none;
+      min-height: 100px;
+      @include mobile-port {
+        // 520
+        display: block;
       }
     }
   }
