@@ -1447,18 +1447,6 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 960px) {
-  .meContainer li p {
-    font-size: 1.3rem;
-  }
-}
-
-@media (max-width: 520px) {
-  .meContainer li p {
-    font-size: 1.4rem;
-  }
-}
-
 .meContainer li p span {
   font-size: 3rem;
 }
