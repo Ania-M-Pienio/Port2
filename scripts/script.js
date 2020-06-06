@@ -1,6 +1,7 @@
 const app = {};
 
 app.isDropped = true;
+app.isDroppedM = false;
 
 // cached jQuery for the Message Form
 app.form = {};
@@ -10,7 +11,8 @@ app.form.$message = $("#theMessage");
 app.form.$reply = $("#expectReply");
 
 // cached jQuery for the Menu
-app.$menuButton = $(".menu button");
+app.$menuButtonD = $(".menu button.desk");
+app.$menuButtonM = $(".menu button.mobile");
 app.$menuLinks = $("nav a");
 
 // carousel
@@ -195,8 +197,12 @@ app.skills = {
 /*****************          ANIMATORS         *******************/
 /****************************************************************/
 
-app.animateDrop = function () {
+app.animateDropD = function () {
   $("nav").toggleClass("collapse");
+};
+
+app.animateDropM = function () {
+  $("nav").toggleClass("show");
 };
 
 app.animateLogo = function (location) {
@@ -306,22 +312,37 @@ app.handleBlurs = function () {
 
 app.handleMenu = function () {
   // show/hide menu
-  app.$menuButton.on("click", function () {
+  app.$menuButtonD.on("click", function () {
+    $("nav").removeClass("show");
     if (app.isDropped) {
-      app.animateDrop();
+      app.animateDropD();
       setTimeout(() => {
         app.$menuLinks.css("display", "none");
       }, 500);
     } else {
       app.$menuLinks.css("display", "block");
       setTimeout(() => {
-        app.animateDrop();
+        app.animateDropD();
       }, 500);
     }
     app.isDropped = !app.isDropped;
   });
 
-
+  app.$menuButtonM.on("click", function () {
+    $("nav").removeClass("collapse");
+    if (app.isDroppedM) {
+      app.animateDropM();
+      setTimeout(() => {
+        app.$menuLinks.css("display", "none");
+      }, 500);
+    } else {
+      app.$menuLinks.css("display", "block");
+      setTimeout(() => {
+        app.animateDropM();
+      }, 500);
+    }
+    app.isDroppedM = !app.isDroppedM;
+  });
 };
 
 app.handleCarousel = function () {

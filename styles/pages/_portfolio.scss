@@ -4,11 +4,15 @@
 
 .wrapper.portfolio article {
   width: 20%;
+  @include tablet-landXS {
+    width: 100%;
+  }
 }
 
 .wrapper.portfolio aside {
   width: 80%;
   border: 2px solid $season;
+
 }
 
 .portfolio .splash {
@@ -40,6 +44,9 @@
     opacity: 0;
     position: absolute;
     top: -600px;
+  }
+  @include tablet-landXS {
+    top: -1000px;
   }
   p {
     text-align: center;
@@ -341,7 +348,7 @@
       }
       li {
         @include tablet-land {
-          margin: 0 20px; 
+          margin: 0 20px;
         }
         .icon {
           width: 30px;
@@ -357,10 +364,6 @@
       }
     }
   }
-}
-
-.portfolio nav.expand {
-  height: 90%;
 }
 
 // CAROUSEL

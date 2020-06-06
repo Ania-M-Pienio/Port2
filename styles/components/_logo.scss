@@ -47,8 +47,11 @@ a.logo {
   }
 }
 
-
 a.logo {
+  @include tablet-port {
+    pointer-events: none;
+    cursor: default;
+  }
   &:focus h3,
   &:hover h3,
   &:active h3 {
@@ -65,5 +68,8 @@ a.logo {
     border: 2px solid $season;
     transition: all 0.5s;
     background-color: white;
+    @include tablet-port {
+      display: none;
+    }
   }
 }

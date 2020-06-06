@@ -1,10 +1,33 @@
 .wrapper.about {
   background-color: darken($tint, 5);
+  @include mobile-port {
+    padding: 30px 0px 80px;
+  }
 }
 
 .about .splash {
   background-color: white;
   background-image: none;
+}
+
+.about article {
+  @include tablet-port {
+    // 960
+    height: 25%;
+  }
+  .info a.logo {
+    @include tablet-landXS {
+      // 1070
+      display: none;
+    }
+  }
+}
+
+.about aside {
+  @include tablet-port {
+    // 960
+    height: 75%;
+  }
 }
 
 .meContainer {
@@ -19,6 +42,21 @@
     grid-template-columns: 1.5fr 0.8fr;
     grid-template-rows: 1fr 1.3fr;
   }
+  @include tablet-landXS {
+    // 1070
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 0.1fr 1.9fr;
+  }
+  @include tablet-port {
+    // 960
+    grid-template-columns: 0.7fr 1.3fr;
+    grid-template-rows: 0.5fr 1.5fr;
+  }
+  @include mobile-land {
+    // 690
+    grid-template-columns: 0.2fr 1.8fr;
+    grid-template-rows: 0.1fr 1.9fr;
+  }
   li {
     padding: 30px;
     border: 2px solid $season;
@@ -29,6 +67,10 @@
       @include tablet-landS {
         // 1250
         font-size: 1.5rem;
+      }
+      @include tablet-port {
+        // 1250
+        font-size: 1.3rem;
       }
       span {
         font-size: 3rem;
@@ -68,13 +110,60 @@
     background-color: white;
     background-image: url(../assets/about/maple.jpg);
     background-size: 47%;
-    background-position: center bottom;
+    background-position: right bottom;
     background-repeat: no-repeat;
     position: relative;
     top: -600px;
+    @include tablet-landXS {
+      // 1070
+      background-size: 30%;
+    }
+    @include tablet-port {
+      // 960
+      background-size: 20%;
+      background-position: right bottom;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+    }
+    @include mobile-port {
+      // 520
+      transform: scale(0);
+      position: absolute;
+    }
     h5 {
+      width: 100%;
       color: $season;
       opacity: 0;
+      position: relative;
+      @include tablet-landXS {
+        // 1070
+        height: 80%;
+        width: 80%;
+        text-align: left;
+      }
+      @include tablet-port {
+        // 960
+        height: 40%;
+        width: 100%;
+        font-size: 4.5rem;
+      }
+      span {
+        display: block;
+        font-size: 5rem;
+        position: absolute;
+        @include tablet-landXS {
+          // 1070
+          font-size: 4.5rem;
+          bottom: 0;
+          right: 0;
+        }
+        @include tablet-port {
+          // 960
+          position: static;
+          display: inline-block;
+        }
+      }
     }
   }
   li.me {
@@ -82,6 +171,17 @@
     background-image: url(../assets/about/me2.png);
     background-size: cover;
     box-shadow: $shadow-inset;
+    background-repeat: no-repeat;
+    @include tablet-port {
+      // 960
+      background-size: cover;
+      background-position: center;
+    }
+    @include mobile-port {
+      // 520
+      transform: scale(0);
+      position: absolute;
+    }
   }
 }
 

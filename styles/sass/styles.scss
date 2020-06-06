@@ -29,13 +29,16 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  overflow-x: hidden;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 body {
   background-color: $dark-grey;
   padding: 40px 0;
+  @include mobile-land-h {
+    padding: 0;
+  }
 }
 
 // wrappers
@@ -48,6 +51,9 @@ body {
   background-color: white;
   position: relative;
   background-color: $tint;
+  @include tablet-landXS {
+    flex-direction: column;
+  }
 }
 
 .wrapper:after {
@@ -173,17 +179,43 @@ header {
   height: 90vh;
   max-height: 900px;
   min-height: 900px;
+  transition: all 1s;
+  @include mobile-land-h {
+    max-height: 700px;
+    min-height: 700px;
+  }
 }
 
 article {
   width: 35%;
   height: 100%;
   padding-right: 20px;
+  @include tablet-landXS {
+    padding-right: 0px;
+    width: 100%;
+    .info {
+      width: 100%;
+      padding-top: 10px;
+    }
+    .menu {
+      display: none;
+    }
+  }
+  @include mobile-land-h {
+    height: 60%;
+  }
 }
 
 aside {
   width: 65%;
   height: 100%;
+  @include tablet-landXS {
+    width: 100%;
+    z-index: 900;
+  }
+  @include mobile-land-h {
+    height: 50%;
+  }
 }
 
 .splash {
@@ -197,6 +229,10 @@ aside {
   z-index: 100;
   position: absolute;
   display: flex;
+  @include tablet-port {
+    // 960
+    display: none;
+  }
   &:hover ion-icon,
   &:focus ion-icon,
   &:active ion-icon {
