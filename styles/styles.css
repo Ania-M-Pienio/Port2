@@ -1464,6 +1464,12 @@ textarea:focus::placeholder {
   }
 }
 
+@media (max-width: 520px) {
+  .meContainer li.today {
+    overflow-x: scroll;
+  }
+}
+
 .meContainer li.today p {
   color: white;
 }
@@ -1512,14 +1518,6 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 520px) {
-  .meContainer li.hello {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    position: absolute;
-  }
-}
-
 .meContainer li.hello h5 {
   width: 100%;
   color: #FF8585;
@@ -1540,6 +1538,12 @@ textarea:focus::placeholder {
     height: 40%;
     width: 100%;
     font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .meContainer li.hello h5 {
+    font-size: 3rem;
   }
 }
 
@@ -1564,6 +1568,12 @@ textarea:focus::placeholder {
   }
 }
 
+@media (max-width: 520px) {
+  .meContainer li.hello h5 span {
+    font-size: 3rem;
+  }
+}
+
 .meContainer li.me {
   height: 100%;
   background-image: url(../assets/about/me2.png);
@@ -1577,14 +1587,6 @@ textarea:focus::placeholder {
   .meContainer li.me {
     background-size: cover;
     background-position: center;
-  }
-}
-
-@media (max-width: 520px) {
-  .meContainer li.me {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    position: absolute;
   }
 }
 
