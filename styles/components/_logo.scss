@@ -47,11 +47,9 @@ a.logo {
   }
 }
 
+
+// VIEW PORTFOLIO BUTTON
 a.logo {
-  @include tablet-port {
-    pointer-events: none;
-    cursor: default;
-  }
   &:focus h3,
   &:hover h3,
   &:active h3 {
@@ -68,8 +66,24 @@ a.logo {
     border: 2px solid $season;
     transition: all 0.5s;
     background-color: white;
-    @include tablet-port {
+  }
+}
+
+
+// MOBILE VERSION
+a.logo {
+  @include tablet-landXS {
+    // 1070
+    pointer-events: none;
+    cursor: default;
+    width: 200px;
+    height: 200px;
+    .logo1, .logo2, .logo3 {
+      width: 200px;
+      height: 200px;
+    }
+    h3 {
       display: none;
     }
-  }
+  }  
 }

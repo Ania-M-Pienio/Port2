@@ -50,3 +50,21 @@
   position: absolute;
   left: -2000px;
 }
+
+
+a.logo {
+  @include tablet-landXS {
+    // 1070
+    pointer-events: none;
+    cursor: default;
+    width: 200px;
+    height: 200px;
+    .logo1, .logo2, .logo3 {
+      width: 200px;
+      height: 200px;
+    }
+    h3 {
+      display: none;
+    }
+  }  
+}

@@ -53,6 +53,7 @@ body {
   background-color: $tint;
   position: relative;
   @include tablet-landXS {
+    // 1070
     flex-direction: column;
   }
 }
