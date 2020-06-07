@@ -5,6 +5,7 @@
 .wrapper.portfolio article {
   width: 20%;
   @include tablet-landXS {
+    // 1070
     width: 100%;
   }
 }
@@ -12,7 +13,10 @@
 .wrapper.portfolio aside {
   width: 80%;
   border: 2px solid $season;
-
+  @include tablet-landXS {
+    // 1070
+    width: 100%;
+  }
 }
 
 .portfolio .splash {
@@ -27,6 +31,10 @@
   @include tablet-land {
     // 1250
     padding: 30px;
+  }
+  @include mobile-land {
+    // 690
+    padding: 15px;
   }
 }
 
@@ -72,6 +80,7 @@
           display: block;
           text-align: center;
           @include tablet-land {
+            // 1300
             font-size: 2rem;
           }
           span {
@@ -107,8 +116,17 @@
     position: static;
     opacity: 1;
   }
+  @include mobile-land {
+    // 690
+    height: 90px;
+  }
   h2 {
     margin-top: 0px;
+    @include mobile-land {
+      // 690
+      font-size: 2.2rem;
+      margin-bottom: 2px;
+    }
   }
   ul {
     height: 60px;
@@ -117,16 +135,52 @@
     margin-top: 5px;
     border-top: 2px solid $grey;
     border-bottom: 2px solid $grey;
+    @include tablet-landXS {
+      // 1070
+      height: 50px;
+    }
+    @include mobile-land {
+      // 690
+      height: 35px;
+      margin-top: 0;
+      padding: 5px;
+    }
     li {
       width: 20%;
+      @include mobile-land {
+        // 690
+        height: 10%;
+      }
+      h3 {
+        @include tablet-landXS {
+          // 1070
+          font-size: 1.6rem;
+        }
+        @include mobile-land {
+          // 690
+          font-size: 1.3rem;
+        }
+      }
     }
   }
   button.selected {
     h3 {
       font-size: 2.15rem;
       color: $season;
+      @include tablet-landXS {
+        // 1070
+        font-size: 1.7rem;
+      }
+      @include mobile-land {
+        // 690
+        font-size: 1.4rem;
+      }
       span {
         visibility: visible;
+        @include mobile-land {
+          // 690
+          visibility: hidden;
+        }
       }
     }
   }
@@ -136,6 +190,7 @@
   width: 80%;
   margin: 0 auto;
   margin-top: 30px;
+  position: relative;
   @include tablet-land {
     // 1300
     width: 100%;
@@ -149,14 +204,19 @@
 .rotationContainer {
   height: 300px;
   width: 750px;
-  position: relative;
   top: -600px;
   transition: all 1s;
   margin: 0 auto;
+  position: relative;
   @include tablet-land {
     // 1300
     margin: 0 auto;
     height: 290px;
+  }
+  @include tablet-landXS {
+    // 1070
+    width: 400px;
+    height: 230px;
   }
   .board {
     border: 2px solid $dark-grey;
@@ -177,6 +237,12 @@
     top: 60px;
     background-size: 85%;
     opacity: 0.2;
+    @include tablet-landXS {
+      // 1070
+      width: 180px;
+      height: 140px;
+      top: 40px;
+    }
   }
   .center {
     background-image: url(../assets/portfolio/2.png);
@@ -185,31 +251,58 @@
     width: 400px;
     height: 310px;
     left: 175px;
+    @include tablet-landXS {
+      // 1070
+      width: 250px;
+      height: 220px;
+      left: 75px;
+    }
   }
-}
 
-.board.right {
-  background-image: url(../assets/portfolio/1.png);
-  left: 500px;
-}
+  .board.right {
+    background-image: url(../assets/portfolio/1.png);
+    left: 500px;
+    @include tablet-landXS {
+      // 1070
+      left: 220px;
+    }
+  }
 
-.board.left {
-  background-image: url(../assets/portfolio/3.png);
+  .board.left {
+    background-image: url(../assets/portfolio/3.png);
+  }
 }
 
 .rotationControl {
   width: 750px;
   position: relative;
-  top: -150px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  z-index: 900;
+  z-index: 3000;
   opacity: 0;
+  top: -150px;
+  @include tablet-landXS {
+    // 1070
+    width: 100%;
+    height: 10px;
+  }
   button {
+    height: 70px;
     border: 2px solid $charcoal;
     background-color: $charcoal;
     box-shadow: $shadow;
+    transition: all 1s;
+    @include tablet-landXS {
+      // 1070
+      background-color: lighten($charcoal, 15);
+      border: 2px solid lighten($charcoal, 15);
+    }
+    @include mobile-land {
+      // 690
+      height: 50px;
+      width: 50px;
+    }
     &:hover,
     &:focus,
     &:active {
@@ -226,6 +319,10 @@
       color: white;
       transition: all 0.5s;
       font-size: 6rem;
+      @include mobile-land {
+        // 690
+        font-size: 4rem;
+      }
     }
   }
 }
@@ -243,6 +340,11 @@
     padding-right: 15px;
     display: flex;
     flex-direction: column;
+  }
+  @include tablet-landXS {
+    // 1070
+    margin: 0;
+    padding: 0;
   }
   // PROJECT TITLE
   .titleContainer {
@@ -275,6 +377,11 @@
         // 1300
         font-size: 1.5rem;
       }
+      @include mobile-land {
+        // 690
+        font-size: 1.3rem;
+        height: 120px;
+      }
     }
   }
 
@@ -290,6 +397,10 @@
       margin-top: 0px;
       padding: 15px 0;
       padding-left: 10px;
+    }
+    @include mobile-land {
+      // 690
+      margin-top: 15px;
     }
   }
 
@@ -332,6 +443,12 @@
       height: 80px;
       order: 0;
     }
+    @include tablet-landXS {
+      // 1070
+      margin: 0;
+      padding: 5px 0;
+      height: 60px;
+    }
     ul {
       width: 100%;
       display: grid;
@@ -348,8 +465,14 @@
       }
       li {
         @include tablet-land {
+          // 1300
           margin: 0 20px;
         }
+        @include mobile-land {
+          // 690
+          margin: 0 12px;
+        }
+
         .icon {
           width: 30px;
           display: flex;
@@ -361,6 +484,18 @@
         h4 {
           font-size: 1.5rem;
         }
+        @include mobile-land {
+          // 690
+          .icon {
+            width: 25px;
+          }
+          .iconImage {
+            width: 25px;
+          }
+          h4 {
+            font-size: 1.3rem;
+          }
+        }
       }
     }
   }
@@ -371,29 +506,53 @@
 .centerANIM {
   animation: CENTER 0.5s ease-in-out;
   animation-fill-mode: forwards;
+  @include tablet-landXS {
+    // 1070
+    animation: CENTER_M 0.5s ease-in-out;
+  }
 }
 
 .leftANIM {
   animation: LEFT 0.5s ease-in-out;
   animation-fill-mode: forwards;
+  @include tablet-landXS {
+    // 1070
+    animation: LEFT_M 0.5s ease-in-out;
+  }
 }
 
 .rightANIM {
   animation: RIGHT 0.5s ease-in-out;
   animation-fill-mode: forwards;
+  @include tablet-landXS {
+    // 1070
+    animation: RIGHT_M 0.5s ease-in-out;
+  }
 }
 
 .centerANIMrev {
   animation: CENTER_REV 0.5s ease-in-out;
   animation-fill-mode: forwards;
+  @include tablet-landXS {
+    // 1070
+    animation: CENTER_REV_M 0.5s ease-in-out;
+  }
 }
 
 .leftANIMrev {
   animation: LEFT_REV 0.5s ease-in-out;
   animation-fill-mode: forwards;
+  @include tablet-landXS {
+    // 1070
+    animation: LEFT_REV_M 0.5s ease-in-out;
+  }
 }
 
 .rightANIMrev {
   animation: RIGHT_REV 0.5s ease-in-out;
   animation-fill-mode: forwards;
+  @include tablet-landXS {
+    // 1070
+    animation: RIGHT_REV_M 0.5s ease-in-out;
+  }
 }

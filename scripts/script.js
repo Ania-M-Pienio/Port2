@@ -311,6 +311,7 @@ app.handleBlurs = function () {
 };
 
 app.handleMenu = function () {
+  
   // show/hide menu
   app.$menuButtonD.on("click", function () {
     $("nav").removeClass("show");

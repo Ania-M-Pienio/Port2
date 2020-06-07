@@ -16,6 +16,24 @@
   }
 }
 
+@keyframes CENTER_M {
+  0% {
+    width: 250px;
+    height: 220px;
+    top: 0;
+    left: 75px;
+    opacity: 1;
+  }
+  100% {
+    width: 180px;
+    height: 140px;
+    top: 40px;
+    left: 220px;
+    z-index: 500;
+    opacity: 0.2;
+  }
+}
+
 @keyframes CENTER_REV {
   0% {
     width: 400px;
@@ -28,6 +46,24 @@
     width: 250px;
     height: 210px;
     top: 60px;
+    left: 0px;
+    z-index: 500;
+    opacity: 0.2;
+  }
+}
+
+@keyframes CENTER_REV_M {
+  0% {
+    width: 250px;
+    height: 220px;
+    top: 0;
+    left: 75px;
+    opacity: 1;
+  }
+  100% {
+    width: 180px;
+    height: 140px;
+    top: 40px;
     left: 0px;
     z-index: 500;
     opacity: 0.2;
@@ -47,6 +83,24 @@
     height: 310px;
     top: 0px;
     left: 175px;
+    z-index: 1000;
+    opacity: 1;
+  }
+}
+
+@keyframes LEFT_M {
+  0% {
+    width: 180px;
+    height: 140px;
+    opacity: 0.5;
+    top: 40px;
+    left: 0;
+  }
+  100% {
+    width: 250px;
+    height: 220px;
+    top: 0px;
+    left: 75px;
     z-index: 1000;
     opacity: 1;
   }
@@ -84,6 +138,43 @@
   100% {
     z-index: 500;
     left: 500px;
+    transform: scale(1);
+    opacity: 0.2;
+  }
+}
+
+@keyframes LEFT_REV_M {
+  0% {
+    left: 0px;
+    transform: scale(0.5);
+  }
+  10% {
+    transform: scale(0.7);
+  }
+  20% {
+    transform: scale(0.5);
+  }
+  30% {
+    transform: scale(0.3);
+  }
+  40% {
+    transform: scale(0);
+  }
+  92% {
+    transform: scale(0.2);
+  }
+  94% {
+    transform: scale(0.4);
+  }
+  96% {
+    transform: scale(0.6);
+  }
+  98% {
+    transform: scale(0.8);
+  }
+  100% {
+    z-index: 500;
+    left: 220px;
     transform: scale(1);
     opacity: 0.2;
   }
@@ -134,7 +225,58 @@
     transform: scale(0.9);
   }
   100% {
+    left: 0px;
+    transform: scale(1);
+    opacity: 0.2;
     z-index: 500;
+  }
+}
+
+@keyframes RIGHT_M {
+  0% {
+    left: 220px;
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.7);
+  }
+  20% {
+    transform: scale(0.5);
+  }
+  30% {
+    transform: scale(0.3);
+  }
+  40% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0.1);
+  }
+  60% {
+    transform: scale(0.2);
+  }
+  70% {
+    transform: scale(0.3);
+  }
+  80% {
+    transform: scale(0.4);
+  }
+  90% {
+    transform: scale(0.5);
+  }
+  92% {
+    transform: scale(0.6);
+  }
+  94% {
+    transform: scale(0.7);
+  }
+  96% {
+    transform: scale(0.8);
+  }
+  98% {
+    transform: scale(0.9);
+  }
+  100% {
     left: 0px;
     transform: scale(1);
     opacity: 0.2;
@@ -155,6 +297,23 @@
     top: 0px;
     z-index: 1000;
     left: 175px;
+    opacity: 1;
+  }
+}
+
+@keyframes RIGHT_REV_M {
+  0% {
+    width: 180px;
+    height: 140px;
+    top: 40px;
+    left: 220px;
+  }
+  100% {
+    width: 250px;
+    height: 220px;
+    top: 0px;
+    z-index: 1000;
+    left: 75px;
     opacity: 1;
   }
 }
