@@ -531,8 +531,17 @@ nav.collapse:not(.show) {
   }
 }
 
+.mobileMenu ul li.selected {
+  background-color: #FF8585;
+  z-index: 1000;
+}
+
 .mobileMenu ul li {
   border: 2px solid #FF8585;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  z-index: 500;
 }
 
 .mobileMenu ul li a.selected {
@@ -558,8 +567,6 @@ nav.collapse:not(.show) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .mobileMenu ul li a:hover, .mobileMenu ul li a:focus, .mobileMenu ul li a:active {
@@ -1795,6 +1802,35 @@ textarea:focus::placeholder {
   background-color: #eaeaea;
 }
 
+@media (max-width: 690px) {
+  .wrapper.skills {
+    background-color: white;
+    background-image: url(../assets/skills/wood.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px 0px 80px 0px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .skills article {
+    height: 25%;
+  }
+}
+
+@media (max-width: 1070px) {
+  .skills article .info a.logo {
+    display: none;
+  }
+}
+
+@media (max-width: 1070px) {
+  .skills aside {
+    height: 70%;
+  }
+}
+
 .skills .splash {
   background-color: #F7F7F7;
   background-image: none;
@@ -1812,6 +1848,12 @@ textarea:focus::placeholder {
           justify-content: space-between;
 }
 
+@media (max-width: 520px) {
+  .skills .splash {
+    padding: 10px;
+  }
+}
+
 .skills .splash .skillset {
   height: 45%;
   display: -webkit-box;
@@ -1826,11 +1868,23 @@ textarea:focus::placeholder {
           justify-content: flex-start;
 }
 
+@media (max-width: 520px) {
+  .skills .splash .skillset {
+    height: 50%;
+  }
+}
+
 .skills .splash .skillset h3 {
   height: 15%;
   width: 100%;
   color: #212121;
   opacity: 0;
+}
+
+@media (max-width: 520px) {
+  .skills .splash .skillset h3 {
+    display: none;
+  }
 }
 
 .skills .splash .skillset ul {
@@ -1851,6 +1905,13 @@ textarea:focus::placeholder {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+@media (max-width: 520px) {
+  .skills .splash .skillset ul {
+    height: 90%;
+    padding: 10px;
+  }
+}
+
 .skills .splash .skillset ul li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1864,12 +1925,36 @@ textarea:focus::placeholder {
   width: 40px;
 }
 
+@media (max-width: 1070px) {
+  .skills .splash .skillset ul li .icon {
+    width: 30px;
+  }
+}
+
 .skills .splash .skillset ul li .iconImage {
   width: 40px;
 }
 
+@media (max-width: 1070px) {
+  .skills .splash .skillset ul li .iconImage {
+    width: 30px;
+  }
+}
+
 .skills .splash .skillset ul li h4 {
   font-size: 1.8rem;
+}
+
+@media (max-width: 1070px) {
+  .skills .splash .skillset ul li h4 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .skills .splash .skillset ul li h4 {
+    font-size: 1.2rem;
+  }
 }
 
 .skills .splash .skillset.swoopDown {
@@ -2427,6 +2512,35 @@ textarea:focus::placeholder {
   background-color: #eaeaea;
 }
 
+@media (max-width: 690px) {
+  .wrapper.skills {
+    background-color: white;
+    background-image: url(../assets/skills/wood.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px 0px 80px 0px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .skills article {
+    height: 25%;
+  }
+}
+
+@media (max-width: 1070px) {
+  .skills article .info a.logo {
+    display: none;
+  }
+}
+
+@media (max-width: 1070px) {
+  .skills aside {
+    height: 70%;
+  }
+}
+
 .skills .splash {
   background-color: #F7F7F7;
   background-image: none;
@@ -2444,6 +2558,12 @@ textarea:focus::placeholder {
           justify-content: space-between;
 }
 
+@media (max-width: 520px) {
+  .skills .splash {
+    padding: 10px;
+  }
+}
+
 .skills .splash .skillset {
   height: 45%;
   display: -webkit-box;
@@ -2458,11 +2578,23 @@ textarea:focus::placeholder {
           justify-content: flex-start;
 }
 
+@media (max-width: 520px) {
+  .skills .splash .skillset {
+    height: 50%;
+  }
+}
+
 .skills .splash .skillset h3 {
   height: 15%;
   width: 100%;
   color: #212121;
   opacity: 0;
+}
+
+@media (max-width: 520px) {
+  .skills .splash .skillset h3 {
+    display: none;
+  }
 }
 
 .skills .splash .skillset ul {
@@ -2483,6 +2615,13 @@ textarea:focus::placeholder {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+@media (max-width: 520px) {
+  .skills .splash .skillset ul {
+    height: 90%;
+    padding: 10px;
+  }
+}
+
 .skills .splash .skillset ul li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2496,12 +2635,36 @@ textarea:focus::placeholder {
   width: 40px;
 }
 
+@media (max-width: 1070px) {
+  .skills .splash .skillset ul li .icon {
+    width: 30px;
+  }
+}
+
 .skills .splash .skillset ul li .iconImage {
   width: 40px;
 }
 
+@media (max-width: 1070px) {
+  .skills .splash .skillset ul li .iconImage {
+    width: 30px;
+  }
+}
+
 .skills .splash .skillset ul li h4 {
   font-size: 1.8rem;
+}
+
+@media (max-width: 1070px) {
+  .skills .splash .skillset ul li h4 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .skills .splash .skillset ul li h4 {
+    font-size: 1.2rem;
+  }
 }
 
 .skills .splash .skillset.swoopDown {

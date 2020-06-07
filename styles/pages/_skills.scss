@@ -1,5 +1,33 @@
 .wrapper.skills {
   background-color: darken($tint, 5);
+  @include mobile-land {
+    // 690
+    background-color: white;
+    background-image: url(../assets/skills/wood.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px 0px 80px 0px;
+  }
+}
+
+.skills article {
+  @include tablet-landXS {
+    // 1070
+    height: 25%;
+  }
+  .info a.logo {
+    @include tablet-landXS {
+      // 1070
+      display: none;
+    }
+  }
+}
+.skills aside {
+  @include tablet-landXS {
+    // 1070
+    height: 70%;
+  }
 }
 
 .skills .splash {
@@ -10,17 +38,30 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @include mobile-port {
+    // 690
+    padding: 10px;
+  }
   .skillset {
     height: 45%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    @include mobile-port {
+      // 690
+      height: 50%;
+    }
     h3 {
       height: 15%;
       width: 100%;
       color: $charcoal;
       opacity: 0;
+      @include mobile-port {
+        // 690
+        display: none;
+      }
     }
+
     ul {
       background-color: white;
       height: 85%;
@@ -33,17 +74,35 @@
       padding: 30px;
       border: 2px solid $season;
       box-shadow: $shadow;
+      @include mobile-port {
+        // 690
+        height: 90%;
+        padding: 10px;
+      }
       li {
         display: flex;
         justify-content: center;
         .icon {
           width: 40px;
+          @include tablet-landXS {
+            width: 30px;
+          }
         }
         .iconImage {
           width: 40px;
+          @include tablet-landXS {
+            width: 30px;
+          }
         }
         h4 {
           font-size: 1.8rem;
+          @include tablet-landXS {
+            font-size: 1.5rem;
+          }
+          @include mobile-port {
+            // 690
+            font-size: 1.2rem;
+          }
         }
       }
     }
@@ -57,7 +116,6 @@
     top: 700px;
   }
 }
-
 
 .skills nav.expand {
   height: 80%;
