@@ -1,3 +1,7 @@
+@include mobile-land-h {
+  // 960 x 960
+}
+
 .wrapper.skills {
   background-color: darken($tint, 5);
   @include mobile-land {
@@ -39,7 +43,7 @@
   flex-direction: column;
   justify-content: space-between;
   @include mobile-port {
-    // 690
+    // 520
     padding: 10px;
   }
   .skillset {
@@ -48,7 +52,11 @@
     flex-direction: column;
     justify-content: flex-start;
     @include mobile-port {
-      // 690
+      // 520
+      height: 50%;
+    }
+    @include mobile-land-h {
+      // 960 x 960
       height: 50%;
     }
     h3 {
@@ -57,7 +65,11 @@
       color: $charcoal;
       opacity: 0;
       @include mobile-port {
-        // 690
+        // 520
+        display: none;
+      }
+      @include mobile-land-h {
+        // 960 x 960
         display: none;
       }
     }
@@ -75,9 +87,14 @@
       border: 2px solid $season;
       box-shadow: $shadow;
       @include mobile-port {
-        // 690
+        // 520
         height: 90%;
         padding: 10px;
+      }
+      @include mobile-land-h {
+        // 960 x 960
+        height: 90%;
+        padding: 15px;
       }
       li {
         display: flex;
@@ -100,7 +117,7 @@
             font-size: 1.5rem;
           }
           @include mobile-port {
-            // 690
+            // 520
             font-size: 1.2rem;
           }
         }

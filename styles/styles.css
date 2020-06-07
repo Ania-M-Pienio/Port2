@@ -1874,6 +1874,12 @@ textarea:focus::placeholder {
   }
 }
 
+@media (max-height: 900px) and (max-width: 960px) {
+  .skills .splash .skillset {
+    height: 50%;
+  }
+}
+
 .skills .splash .skillset h3 {
   height: 15%;
   width: 100%;
@@ -1882,6 +1888,12 @@ textarea:focus::placeholder {
 }
 
 @media (max-width: 520px) {
+  .skills .splash .skillset h3 {
+    display: none;
+  }
+}
+
+@media (max-height: 900px) and (max-width: 960px) {
   .skills .splash .skillset h3 {
     display: none;
   }
@@ -1909,6 +1921,13 @@ textarea:focus::placeholder {
   .skills .splash .skillset ul {
     height: 90%;
     padding: 10px;
+  }
+}
+
+@media (max-height: 900px) and (max-width: 960px) {
+  .skills .splash .skillset ul {
+    height: 90%;
+    padding: 15px;
   }
 }
 
@@ -2584,6 +2603,12 @@ textarea:focus::placeholder {
   }
 }
 
+@media (max-height: 900px) and (max-width: 960px) {
+  .skills .splash .skillset {
+    height: 50%;
+  }
+}
+
 .skills .splash .skillset h3 {
   height: 15%;
   width: 100%;
@@ -2592,6 +2617,12 @@ textarea:focus::placeholder {
 }
 
 @media (max-width: 520px) {
+  .skills .splash .skillset h3 {
+    display: none;
+  }
+}
+
+@media (max-height: 900px) and (max-width: 960px) {
   .skills .splash .skillset h3 {
     display: none;
   }
@@ -2619,6 +2650,13 @@ textarea:focus::placeholder {
   .skills .splash .skillset ul {
     height: 90%;
     padding: 10px;
+  }
+}
+
+@media (max-height: 900px) and (max-width: 960px) {
+  .skills .splash .skillset ul {
+    height: 90%;
+    padding: 15px;
   }
 }
 
@@ -3758,6 +3796,7 @@ header {
 
 @media (max-height: 900px) and (max-width: 960px) {
   header {
+    height: 100vh;
     max-height: 700px;
     min-height: 700px;
   }
