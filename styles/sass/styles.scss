@@ -10,6 +10,7 @@
 @import "../components/logo";
 @import "../components/icon";
 @import "../components/nav";
+@import "../components/nav_mobile";
 @import "../components/animations";
 @import "../components/form";
 
@@ -49,8 +50,8 @@ body {
   display: flex;
   height: 100%;
   background-color: white;
-  position: relative;
   background-color: $tint;
+  position: relative;
   @include tablet-landXS {
     flex-direction: column;
   }
@@ -253,6 +254,8 @@ aside {
     transition: all 1s;
   }
 }
+
+
 
 // PAGINATION
 
