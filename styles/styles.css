@@ -616,7 +616,7 @@ nav.collapse:not(.show) {
   }
   100% {
     width: 250px;
-    height: 210px;
+    height: 200px;
     top: 60px;
     left: 500px;
     z-index: 500;
@@ -634,7 +634,7 @@ nav.collapse:not(.show) {
   }
   100% {
     width: 250px;
-    height: 210px;
+    height: 200px;
     top: 60px;
     left: 500px;
     z-index: 500;
@@ -645,7 +645,7 @@ nav.collapse:not(.show) {
 @-webkit-keyframes CENTER_M {
   0% {
     width: 250px;
-    height: 220px;
+    height: 200px;
     top: 0;
     left: 75px;
     opacity: 1;
@@ -663,7 +663,7 @@ nav.collapse:not(.show) {
 @keyframes CENTER_M {
   0% {
     width: 250px;
-    height: 220px;
+    height: 200px;
     top: 0;
     left: 75px;
     opacity: 1;
@@ -688,7 +688,7 @@ nav.collapse:not(.show) {
   }
   100% {
     width: 250px;
-    height: 210px;
+    height: 200px;
     top: 60px;
     left: 0px;
     z-index: 500;
@@ -706,7 +706,7 @@ nav.collapse:not(.show) {
   }
   100% {
     width: 250px;
-    height: 210px;
+    height: 200px;
     top: 60px;
     left: 0px;
     z-index: 500;
@@ -717,7 +717,7 @@ nav.collapse:not(.show) {
 @-webkit-keyframes CENTER_REV_M {
   0% {
     width: 250px;
-    height: 220px;
+    height: 200px;
     top: 0;
     left: 75px;
     opacity: 1;
@@ -735,7 +735,7 @@ nav.collapse:not(.show) {
 @keyframes CENTER_REV_M {
   0% {
     width: 250px;
-    height: 220px;
+    height: 200px;
     top: 0;
     left: 75px;
     opacity: 1;
@@ -753,7 +753,7 @@ nav.collapse:not(.show) {
 @-webkit-keyframes LEFT {
   0% {
     width: 250px;
-    height: 210px;
+    height: 200px;
     opacity: 0.5;
     top: 60px;
     left: 0;
@@ -771,7 +771,7 @@ nav.collapse:not(.show) {
 @keyframes LEFT {
   0% {
     width: 250px;
-    height: 210px;
+    height: 200px;
     opacity: 0.5;
     top: 60px;
     left: 0;
@@ -796,7 +796,7 @@ nav.collapse:not(.show) {
   }
   100% {
     width: 250px;
-    height: 220px;
+    height: 200px;
     top: 0px;
     left: 75px;
     z-index: 1000;
@@ -814,7 +814,7 @@ nav.collapse:not(.show) {
   }
   100% {
     width: 250px;
-    height: 220px;
+    height: 200px;
     top: 0px;
     left: 75px;
     z-index: 1000;
@@ -2183,7 +2183,7 @@ textarea:focus::placeholder {
 
 @media (max-width: 1070px) {
   .skills article {
-    height: 25%;
+    height: 20%;
   }
 }
 
@@ -2370,23 +2370,46 @@ textarea:focus::placeholder {
   background-color: #eaeaea;
 }
 
-.wrapper.portfolio article {
+@media (max-width: 690px) {
+  .wrapper.portfolio {
+    background-color: white;
+    background-image: url(../assets/skills/wood.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px 0px 80px 0px;
+  }
+}
+
+.portfolio article {
   width: 20%;
 }
 
 @media (max-width: 1070px) {
-  .wrapper.portfolio article {
+  .portfolio article {
+    height: 25%;
     width: 100%;
   }
 }
 
-.wrapper.portfolio aside {
-  width: 80%;
-  border: 2px solid #FF8585;
+.portfolio article .info p span {
+  display: block;
 }
 
 @media (max-width: 1070px) {
-  .wrapper.portfolio aside {
+  .portfolio article .info a.logo {
+    display: none;
+  }
+}
+
+.portfolio aside {
+  width: 80%;
+  border: 2px solid #dcdcdc;
+}
+
+@media (max-width: 1070px) {
+  .portfolio aside {
+    height: 70%;
     width: 100%;
   }
 }
@@ -2402,7 +2425,6 @@ textarea:focus::placeholder {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  border: none;
   position: relative;
 }
 
@@ -2412,9 +2434,9 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 690px) {
+@media (max-width: 1070px) {
   .portfolio .splash {
-    padding: 15px;
+    padding: 10px;
   }
 }
 
@@ -2518,7 +2540,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 690px) {
+@media (max-width: 1070px) {
   .projects.mobile {
     height: 90px;
   }
@@ -2526,6 +2548,12 @@ textarea:focus::placeholder {
 
 .projects.mobile h2 {
   margin-top: 0px;
+}
+
+@media (max-width: 1070px) {
+  .projects.mobile h2 {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 690px) {
@@ -2548,7 +2576,8 @@ textarea:focus::placeholder {
 
 @media (max-width: 1070px) {
   .projects.mobile ul {
-    height: 50px;
+    height: 40px;
+    padding: 5px;
   }
 }
 
@@ -2556,7 +2585,6 @@ textarea:focus::placeholder {
   .projects.mobile ul {
     height: 35px;
     margin-top: 0;
-    padding: 5px;
   }
 }
 
@@ -2564,7 +2592,7 @@ textarea:focus::placeholder {
   width: 20%;
 }
 
-@media (max-width: 690px) {
+@media (max-width: 1070px) {
   .projects.mobile ul li {
     height: 10%;
   }
@@ -2572,7 +2600,7 @@ textarea:focus::placeholder {
 
 @media (max-width: 1070px) {
   .projects.mobile ul li h3 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -2653,7 +2681,7 @@ textarea:focus::placeholder {
 @media (max-width: 1070px) {
   .rotationContainer {
     width: 400px;
-    height: 230px;
+    height: 220px;
   }
 }
 
@@ -2678,7 +2706,7 @@ textarea:focus::placeholder {
 
 .rotationContainer .side {
   width: 250px;
-  height: 210px;
+  height: 200px;
   z-index: 500;
   top: 60px;
   background-size: 85%;
@@ -2705,7 +2733,7 @@ textarea:focus::placeholder {
 @media (max-width: 1070px) {
   .rotationContainer .center {
     width: 250px;
-    height: 220px;
+    height: 200px;
     left: 75px;
   }
 }
@@ -2873,6 +2901,12 @@ textarea:focus::placeholder {
   }
 }
 
+@media (max-width: 1070px) {
+  .projectInfo .paragraphContainer p {
+    font-size: 1.4rem;
+  }
+}
+
 @media (max-width: 690px) {
   .projectInfo .paragraphContainer p {
     font-size: 1.3rem;
@@ -2902,6 +2936,12 @@ textarea:focus::placeholder {
   }
 }
 
+@media (max-width: 1070px) {
+  .projectInfo .projectLinks {
+    padding: 5px 0;
+  }
+}
+
 @media (max-width: 690px) {
   .projectInfo .projectLinks {
     margin-top: 15px;
@@ -2919,6 +2959,12 @@ textarea:focus::placeholder {
   border: 2px solid #FF8585;
 }
 
+@media (max-width: 1070px) {
+  .projectInfo a.linkButton {
+    width: 90px;
+  }
+}
+
 .projectInfo a.linkButton:focus, .projectInfo a.linkButton:hover, .projectInfo a.linkButton:active {
   background-color: #FF8585;
   color: white;
@@ -2934,6 +2980,18 @@ textarea:focus::placeholder {
   font-size: 1.8rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+@media (max-width: 1070px) {
+  .projectInfo a.linkButton h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 690px) {
+  .projectInfo a.linkButton h3 {
+    font-size: 1.4rem;
+  }
 }
 
 .projectInfo .projectSkills {
@@ -3135,7 +3193,7 @@ textarea:focus::placeholder {
 
 @media (max-width: 1070px) {
   .skills article {
-    height: 25%;
+    height: 20%;
   }
 }
 
@@ -3322,23 +3380,46 @@ textarea:focus::placeholder {
   background-color: #eaeaea;
 }
 
-.wrapper.portfolio article {
+@media (max-width: 690px) {
+  .wrapper.portfolio {
+    background-color: white;
+    background-image: url(../assets/skills/wood.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px 0px 80px 0px;
+  }
+}
+
+.portfolio article {
   width: 20%;
 }
 
 @media (max-width: 1070px) {
-  .wrapper.portfolio article {
+  .portfolio article {
+    height: 25%;
     width: 100%;
   }
 }
 
-.wrapper.portfolio aside {
-  width: 80%;
-  border: 2px solid #FF8585;
+.portfolio article .info p span {
+  display: block;
 }
 
 @media (max-width: 1070px) {
-  .wrapper.portfolio aside {
+  .portfolio article .info a.logo {
+    display: none;
+  }
+}
+
+.portfolio aside {
+  width: 80%;
+  border: 2px solid #dcdcdc;
+}
+
+@media (max-width: 1070px) {
+  .portfolio aside {
+    height: 70%;
     width: 100%;
   }
 }
@@ -3354,7 +3435,6 @@ textarea:focus::placeholder {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  border: none;
   position: relative;
 }
 
@@ -3364,9 +3444,9 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 690px) {
+@media (max-width: 1070px) {
   .portfolio .splash {
-    padding: 15px;
+    padding: 10px;
   }
 }
 
@@ -3470,7 +3550,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 690px) {
+@media (max-width: 1070px) {
   .projects.mobile {
     height: 90px;
   }
@@ -3478,6 +3558,12 @@ textarea:focus::placeholder {
 
 .projects.mobile h2 {
   margin-top: 0px;
+}
+
+@media (max-width: 1070px) {
+  .projects.mobile h2 {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 690px) {
@@ -3500,7 +3586,8 @@ textarea:focus::placeholder {
 
 @media (max-width: 1070px) {
   .projects.mobile ul {
-    height: 50px;
+    height: 40px;
+    padding: 5px;
   }
 }
 
@@ -3508,7 +3595,6 @@ textarea:focus::placeholder {
   .projects.mobile ul {
     height: 35px;
     margin-top: 0;
-    padding: 5px;
   }
 }
 
@@ -3516,7 +3602,7 @@ textarea:focus::placeholder {
   width: 20%;
 }
 
-@media (max-width: 690px) {
+@media (max-width: 1070px) {
   .projects.mobile ul li {
     height: 10%;
   }
@@ -3524,7 +3610,7 @@ textarea:focus::placeholder {
 
 @media (max-width: 1070px) {
   .projects.mobile ul li h3 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -3605,7 +3691,7 @@ textarea:focus::placeholder {
 @media (max-width: 1070px) {
   .rotationContainer {
     width: 400px;
-    height: 230px;
+    height: 220px;
   }
 }
 
@@ -3630,7 +3716,7 @@ textarea:focus::placeholder {
 
 .rotationContainer .side {
   width: 250px;
-  height: 210px;
+  height: 200px;
   z-index: 500;
   top: 60px;
   background-size: 85%;
@@ -3657,7 +3743,7 @@ textarea:focus::placeholder {
 @media (max-width: 1070px) {
   .rotationContainer .center {
     width: 250px;
-    height: 220px;
+    height: 200px;
     left: 75px;
   }
 }
@@ -3825,6 +3911,12 @@ textarea:focus::placeholder {
   }
 }
 
+@media (max-width: 1070px) {
+  .projectInfo .paragraphContainer p {
+    font-size: 1.4rem;
+  }
+}
+
 @media (max-width: 690px) {
   .projectInfo .paragraphContainer p {
     font-size: 1.3rem;
@@ -3854,6 +3946,12 @@ textarea:focus::placeholder {
   }
 }
 
+@media (max-width: 1070px) {
+  .projectInfo .projectLinks {
+    padding: 5px 0;
+  }
+}
+
 @media (max-width: 690px) {
   .projectInfo .projectLinks {
     margin-top: 15px;
@@ -3871,6 +3969,12 @@ textarea:focus::placeholder {
   border: 2px solid #FF8585;
 }
 
+@media (max-width: 1070px) {
+  .projectInfo a.linkButton {
+    width: 90px;
+  }
+}
+
 .projectInfo a.linkButton:focus, .projectInfo a.linkButton:hover, .projectInfo a.linkButton:active {
   background-color: #FF8585;
   color: white;
@@ -3886,6 +3990,18 @@ textarea:focus::placeholder {
   font-size: 1.8rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+@media (max-width: 1070px) {
+  .projectInfo a.linkButton h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 690px) {
+  .projectInfo a.linkButton h3 {
+    font-size: 1.4rem;
+  }
 }
 
 .projectInfo .projectSkills {

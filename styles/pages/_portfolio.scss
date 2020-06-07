@@ -1,20 +1,39 @@
 .wrapper.portfolio {
   background-color: darken($tint, 5);
-}
-
-.wrapper.portfolio article {
-  width: 20%;
-  @include tablet-landXS {
-    // 1070
-    width: 100%;
+  @include mobile-land {
+    // 690
+    background-color: white;
+    background-image: url(../assets/skills/wood.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px 0px 80px 0px;
   }
 }
 
-.wrapper.portfolio aside {
-  width: 80%;
-  border: 2px solid $season;
+.portfolio article {
+  width: 20%;
   @include tablet-landXS {
     // 1070
+    height: 25%;
+    width: 100%;
+  }
+  .info p span {
+    display: block;
+  }
+  .info a.logo {
+    @include tablet-landXS {
+      // 1070
+      display: none;
+    }
+  }
+}
+.portfolio aside {
+  width: 80%;
+  border: 2px solid $grey;
+  @include tablet-landXS {
+    // 1070
+    height: 70%;
     width: 100%;
   }
 }
@@ -26,15 +45,14 @@
   margin: 0;
   display: flex;
   justify-content: flex-start;
-  border: none;
   position: relative;
   @include tablet-land {
     // 1250
     padding: 30px;
   }
-  @include mobile-land {
-    // 690
-    padding: 15px;
+  @include tablet-landXS {
+    // 1070
+    padding: 10px;
   }
 }
 
@@ -116,12 +134,16 @@
     position: static;
     opacity: 1;
   }
-  @include mobile-land {
-    // 690
+  @include tablet-landXS {
+    // 1070
     height: 90px;
   }
   h2 {
     margin-top: 0px;
+    @include tablet-landXS {
+      // 1070
+      font-size: 2.5rem;
+    }
     @include mobile-land {
       // 690
       font-size: 2.2rem;
@@ -137,24 +159,24 @@
     border-bottom: 2px solid $grey;
     @include tablet-landXS {
       // 1070
-      height: 50px;
+      height: 40px;
+      padding: 5px;
     }
     @include mobile-land {
       // 690
       height: 35px;
       margin-top: 0;
-      padding: 5px;
     }
     li {
       width: 20%;
-      @include mobile-land {
-        // 690
+      @include tablet-landXS {
+        // 1070
         height: 10%;
       }
       h3 {
         @include tablet-landXS {
           // 1070
-          font-size: 1.6rem;
+          font-size: 1.5rem;
         }
         @include mobile-land {
           // 690
@@ -216,7 +238,7 @@
   @include tablet-landXS {
     // 1070
     width: 400px;
-    height: 230px;
+    height: 220px;
   }
   .board {
     border: 2px solid $dark-grey;
@@ -232,7 +254,7 @@
   }
   .side {
     width: 250px;
-    height: 210px;
+    height: 200px;
     z-index: 500;
     top: 60px;
     background-size: 85%;
@@ -254,7 +276,7 @@
     @include tablet-landXS {
       // 1070
       width: 250px;
-      height: 220px;
+      height: 200px;
       left: 75px;
     }
   }
@@ -377,6 +399,10 @@
         // 1300
         font-size: 1.5rem;
       }
+      @include tablet-landXS {
+        // 1070
+        font-size: 1.4rem;
+      }
       @include mobile-land {
         // 690
         font-size: 1.3rem;
@@ -398,6 +424,10 @@
       padding: 15px 0;
       padding-left: 10px;
     }
+    @include tablet-landXS {
+      // 1070
+      padding: 5px 0;
+    }
     @include mobile-land {
       // 690
       margin-top: 15px;
@@ -413,6 +443,10 @@
     padding: 5px 0;
     background-color: white;
     border: 2px solid $season;
+    @include tablet-landXS {
+      // 1070
+      width: 90px;
+    }
     &:focus,
     &:hover,
     &:active {
@@ -427,6 +461,14 @@
     h3 {
       font-size: 1.8rem;
       transition: all 0.5s;
+      @include tablet-landXS {
+        // 1070
+        font-size: 1.6rem;
+      }
+      @include mobile-land {
+        // 690
+        font-size: 1.4rem;
+      }
     }
   }
 
