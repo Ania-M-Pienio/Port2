@@ -535,6 +535,15 @@ nav.collapse:not(.show) {
   border: 2px solid #FF8585;
 }
 
+.mobileMenu ul li a.selected {
+  background-color: #FF8585;
+}
+
+.mobileMenu ul li a.selected h3,
+.mobileMenu ul li a.selected ion-icon {
+  color: #F7F7F7;
+}
+
 .mobileMenu ul li a {
   padding: 5px;
   display: -webkit-box;
@@ -551,6 +560,17 @@ nav.collapse:not(.show) {
           justify-content: center;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mobileMenu ul li a:hover, .mobileMenu ul li a:focus, .mobileMenu ul li a:active {
+  background-color: #FF8585;
+}
+
+.mobileMenu ul li a:hover h3,
+.mobileMenu ul li a:hover ion-icon, .mobileMenu ul li a:focus h3,
+.mobileMenu ul li a:focus ion-icon, .mobileMenu ul li a:active h3,
+.mobileMenu ul li a:active ion-icon {
+  color: #F7F7F7;
 }
 
 .mobileMenu ul li a ion-icon {
