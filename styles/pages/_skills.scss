@@ -18,7 +18,7 @@
 .skills article {
   @include tablet-landXS {
     // 1070
-    height: 20%;
+    height: 25%;
   }
   .info a.logo {
     @include tablet-landXS {
@@ -94,7 +94,7 @@
       @include mobile-land-h {
         // 960 x 960
         height: 90%;
-        padding: 15px;
+        padding: 10px;
       }
       li {
         display: flex;

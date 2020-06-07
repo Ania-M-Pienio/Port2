@@ -19,7 +19,7 @@
 @keyframes CENTER_M {
   0% {
     width: 250px;
-    height: 200px;
+    height: 180px;
     top: 0;
     left: 75px;
     opacity: 1;
@@ -44,7 +44,7 @@
   }
   100% {
     width: 250px;
-    height: 200px;
+    height: 180px;
     top: 60px;
     left: 0px;
     z-index: 500;
@@ -55,7 +55,7 @@
 @keyframes CENTER_REV_M {
   0% {
     width: 250px;
-    height: 200px;
+    height: 180px;
     top: 0;
     left: 75px;
     opacity: 1;
@@ -73,7 +73,7 @@
 @keyframes LEFT {
   0% {
     width: 250px;
-    height: 200px;
+    height: 180px;
     opacity: 0.5;
     top: 60px;
     left: 0;
@@ -98,7 +98,7 @@
   }
   100% {
     width: 250px;
-    height: 200px;
+    height: 180px;
     top: 0px;
     left: 75px;
     z-index: 1000;
@@ -310,7 +310,7 @@
   }
   100% {
     width: 250px;
-    height: 220px;
+    height: 180px;
     top: 0px;
     z-index: 1000;
     left: 75px;

@@ -88,8 +88,7 @@ app.que = [
     description: `A fullstack news-sharing application where authenticated
                   users can view, post and comment on articles. The front end
                   is rendered using React and makes calls via Axios. Identity
-                  federation is brokered via Auth0 - allowing uses to sign in
-                  with their Google accounts. Server-side routing is written
+                  federation is brokered via Auth0. Server-side routing is written
                   in Express/Node.js and persistence is hooked up to MongoDB
                   via Mongoose.`,
     skills: [

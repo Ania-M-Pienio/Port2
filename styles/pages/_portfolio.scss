@@ -20,6 +20,10 @@
   }
   .info p span {
     display: block;
+    @include tablet-landXS {
+      // 1070
+      display: inline-block;
+    }
   }
   .info a.logo {
     @include tablet-landXS {
@@ -149,6 +153,10 @@
       font-size: 2.2rem;
       margin-bottom: 2px;
     }
+    @include mobile-port {
+      // 520
+      display: none;
+    }
   }
   ul {
     height: 60px;
@@ -197,6 +205,10 @@
         // 690
         font-size: 1.4rem;
       }
+      @include mobile-port {
+        // 520
+        font-size: 1.3rem;
+      }
       span {
         visibility: visible;
         @include mobile-land {
@@ -239,6 +251,11 @@
     // 1070
     width: 400px;
     height: 220px;
+    @include mobile-port {
+      // 520
+      width: 100%;
+      min-height: 180px;
+    }
   }
   .board {
     border: 2px solid $dark-grey;
@@ -265,6 +282,10 @@
       height: 140px;
       top: 40px;
     }
+    @include mobile-port {
+      // 520
+      display: none;
+    }
   }
   .center {
     background-image: url(../assets/portfolio/2.png);
@@ -276,8 +297,20 @@
     @include tablet-landXS {
       // 1070
       width: 250px;
-      height: 200px;
+      height: 180px;
       left: 75px;
+    }
+    @include mobile-port {
+      // 520
+      position: static;
+      margin: 0 auto;
+    }
+    @include mobile-port-h {
+      // 520 x 960
+      position: static;
+      margin: 0 auto;
+      height: 160px;
+      background-size: 70%;
     }
   }
 
@@ -393,6 +426,14 @@
       margin-top: 10px;
       padding-left: 15px;
     }
+    @include tablet-landXS {
+      // 1070
+      padding-left: 0px;
+    }
+    @include mobile-port-h {
+      // 520 x 960
+      height: 100px;
+    }
     p {
       font-size: 1.55rem;
       color: $font;
@@ -408,6 +449,10 @@
         // 690
         font-size: 1.3rem;
         height: 120px;
+      }
+      @include mobile-port-h {
+        // 520 x 960
+        font-size: 1.2rem;
       }
     }
   }
@@ -432,6 +477,10 @@
     @include mobile-land {
       // 690
       margin-top: 15px;
+    }
+    @include mobile-port-h {
+      // 520 x 960
+      margin-top: 0px;
     }
   }
 
@@ -492,6 +541,11 @@
       padding: 5px 0;
       height: 60px;
     }
+    @include mobile-port-h {
+      // 520 x 960
+      display: none;
+    }
+
     ul {
       width: 100%;
       display: grid;
@@ -515,7 +569,6 @@
           // 690
           margin: 0 12px;
         }
-
         .icon {
           width: 30px;
           display: flex;

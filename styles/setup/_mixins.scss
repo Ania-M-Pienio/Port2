@@ -87,6 +87,13 @@
   }
 }
 
+// vertical y-axis 
+@mixin mobile-port-h {
+  @media (max-height: 900px) and (max-width: 520px ) {
+    @content;
+  }
+}
+
 
 // reduced motion option ON for accessibility
 

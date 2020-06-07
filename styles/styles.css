@@ -645,7 +645,7 @@ nav.collapse:not(.show) {
 @-webkit-keyframes CENTER_M {
   0% {
     width: 250px;
-    height: 200px;
+    height: 180px;
     top: 0;
     left: 75px;
     opacity: 1;
@@ -663,7 +663,7 @@ nav.collapse:not(.show) {
 @keyframes CENTER_M {
   0% {
     width: 250px;
-    height: 200px;
+    height: 180px;
     top: 0;
     left: 75px;
     opacity: 1;
@@ -688,7 +688,7 @@ nav.collapse:not(.show) {
   }
   100% {
     width: 250px;
-    height: 200px;
+    height: 180px;
     top: 60px;
     left: 0px;
     z-index: 500;
@@ -706,7 +706,7 @@ nav.collapse:not(.show) {
   }
   100% {
     width: 250px;
-    height: 200px;
+    height: 180px;
     top: 60px;
     left: 0px;
     z-index: 500;
@@ -717,7 +717,7 @@ nav.collapse:not(.show) {
 @-webkit-keyframes CENTER_REV_M {
   0% {
     width: 250px;
-    height: 200px;
+    height: 180px;
     top: 0;
     left: 75px;
     opacity: 1;
@@ -735,7 +735,7 @@ nav.collapse:not(.show) {
 @keyframes CENTER_REV_M {
   0% {
     width: 250px;
-    height: 200px;
+    height: 180px;
     top: 0;
     left: 75px;
     opacity: 1;
@@ -753,7 +753,7 @@ nav.collapse:not(.show) {
 @-webkit-keyframes LEFT {
   0% {
     width: 250px;
-    height: 200px;
+    height: 180px;
     opacity: 0.5;
     top: 60px;
     left: 0;
@@ -771,7 +771,7 @@ nav.collapse:not(.show) {
 @keyframes LEFT {
   0% {
     width: 250px;
-    height: 200px;
+    height: 180px;
     opacity: 0.5;
     top: 60px;
     left: 0;
@@ -796,7 +796,7 @@ nav.collapse:not(.show) {
   }
   100% {
     width: 250px;
-    height: 200px;
+    height: 180px;
     top: 0px;
     left: 75px;
     z-index: 1000;
@@ -814,7 +814,7 @@ nav.collapse:not(.show) {
   }
   100% {
     width: 250px;
-    height: 200px;
+    height: 180px;
     top: 0px;
     left: 75px;
     z-index: 1000;
@@ -1321,7 +1321,7 @@ nav.collapse:not(.show) {
   }
   100% {
     width: 250px;
-    height: 220px;
+    height: 180px;
     top: 0px;
     z-index: 1000;
     left: 75px;
@@ -1338,7 +1338,7 @@ nav.collapse:not(.show) {
   }
   100% {
     width: 250px;
-    height: 220px;
+    height: 180px;
     top: 0px;
     z-index: 1000;
     left: 75px;
@@ -2183,7 +2183,7 @@ textarea:focus::placeholder {
 
 @media (max-width: 1070px) {
   .skills article {
-    height: 20%;
+    height: 25%;
   }
 }
 
@@ -2295,7 +2295,7 @@ textarea:focus::placeholder {
 @media (max-height: 900px) and (max-width: 960px) {
   .skills .splash .skillset ul {
     height: 90%;
-    padding: 15px;
+    padding: 10px;
   }
 }
 
@@ -2394,6 +2394,12 @@ textarea:focus::placeholder {
 
 .portfolio article .info p span {
   display: block;
+}
+
+@media (max-width: 1070px) {
+  .portfolio article .info p span {
+    display: inline-block;
+  }
 }
 
 @media (max-width: 1070px) {
@@ -2563,6 +2569,12 @@ textarea:focus::placeholder {
   }
 }
 
+@media (max-width: 520px) {
+  .projects.mobile h2 {
+    display: none;
+  }
+}
+
 .projects.mobile ul {
   height: 60px;
   width: 100%;
@@ -2627,6 +2639,12 @@ textarea:focus::placeholder {
   }
 }
 
+@media (max-width: 520px) {
+  .projects.mobile button.selected h3 {
+    font-size: 1.3rem;
+  }
+}
+
 .projects.mobile button.selected h3 span {
   visibility: visible;
 }
@@ -2685,6 +2703,13 @@ textarea:focus::placeholder {
   }
 }
 
+@media (max-width: 1070px) and (max-width: 520px) {
+  .rotationContainer {
+    width: 100%;
+    min-height: 180px;
+  }
+}
+
 .rotationContainer .board {
   border: 2px solid #979696;
   background-color: white;
@@ -2721,6 +2746,12 @@ textarea:focus::placeholder {
   }
 }
 
+@media (max-width: 520px) {
+  .rotationContainer .side {
+    display: none;
+  }
+}
+
 .rotationContainer .center {
   background-image: url(../assets/portfolio/2.png);
   background-size: 85%;
@@ -2733,8 +2764,24 @@ textarea:focus::placeholder {
 @media (max-width: 1070px) {
   .rotationContainer .center {
     width: 250px;
-    height: 200px;
+    height: 180px;
     left: 75px;
+  }
+}
+
+@media (max-width: 520px) {
+  .rotationContainer .center {
+    position: static;
+    margin: 0 auto;
+  }
+}
+
+@media (max-height: 900px) and (max-width: 520px) {
+  .rotationContainer .center {
+    position: static;
+    margin: 0 auto;
+    height: 160px;
+    background-size: 70%;
   }
 }
 
@@ -2891,6 +2938,18 @@ textarea:focus::placeholder {
   }
 }
 
+@media (max-width: 1070px) {
+  .projectInfo .paragraphContainer {
+    padding-left: 0px;
+  }
+}
+
+@media (max-height: 900px) and (max-width: 520px) {
+  .projectInfo .paragraphContainer {
+    height: 100px;
+  }
+}
+
 .projectInfo .paragraphContainer p {
   font-size: 1.55rem;
   color: #191919;
@@ -2912,6 +2971,12 @@ textarea:focus::placeholder {
   .projectInfo .paragraphContainer p {
     font-size: 1.3rem;
     height: 120px;
+  }
+}
+
+@media (max-height: 900px) and (max-width: 520px) {
+  .projectInfo .paragraphContainer p {
+    font-size: 1.2rem;
   }
 }
 
@@ -2946,6 +3011,12 @@ textarea:focus::placeholder {
 @media (max-width: 690px) {
   .projectInfo .projectLinks {
     margin-top: 15px;
+  }
+}
+
+@media (max-height: 900px) and (max-width: 520px) {
+  .projectInfo .projectLinks {
+    margin-top: 0px;
   }
 }
 
@@ -3020,6 +3091,12 @@ textarea:focus::placeholder {
     margin: 0;
     padding: 5px 0;
     height: 60px;
+  }
+}
+
+@media (max-height: 900px) and (max-width: 520px) {
+  .projectInfo .projectSkills {
+    display: none;
   }
 }
 
@@ -3194,7 +3271,7 @@ textarea:focus::placeholder {
 
 @media (max-width: 1070px) {
   .skills article {
-    height: 20%;
+    height: 25%;
   }
 }
 
@@ -3306,7 +3383,7 @@ textarea:focus::placeholder {
 @media (max-height: 900px) and (max-width: 960px) {
   .skills .splash .skillset ul {
     height: 90%;
-    padding: 15px;
+    padding: 10px;
   }
 }
 
@@ -3405,6 +3482,12 @@ textarea:focus::placeholder {
 
 .portfolio article .info p span {
   display: block;
+}
+
+@media (max-width: 1070px) {
+  .portfolio article .info p span {
+    display: inline-block;
+  }
 }
 
 @media (max-width: 1070px) {
@@ -3574,6 +3657,12 @@ textarea:focus::placeholder {
   }
 }
 
+@media (max-width: 520px) {
+  .projects.mobile h2 {
+    display: none;
+  }
+}
+
 .projects.mobile ul {
   height: 60px;
   width: 100%;
@@ -3638,6 +3727,12 @@ textarea:focus::placeholder {
   }
 }
 
+@media (max-width: 520px) {
+  .projects.mobile button.selected h3 {
+    font-size: 1.3rem;
+  }
+}
+
 .projects.mobile button.selected h3 span {
   visibility: visible;
 }
@@ -3696,6 +3791,13 @@ textarea:focus::placeholder {
   }
 }
 
+@media (max-width: 1070px) and (max-width: 520px) {
+  .rotationContainer {
+    width: 100%;
+    min-height: 180px;
+  }
+}
+
 .rotationContainer .board {
   border: 2px solid #979696;
   background-color: white;
@@ -3732,6 +3834,12 @@ textarea:focus::placeholder {
   }
 }
 
+@media (max-width: 520px) {
+  .rotationContainer .side {
+    display: none;
+  }
+}
+
 .rotationContainer .center {
   background-image: url(../assets/portfolio/2.png);
   background-size: 85%;
@@ -3744,8 +3852,24 @@ textarea:focus::placeholder {
 @media (max-width: 1070px) {
   .rotationContainer .center {
     width: 250px;
-    height: 200px;
+    height: 180px;
     left: 75px;
+  }
+}
+
+@media (max-width: 520px) {
+  .rotationContainer .center {
+    position: static;
+    margin: 0 auto;
+  }
+}
+
+@media (max-height: 900px) and (max-width: 520px) {
+  .rotationContainer .center {
+    position: static;
+    margin: 0 auto;
+    height: 160px;
+    background-size: 70%;
   }
 }
 
@@ -3902,6 +4026,18 @@ textarea:focus::placeholder {
   }
 }
 
+@media (max-width: 1070px) {
+  .projectInfo .paragraphContainer {
+    padding-left: 0px;
+  }
+}
+
+@media (max-height: 900px) and (max-width: 520px) {
+  .projectInfo .paragraphContainer {
+    height: 100px;
+  }
+}
+
 .projectInfo .paragraphContainer p {
   font-size: 1.55rem;
   color: #191919;
@@ -3923,6 +4059,12 @@ textarea:focus::placeholder {
   .projectInfo .paragraphContainer p {
     font-size: 1.3rem;
     height: 120px;
+  }
+}
+
+@media (max-height: 900px) and (max-width: 520px) {
+  .projectInfo .paragraphContainer p {
+    font-size: 1.2rem;
   }
 }
 
@@ -3957,6 +4099,12 @@ textarea:focus::placeholder {
 @media (max-width: 690px) {
   .projectInfo .projectLinks {
     margin-top: 15px;
+  }
+}
+
+@media (max-height: 900px) and (max-width: 520px) {
+  .projectInfo .projectLinks {
+    margin-top: 0px;
   }
 }
 
@@ -4031,6 +4179,12 @@ textarea:focus::placeholder {
     margin: 0;
     padding: 5px 0;
     height: 60px;
+  }
+}
+
+@media (max-height: 900px) and (max-width: 520px) {
+  .projectInfo .projectSkills {
+    display: none;
   }
 }
 
