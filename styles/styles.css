@@ -3185,7 +3185,7 @@ textarea:focus::placeholder {
 
 @media (max-width: 690px) and (max-height: 1000px) {
   .projectInfo .skillsContainer ul.skills li {
-    width: 15px;
+    margin: 0px 10px;
   }
 }
 
@@ -4387,7 +4387,7 @@ textarea:focus::placeholder {
 
 @media (max-width: 690px) and (max-height: 1000px) {
   .projectInfo .skillsContainer ul.skills li {
-    width: 15px;
+    margin: 0px 10px;
   }
 }
 
