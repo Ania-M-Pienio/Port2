@@ -3269,7 +3269,7 @@ textarea:focus::placeholder {
 
 @media (max-width: 520px) {
   .projectInfo .skillsContainer ul.skills li h4 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -4477,7 +4477,7 @@ textarea:focus::placeholder {
 
 @media (max-width: 520px) {
   .projectInfo .skillsContainer ul.skills li h4 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 
