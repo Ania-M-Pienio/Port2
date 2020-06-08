@@ -310,7 +310,6 @@ app.handleBlurs = function () {
 };
 
 app.handleMenu = function () {
-  
   // show/hide menu
   app.$menuButtonD.on("click", function () {
     $("nav").removeClass("show");
@@ -546,7 +545,7 @@ app.rotateProjectInfo = function (project) {
   $(".projectInfo .description").text(`${project.description}`);
   $(".projectInfo .live").attr("href", project.liveLink);
   $(".projectInfo .code").attr("href", project.codeLink);
-  $("a.main").attr("href", project.liveLink);
+  $("a#main").attr("href", project.liveLink);
   app.loadSkills(project.skills);
 };
 
@@ -573,7 +572,13 @@ app.completeSkills = function (skills) {
 app.freshBoards = function () {
   return `      
         <div id="left"   class="board side left"></div>
-        <a href=""><div id="center" class="board center"></div></a>
+        <a
+          id="main"
+          href="https://ania-m-pienio.github.io/ClickFly/"
+          target="_blank"
+          >
+          <div id="center" class="board center"></div
+        ></a>
         <div id="right"  class="board side right"></div>`;
 };
 
