@@ -32,6 +32,10 @@ html {
   scroll-behavior: smooth;
   overflow-y: hidden;
   overflow-x: hidden;
+  @include mobile-land-hy {
+    // 960v
+    overflow-y: visible;    
+  }
 }
 
 body {
@@ -184,8 +188,8 @@ header {
   transition: all 1s;
   @include mobile-land-h {
     // 960 x 960
-    max-height: 700px;
-    min-height: 700px;
+    max-height: 800px;
+    min-height: 800px;
   }
 }
 

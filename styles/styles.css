@@ -2392,13 +2392,19 @@ textarea:focus::placeholder {
   }
 }
 
-.portfolio article .info p span {
+.portfolio article .info p span.break {
   display: block;
 }
 
 @media (max-width: 1070px) {
-  .portfolio article .info p span {
+  .portfolio article .info p span.break {
     display: inline-block;
+  }
+}
+
+@media (max-width: 1070px) {
+  .portfolio article .info p span.slash {
+    display: none;
   }
 }
 
@@ -2566,6 +2572,12 @@ textarea:focus::placeholder {
   .projects.mobile h2 {
     font-size: 2.2rem;
     margin-bottom: 2px;
+  }
+}
+
+@media (max-height: 900px) and (max-width: 960px) {
+  .projects.mobile h2 {
+    display: none;
   }
 }
 
@@ -3094,6 +3106,12 @@ textarea:focus::placeholder {
   }
 }
 
+@media (max-height: 900px) and (max-width: 960px) {
+  .projectInfo .projectSkills {
+    display: none;
+  }
+}
+
 @media (max-height: 900px) and (max-width: 520px) {
   .projectInfo .projectSkills {
     display: none;
@@ -3181,6 +3199,13 @@ textarea:focus::placeholder {
   .centerANIM {
     -webkit-animation: CENTER_M 0.5s ease-in-out;
             animation: CENTER_M 0.5s ease-in-out;
+  }
+}
+
+@media (max-width: 520px) {
+  .centerANIM {
+    -webkit-animation: FADE_OUT 1s ease-in-out;
+            animation: FADE_OUT 1s ease-in-out;
   }
 }
 
@@ -3480,13 +3505,19 @@ textarea:focus::placeholder {
   }
 }
 
-.portfolio article .info p span {
+.portfolio article .info p span.break {
   display: block;
 }
 
 @media (max-width: 1070px) {
-  .portfolio article .info p span {
+  .portfolio article .info p span.break {
     display: inline-block;
+  }
+}
+
+@media (max-width: 1070px) {
+  .portfolio article .info p span.slash {
+    display: none;
   }
 }
 
@@ -3654,6 +3685,12 @@ textarea:focus::placeholder {
   .projects.mobile h2 {
     font-size: 2.2rem;
     margin-bottom: 2px;
+  }
+}
+
+@media (max-height: 900px) and (max-width: 960px) {
+  .projects.mobile h2 {
+    display: none;
   }
 }
 
@@ -4182,6 +4219,12 @@ textarea:focus::placeholder {
   }
 }
 
+@media (max-height: 900px) and (max-width: 960px) {
+  .projectInfo .projectSkills {
+    display: none;
+  }
+}
+
 @media (max-height: 900px) and (max-width: 520px) {
   .projectInfo .projectSkills {
     display: none;
@@ -4269,6 +4312,13 @@ textarea:focus::placeholder {
   .centerANIM {
     -webkit-animation: CENTER_M 0.5s ease-in-out;
             animation: CENTER_M 0.5s ease-in-out;
+  }
+}
+
+@media (max-width: 520px) {
+  .centerANIM {
+    -webkit-animation: FADE_OUT 1s ease-in-out;
+            animation: FADE_OUT 1s ease-in-out;
   }
 }
 
@@ -4688,6 +4738,12 @@ html {
   overflow-x: hidden;
 }
 
+@media (max-height: 900px) {
+  html {
+    overflow-y: visible;
+  }
+}
+
 body {
   background-color: #979696;
   padding: 40px 0;
@@ -4882,8 +4938,8 @@ header {
 
 @media (max-height: 900px) and (max-width: 960px) {
   header {
-    max-height: 700px;
-    min-height: 700px;
+    max-height: 800px;
+    min-height: 800px;
   }
 }
 

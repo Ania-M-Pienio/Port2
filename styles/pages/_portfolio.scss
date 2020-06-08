@@ -18,11 +18,17 @@
     height: 25%;
     width: 100%;
   }
-  .info p span {
+  .info p span.break {
     display: block;
     @include tablet-landXS {
       // 1070
       display: inline-block;
+    }
+  }
+  .info p span.slash {
+    @include tablet-landXS {
+      // 1070
+      display: none;
     }
   }
   .info a.logo {
@@ -153,6 +159,12 @@
       font-size: 2.2rem;
       margin-bottom: 2px;
     }
+
+    @include mobile-land-h {
+      // 960 x 960
+      display: none;
+    }
+
     @include mobile-port {
       // 520
       display: none;
@@ -541,6 +553,12 @@
       padding: 5px 0;
       height: 60px;
     }
+
+    @include mobile-land-h {
+      // 960 x 960
+      display: none;
+    }
+
     @include mobile-port-h {
       // 520 x 960
       display: none;
@@ -605,6 +623,10 @@
   @include tablet-landXS {
     // 1070
     animation: CENTER_M 0.5s ease-in-out;
+  }
+  @include mobile-port {
+    // 520
+    animation: FADE_OUT 1s ease-in-out;
   }
 }
 
