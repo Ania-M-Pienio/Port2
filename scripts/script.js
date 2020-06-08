@@ -34,7 +34,6 @@ app.que = [
     skills: [
       "vue",
       "angular",
-      "bootstrap",
       "typescript",
       "nodejs",
       "express",
@@ -94,7 +93,6 @@ app.que = [
     skills: [
       "react",
       "javascript",
-      "sass",
       "auth0",
       "nodejs",
       "express",

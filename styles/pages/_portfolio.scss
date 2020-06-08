@@ -43,7 +43,7 @@
   border: 2px solid $grey;
   @include tablet-landXS {
     // 1070
-    height: 70%;
+    height: 73%;
     width: 100%;
   }
 }
@@ -147,7 +147,7 @@
   }
   @include tablet-landXS {
     // 1070
-    height: 90px;
+    height: 30px;
   }
   h2 {
     margin-top: 0px;
@@ -190,8 +190,8 @@
     }
     @include mobile-port {
       // 520
-      padding: 0;
-      
+      padding: 5px 0;
+      height: 30px;
     }
     li {
       width: 20%;
@@ -199,14 +199,30 @@
         // 1070
         height: 10%;
       }
-      h3 {
-        @include tablet-landXS {
-          // 1070
-          font-size: 1.5rem;
+      button {
+        @include mobile-port {
+          // 520
+          height: 20px;
         }
-        @include mobile-land {
-          // 690
-          font-size: 1.3rem;
+        h3 {
+          @include tablet-landXS {
+            // 1070
+            font-size: 1.5rem;
+          }
+          @include mobile-land {
+            // 690
+            font-size: 1.3rem;
+          }
+          @include mobile-port {
+            // 520
+            height: 30px;
+          }
+          span.mobile {
+            @include mobile-port {
+              // 520
+              display: none;
+            }
+          }
         }
       }
     }
@@ -269,11 +285,11 @@
     // 1070
     width: 400px;
     height: 220px;
-    @include mobile-port {
-      // 520
-      width: 100%;
-      min-height: 180px;
-    }
+  }
+  @include mobile-port {
+    // 520
+    width: 100%;
+    height: 170px;
   }
   .board {
     border: 2px solid $dark-grey;
@@ -498,7 +514,7 @@
     }
     @include mobile-port-h {
       // 520 x 960
-      margin-top: 0px;
+      margin-top: 5px;
     }
   }
 
@@ -537,6 +553,10 @@
         // 690
         font-size: 1.4rem;
       }
+      @include mobile-port {
+        // 520
+        font-size: 1.2rem;
+      }
     }
   }
 
@@ -559,16 +579,11 @@
       padding: 5px 0;
       height: 60px;
     }
-
-    @include mobile-land-h {
-      // 960 x 960
-      display: none;
+    @include mobile-port {
+      // 520
+      height: 40px;
+      margin: 5px 0;
     }
-
-    // @include mobile-port-h {
-    //   // 520 x 960
-    //   display: none;
-    // }
 
     ul {
       width: 100%;
@@ -614,6 +629,18 @@
           }
           h4 {
             font-size: 1.3rem;
+          }
+        }
+        @include mobile-port {
+          // 520
+          .icon {
+            width: 20px;
+          }
+          .iconImage {
+            width: 20px;
+          }
+          h4 {
+            font-size: 1.2rem;
           }
         }
       }
