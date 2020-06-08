@@ -2822,7 +2822,7 @@ textarea:focus::placeholder {
           justify-content: space-between;
   z-index: 3000;
   opacity: 0;
-  top: -150px;
+  top: -200px;
   height: 10px;
 }
 
@@ -3207,7 +3207,7 @@ textarea:focus::placeholder {
 
 @media (max-width: 520px) {
   .projectInfo .skillsContainer ul.skills li .icon {
-    width: 15px;
+    width: 20px;
   }
 }
 
@@ -3219,7 +3219,7 @@ textarea:focus::placeholder {
 
 @media (max-width: 690px) and (max-height: 1000px) {
   .projectInfo .skillsContainer ul.skills li .icon {
-    width: 15px;
+    width: 20px;
   }
 }
 
@@ -3235,13 +3235,19 @@ textarea:focus::placeholder {
 
 @media (max-width: 520px) {
   .projectInfo .skillsContainer ul.skills li .iconImage {
-    width: 15px;
+    width: 20px;
   }
 }
 
 @media (max-width: 1070px) and (max-height: 1000px) {
   .projectInfo .skillsContainer ul.skills li .iconImage {
     width: 25px;
+  }
+}
+
+@media (max-width: 690px) and (max-height: 1000px) {
+  .projectInfo .skillsContainer ul.skills li .iconImage {
+    width: 20px;
   }
 }
 
@@ -3269,7 +3275,7 @@ textarea:focus::placeholder {
 
 @media (max-width: 690px) and (max-height: 1000px) {
   .projectInfo .skillsContainer ul.skills li h4 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -4024,7 +4030,7 @@ textarea:focus::placeholder {
           justify-content: space-between;
   z-index: 3000;
   opacity: 0;
-  top: -150px;
+  top: -200px;
   height: 10px;
 }
 
@@ -4409,7 +4415,7 @@ textarea:focus::placeholder {
 
 @media (max-width: 520px) {
   .projectInfo .skillsContainer ul.skills li .icon {
-    width: 15px;
+    width: 20px;
   }
 }
 
@@ -4421,7 +4427,7 @@ textarea:focus::placeholder {
 
 @media (max-width: 690px) and (max-height: 1000px) {
   .projectInfo .skillsContainer ul.skills li .icon {
-    width: 15px;
+    width: 20px;
   }
 }
 
@@ -4437,13 +4443,19 @@ textarea:focus::placeholder {
 
 @media (max-width: 520px) {
   .projectInfo .skillsContainer ul.skills li .iconImage {
-    width: 15px;
+    width: 20px;
   }
 }
 
 @media (max-width: 1070px) and (max-height: 1000px) {
   .projectInfo .skillsContainer ul.skills li .iconImage {
     width: 25px;
+  }
+}
+
+@media (max-width: 690px) and (max-height: 1000px) {
+  .projectInfo .skillsContainer ul.skills li .iconImage {
+    width: 20px;
   }
 }
 
@@ -4471,7 +4483,7 @@ textarea:focus::placeholder {
 
 @media (max-width: 690px) and (max-height: 1000px) {
   .projectInfo .skillsContainer ul.skills li h4 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 

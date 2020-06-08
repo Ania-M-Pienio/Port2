@@ -369,7 +369,7 @@
   justify-content: space-between;
   z-index: 3000;
   opacity: 0;
-  top: -150px;
+  top: -200px;
   // border: 2px solid fuchsia;
   height: 10px;
   @include tablet-landXS {
@@ -643,7 +643,7 @@
           }
           @include mobile-port {
             // 520
-            width: 15px;
+            width: 20px;
           }
           @include mobile-land-vw {
             // 1070w x 1000v
@@ -651,7 +651,7 @@
           }
           @include mobile-port-vw {
             // 690w x 1000v
-            width: 15px;
+            width: 20px;
           }
         }
         .iconImage {
@@ -662,11 +662,15 @@
           }
           @include mobile-port {
             // 520
-            width: 15px;
+            width: 20px;
           }
           @include mobile-land-vw {
             // 1070w x 1000v
             width: 25px;
+          }
+          @include mobile-port-vw {
+            // 690w x 1000v
+            width: 20px;
           }
         }
         h4 {
@@ -685,7 +689,7 @@
           }
           @include mobile-port-vw {
             // 690w x 1000v
-            font-size: 1rem;
+            font-size: 1.1rem;
           }
         }
       } // li ends
