@@ -1606,19 +1606,19 @@ textarea:focus::placeholder {
 
 @media (max-width: 690px) {
   .wrapper.home {
-    padding: 20px;
+    padding: 30px;
   }
 }
 
 @media (max-width: 1070px) {
   .home article {
-    height: 45%;
+    height: 50%;
   }
 }
 
 @media (max-width: 520px) {
   .home article {
-    height: 55%;
+    height: 50%;
   }
 }
 

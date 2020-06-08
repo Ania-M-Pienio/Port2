@@ -2,18 +2,18 @@
   background-color: darken($tint, 5);
   @include mobile-land {
     // 690w
-    padding: 20px;
+    padding: 30px;
   }
 }
 
 .home article {
   @include tablet-landXS {
     // 1070
-    height: 45%;
+    height: 50%;
   }
   @include mobile-port {
     // 520
-    height: 55%;
+    height: 50%;
   }
 }
 
