@@ -34,7 +34,7 @@ html {
   overflow-x: hidden;
   @include mobile-land-hy {
     // 960v
-    overflow-y: visible;    
+    overflow-y: visible;
   }
 }
 
@@ -43,6 +43,19 @@ body {
   padding: 40px 0;
   @include mobile-land-h {
     padding: 0;
+  }
+}
+
+// headers
+header {
+  height: 90vh;
+  max-height: 900px;
+  min-height: 900px;
+  transition: all 1s;
+  @include mobile-land-h {
+    // 960 x 960
+    max-height: 740px;
+    min-height: 740px;
   }
 }
 
@@ -180,19 +193,6 @@ p {
 
 // LAYOUT
 
-// headers
-header {
-  height: 90vh;
-  max-height: 900px;
-  min-height: 900px;
-  transition: all 1s;
-  @include mobile-land-h {
-    // 960 x 960
-    max-height: 800px;
-    min-height: 800px;
-  }
-}
-
 article {
   width: 35%;
   height: 100%;
@@ -260,8 +260,6 @@ aside {
   }
 }
 
-
-
 // PAGINATION
 
 .pagination.right a {
@@ -295,7 +293,6 @@ aside {
   animation-fill-mode: forwards;
 }
 
-
 // SCROLLBARS (WEBKIT)
 
 /* width */
@@ -305,15 +302,15 @@ aside {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f100; 
+  background: #f1f1f100;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: $season; 
+  background: $season;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }

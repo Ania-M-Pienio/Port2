@@ -92,6 +92,7 @@
     margin: 0 auto;
     padding: 10px 0;
     margin-top: 20px;
+
     li {
       width: 80%;
       margin: 0 auto;
@@ -186,6 +187,11 @@
       // 690
       height: 35px;
       margin-top: 0;
+    }
+    @include mobile-port {
+      // 520
+      padding: 0;
+      
     }
     li {
       width: 20%;
@@ -559,10 +565,10 @@
       display: none;
     }
 
-    @include mobile-port-h {
-      // 520 x 960
-      display: none;
-    }
+    // @include mobile-port-h {
+    //   // 520 x 960
+    //   display: none;
+    // }
 
     ul {
       width: 100%;

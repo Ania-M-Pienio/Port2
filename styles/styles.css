@@ -2612,6 +2612,12 @@ textarea:focus::placeholder {
   }
 }
 
+@media (max-width: 520px) {
+  .projects.mobile ul {
+    padding: 0;
+  }
+}
+
 .projects.mobile ul li {
   width: 20%;
 }
@@ -3107,12 +3113,6 @@ textarea:focus::placeholder {
 }
 
 @media (max-height: 900px) and (max-width: 960px) {
-  .projectInfo .projectSkills {
-    display: none;
-  }
-}
-
-@media (max-height: 900px) and (max-width: 520px) {
   .projectInfo .projectSkills {
     display: none;
   }
@@ -3725,6 +3725,12 @@ textarea:focus::placeholder {
   }
 }
 
+@media (max-width: 520px) {
+  .projects.mobile ul {
+    padding: 0;
+  }
+}
+
 .projects.mobile ul li {
   width: 20%;
 }
@@ -4220,12 +4226,6 @@ textarea:focus::placeholder {
 }
 
 @media (max-height: 900px) and (max-width: 960px) {
-  .projectInfo .projectSkills {
-    display: none;
-  }
-}
-
-@media (max-height: 900px) and (max-width: 520px) {
   .projectInfo .projectSkills {
     display: none;
   }
@@ -4755,6 +4755,21 @@ body {
   }
 }
 
+header {
+  height: 90vh;
+  max-height: 900px;
+  min-height: 900px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+@media (max-height: 900px) and (max-width: 960px) {
+  header {
+    max-height: 740px;
+    min-height: 740px;
+  }
+}
+
 .wrapper {
   max-width: 1480px;
   margin: 0 auto;
@@ -4926,21 +4941,6 @@ p {
   letter-spacing: 1.5;
   line-height: 1.6;
   text-align: left;
-}
-
-header {
-  height: 90vh;
-  max-height: 900px;
-  min-height: 900px;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-@media (max-height: 900px) and (max-width: 960px) {
-  header {
-    max-height: 800px;
-    min-height: 800px;
-  }
 }
 
 article {
