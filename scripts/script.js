@@ -34,6 +34,7 @@ app.que = [
     skills: [
       "vue",
       "angular",
+      "bootstrap",
       "typescript",
       "nodejs",
       "express",
@@ -93,6 +94,7 @@ app.que = [
     skills: [
       "react",
       "javascript",
+      "sass",
       "auth0",
       "nodejs",
       "express",
@@ -550,9 +552,9 @@ app.rotateProjectInfo = function (project) {
 
 app.loadSkills = function (skills) {
   let completedSkills = app.completeSkills(skills);
-  $(".skillContainer").empty();
+  $(".projectInfo .skills").empty();
   completedSkills.forEach((skill) => {
-    $(".skillContainer").append(app.freshSkill(skill));
+    $(".projectInfo .skills").append(app.freshSkill(skill));
   });
 };
 

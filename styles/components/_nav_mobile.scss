@@ -7,11 +7,11 @@
   padding: 10px 30px;
   transition: all 1s;
   @include tablet-landXS {
-    // 1070
+    // 1070w
     transform: scale(1);
   }
-  @include mobile-land {
-    // 690
+  @include tablet-portXL {
+    // 800w
     padding: 10px 0px;
   }
   ul {
@@ -26,6 +26,7 @@
     box-shadow: $shadow;
     padding: 10px;
     @include mobile-port {
+      // 520
       grid-gap: 2px;
     }
 

@@ -1,22 +1,17 @@
 .wrapper.portfolio {
   background-color: darken($tint, 5);
-  @include mobile-land {
-    // 690
-    background-color: white;
-    background-image: url(../assets/skills/wood.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 30px 0px 80px 0px;
-  }
 }
 
 .portfolio article {
   width: 20%;
   @include tablet-landXS {
     // 1070
-    height: 25%;
     width: 100%;
+    height: 25%;
+  }
+  @include mobile-land {
+    // 690
+    height: 18%;
   }
   .info p span.break {
     display: block;
@@ -37,14 +32,25 @@
       display: none;
     }
   }
+  .info .social {
+    @include mobile-land {
+      // 690
+      margin-top: 10px;
+    }
+  }
 }
+
 .portfolio aside {
   width: 80%;
   border: 2px solid $grey;
   @include tablet-landXS {
     // 1070
-    height: 73%;
     width: 100%;
+    height: 70%;
+  }
+  @include mobile-land {
+    // 690
+    height: 75%;
   }
 }
 
@@ -63,6 +69,10 @@
   @include tablet-landXS {
     // 1070
     padding: 10px;
+  }
+  @include mobile-land {
+    // 690
+    margin-top: 10px;
   }
 }
 
@@ -140,37 +150,41 @@
   opacity: 0;
   transition: all 0.5s;
   border-right: none;
+  border: 2px solid rgb(0, 140, 255);
   @include tablet-land {
     // 1300
     position: static;
     opacity: 1;
   }
-  @include tablet-landXS {
-    // 1070
-    height: 30px;
+  @include mobile-land-vw {
+    // 1070w x 1000vv
+    height: 55px;
+  }
+  @include mobile-port-vw {
+    // 690w x 1000v
+    height: 50px;
+  }
+  @include mobile-port {
+    // 520
+    height: 47px;
   }
   h2 {
     margin-top: 0px;
+    font-size: 2.3rem;
     @include tablet-landXS {
       // 1070
-      font-size: 2.5rem;
+      font-size: 2.1rem;
     }
-    @include mobile-land {
-      // 690
-      font-size: 2.2rem;
-      margin-bottom: 2px;
+    @include mobile-landL-vw {
+      // 1070w x 1000+h
+      font-size: 2.3rem;
     }
-
-    @include mobile-land-h {
-      // 960 x 960
-      display: none;
-    }
-
-    @include mobile-port {
-      // 520
+    @include mobile-land-vw {
+      // 1070w x 1000v
       display: none;
     }
   }
+
   ul {
     height: 60px;
     width: 100%;
@@ -180,74 +194,58 @@
     border-bottom: 2px solid $grey;
     @include tablet-landXS {
       // 1070
-      height: 40px;
+      height: 50px;
       padding: 5px;
     }
-    @include mobile-land {
-      // 690
-      height: 35px;
-      margin-top: 0;
-    }
-    @include mobile-port {
-      // 520
-      padding: 5px 0;
+    @include mobile-port-vw {
+      // 690w x 1000v
+      padding: 0px;
       height: 30px;
     }
     li {
       width: 20%;
-      @include tablet-landXS {
-        // 1070
-        height: 10%;
+      @include tablet-portXL {
+        // 800w
+        width: 100px;
+      }
+      @include mobile-port-vw {
+        // 690w x 1000v
+        height: 30px;
       }
       button {
-        @include mobile-port {
-          // 520
-          height: 20px;
-        }
         h3 {
-          @include tablet-landXS {
-            // 1070
-            font-size: 1.5rem;
-          }
-          @include mobile-land {
-            // 690
-            font-size: 1.3rem;
+          width: 100%;
+          text-align: center;
+          @include tablet-portXL {
+            // 800w
+            font-size: 1.8rem;
+            height: 30px;
+            overflow: hidden;
           }
           @include mobile-port {
             // 520
-            height: 30px;
-          }
-          span.mobile {
-            @include mobile-port {
-              // 520
-              display: none;
-            }
+            font-size: 1.6rem;
           }
         }
       }
-    }
-  }
-  button.selected {
-    h3 {
-      font-size: 2.15rem;
-      color: $season;
-      @include tablet-landXS {
-        // 1070
-        font-size: 1.7rem;
-      }
-      @include mobile-land {
-        // 690
-        font-size: 1.4rem;
-      }
-      @include mobile-port {
-        // 520
-        font-size: 1.3rem;
-      }
-      span {
-        visibility: visible;
-        @include mobile-land {
-          // 690
-          visibility: hidden;
+      button.selected {
+        h3 {
+          font-size: 2.15rem;
+          color: $season;
+          @include tablet-portXL {
+            // 800w
+            font-size: 1.9rem;
+          }
+          @include mobile-port {
+            // 520
+            font-size: 1.7rem;
+          }
+          span {
+            visibility: visible;
+            @include tablet-portXL {
+              visibility: hidden;
+            }
+          }
         }
       }
     }
@@ -259,6 +257,7 @@
   margin: 0 auto;
   margin-top: 30px;
   position: relative;
+  border: 2px solid rgb(255, 136, 0);
   @include tablet-land {
     // 1300
     width: 100%;
@@ -270,26 +269,32 @@
 }
 
 .rotationContainer {
-  height: 300px;
+  height: 340px;
   width: 750px;
   top: -600px;
   transition: all 1s;
   margin: 0 auto;
   position: relative;
+  border: 2px solid fuchsia;
   @include tablet-land {
     // 1300
     margin: 0 auto;
-    height: 290px;
   }
   @include tablet-landXS {
     // 1070
     width: 400px;
-    height: 220px;
   }
-  @include mobile-port {
-    // 520
+  @include mobile-landL-vw {
+    // 1070w x 1000+h
+    height: 200px;
+  }
+  @include mobile-land-vw {
+    // 1070w x 1000v
+    height: 180px;
+  }
+  @include mobile-land {
+    // 690
     width: 100%;
-    height: 170px;
   }
   .board {
     border: 2px solid $dark-grey;
@@ -316,8 +321,8 @@
       height: 140px;
       top: 40px;
     }
-    @include mobile-port {
-      // 520
+    @include mobile-land {
+      // 690
       display: none;
     }
   }
@@ -334,17 +339,10 @@
       height: 180px;
       left: 75px;
     }
-    @include mobile-port {
-      // 520
+    @include mobile-land {
+      // 690
       position: static;
       margin: 0 auto;
-    }
-    @include mobile-port-h {
-      // 520 x 960
-      position: static;
-      margin: 0 auto;
-      height: 160px;
-      background-size: 70%;
     }
   }
 
@@ -371,10 +369,11 @@
   z-index: 3000;
   opacity: 0;
   top: -150px;
+  border: 2px solid fuchsia;
+  height: 10px;
   @include tablet-landXS {
     // 1070
     width: 100%;
-    height: 10px;
     top: -120px;
   }
   button {
@@ -387,11 +386,6 @@
       // 1070
       background-color: lighten($charcoal, 15);
       border: 2px solid lighten($charcoal, 15);
-    }
-    @include mobile-land {
-      // 690
-      height: 50px;
-      width: 50px;
     }
     &:hover,
     &:focus,
@@ -409,31 +403,25 @@
       color: white;
       transition: all 0.5s;
       font-size: 6rem;
-      @include mobile-land {
-        // 690
-        font-size: 4rem;
-      }
     }
   }
 }
 
 .projectInfo {
   width: 750px;
-  height: auto;
   margin: 0 auto;
   transition: all 0.5s;
   margin-top: 10px;
   opacity: 0;
+  border: 2px solid rgb(0, 255, 157);
+  position: relative;
   @include tablet-land {
     // 1300
     width: 100%;
     padding-right: 15px;
     display: flex;
     flex-direction: column;
-  }
-  @include tablet-landXS {
-    // 1070
-    margin: 0;
+    margin: 0px;
     padding: 0;
   }
   // PROJECT TITLE
@@ -441,6 +429,7 @@
     order: 1;
     height: 40px;
     min-height: 40px;
+    border: 2px solid fuchsia;
     @include tablet-land {
       // 1300
       display: none;
@@ -450,11 +439,12 @@
     }
   }
   // PROJECT DESCRIPTION
-  .paragraphContainer {
+  .descriptionContainer {
     order: 2;
     margin-top: 15px;
     height: 110px;
     min-height: 110px;
+    border: 2px solid fuchsia;
     @include tablet-land {
       // 1300
       margin-top: 10px;
@@ -464,10 +454,23 @@
       // 1070
       padding-left: 0px;
     }
-    @include mobile-port-h {
-      // 520 x 960
-      height: 100px;
+    @include mobile-land-vw {
+      // 1070w x 1000v
+      margin-top: 0px;
     }
+    @include mobile-landL-vw {
+      // 1070w x 1001+v
+      height: 160px;
+    }
+    @include mobile-port {
+      // 690w
+      height: 200px;
+    }
+    @include mobile-port-vw {
+      // 690w x 1000v
+      height: 120px;
+    }
+
     p {
       font-size: 1.55rem;
       color: $font;
@@ -477,22 +480,24 @@
       }
       @include tablet-landXS {
         // 1070
+        margin-top: 20px;
         font-size: 1.4rem;
       }
-      @include mobile-land {
-        // 690
-        font-size: 1.3rem;
-        height: 120px;
+      @include mobile-land-vw {
+        // 1070w x 1000v
+        margin-top: 10px;
+        font-size: 1.35rem;
       }
-      @include mobile-port-h {
-        // 520 x 960
-        font-size: 1.2rem;
+      @include mobile-port-vw {
+        // 690w x 1000v
+        font-size: 1.15rem;
       }
     }
   }
 
   // PROJECT LINKS
-  .projectLinks {
+  .linkContainer {
+    border: 2px solid fuchsia;
     order: 3;
     width: 50%;
     margin-top: 15px;
@@ -508,20 +513,10 @@
       // 1070
       padding: 5px 0;
     }
-    @include mobile-land {
-      // 690
-      margin-top: 15px;
-    }
-    @include mobile-port-h {
-      // 520 x 960
-      margin-top: 5px;
-    }
   }
-
-  .projectLinks a:first-child {
+  .linkContainer a:first-child {
     margin-right: 15px;
   }
-
   a.linkButton {
     width: 120px;
     padding: 5px 0;
@@ -549,29 +544,22 @@
         // 1070
         font-size: 1.6rem;
       }
-      @include mobile-land {
-        // 690
-        font-size: 1.4rem;
-      }
-      @include mobile-port {
-        // 520
-        font-size: 1.2rem;
-      }
     }
   }
 
   // PROJECT SKILLS
-  .projectSkills {
+  .skillsContainer {
     width: 100%;
     height: 50px;
     margin-top: 40px;
     order: 4;
+    border: 2px solid fuchsia;
     @include tablet-land {
       // 1300
       margin-top: 15px;
       padding: 10px 0;
       height: 80px;
-      order: 0;
+      order: 1;
     }
     @include tablet-landXS {
       // 1070
@@ -579,14 +567,23 @@
       padding: 5px 0;
       height: 60px;
     }
-    @include mobile-port {
-      // 520
-      height: 40px;
-      margin: 5px 0;
+    @include mobile-land-vw {
+      // 1070w x 1000v
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 70%;
     }
-
-    ul {
+    @include mobile-port-vw {
+      // 690w x 1000v
+      position: static;
+      order: 4;
+      height: 50px;
+    }
+    ul.skills {
+      border: 2px solid blue;
       width: 100%;
+      height: 100%;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr;
@@ -598,54 +595,82 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+        margin-left: 0px;
       }
+      @include mobile-land-vw {
+        // 1070w x 1000v
+        justify-content: flex-end;
+      }
+      @include mobile-port-vw {
+        // 690w x 1000v
+        justify-content: flex-start;
+      }
+
       li {
         @include tablet-land {
           // 1300
           margin: 0 20px;
         }
-        @include mobile-land {
-          // 690
-          margin: 0 12px;
+        @include mobile-land-vw {
+          // 1070w x 1000v
+          margin: 0 12.5px;
+        }
+        @include mobile-port {
+          // 520w
+          margin: 0px 7px;
         }
         .icon {
           width: 30px;
           display: flex;
           justify-content: space-between;
+          @include mobile-land-vw {
+            // 1070w x 1000v
+            width: 25px;
+          }
+          @include mobile-land {
+            // 690
+            width: 25px;
+          }
+          @include mobile-port {
+            // 520
+            width: 15px;
+          }
         }
         .iconImage {
           width: 30px;
+          @include mobile-land-vw {
+            // 1070w x 1000v
+            width: 25px;
+          }
+          @include mobile-land {
+            // 690
+            width: 25px;
+          }
+          @include mobile-port {
+            // 520
+            width: 15px;
+          }
         }
         h4 {
           font-size: 1.5rem;
-        }
-        @include mobile-land {
-          // 690
-          .icon {
-            width: 25px;
-          }
-          .iconImage {
-            width: 25px;
-          }
-          h4 {
+          @include mobile-land-vw {
+            // 1070w x 1000v
             font-size: 1.3rem;
           }
-        }
-        @include mobile-port {
-          // 520
-          .icon {
-            width: 20px;
+          @include mobile-land {
+            // 690
+            font-size: 1.3rem;
           }
-          .iconImage {
-            width: 20px;
-          }
-          h4 {
-            font-size: 1.2rem;
+          @include mobile-port {
+            // 520
+            font-size: 1rem;
           }
         }
-      }
-    }
-  }
+      } // li ends
+    } // ul ends
+  } // skillsContainer end
+
+  // project info ends
 }
 
 // CAROUSEL
@@ -656,10 +681,6 @@
   @include tablet-landXS {
     // 1070
     animation: CENTER_M 0.5s ease-in-out;
-  }
-  @include mobile-port {
-    // 520
-    animation: FADE_OUT 1s ease-in-out;
   }
 }
 
