@@ -13,7 +13,9 @@
         <article>
           <div class="menu swoopDown">
             <!-- NAVIGATION -->
-            <button class="fadeIn"><ion-icon name="reorder-four-outline"></ion-icon></button>
+            <button class="fadeIn">
+              <ion-icon name="reorder-four-outline"></ion-icon>
+            </button>
             <div class="navAdjust"></div>
             <nav>
               <ul>
@@ -98,48 +100,51 @@
               </a>
             </div>
             <div class="message">
-              <div class="wrapper message">
+              <div class="messageWrapper">
                 <form>
                   <fieldset class="swoopDown">
-                    <div class="formBox name">
-                      <label for="name"> Name <span>*</span> </label>
-                      <input
-                        id="name"
-                        type="text"
-                        placeholder="Your Name"
-                        name="name"
-                      />
-                    </div>
+                    <div class="nameBox">
+                      <div class="formBox name">
+                        <label for="name"> Name <span>*</span> </label>
+                        <input
+                          id="name"
+                          type="text"
+                          placeholder="Your Name"
+                          name="name"
+                        />
+                      </div>
 
-                    <div class="formBox replyTo">
-                      <label for="replyTo"> Email <span>*</span> </label>
-                      <input
-                        id="replyTo"
-                        type="email"
-                        placeholder="Your Email"
-                        name="_replyto"
-                      />
+                      <div class="formBox replyTo">
+                        <label for="replyTo"> Email <span>*</span> </label>
+                        <input
+                          id="replyTo"
+                          type="email"
+                          placeholder="Your Email"
+                          name="_replyto"
+                        />
+                      </div>
                     </div>
+                    <div class="messageBox">
+                      <div class="formBox theMessage">
+                        <label for="theMessage">Message <span>*</span></label>
+                        <textarea
+                          id="theMessage"
+                          name="message"
+                          placeholder="Your Message ..."
+                          rows="4"
+                          wrap
+                          value=""
+                        ></textarea>
+                      </div>
 
-                    <div class="formBox theMessage">
-                      <label for="theMessage">Message <span>*</span></label>
-                      <textarea
-                        id="theMessage"
-                        name="message"
-                        placeholder="Your Message ..."
-                        rows="4"
-                        wrap
-                        value=""
-                      ></textarea>
-                    </div>
-
-                    <div class="formButtons">
-                      <button id="submitMssg" type="submit">
-                        <h3>Send</h3>
-                      </button>
-                      <button id="resetMssg" type="reset">
-                        <h3>Reset</h3>
-                      </button>
+                      <div class="formButtons">
+                        <button id="submitMssg" type="submit">
+                          <h3>Send</h3>
+                        </button>
+                        <button id="resetMssg" type="reset">
+                          <h3>Reset</h3>
+                        </button>
+                      </div>
                     </div>
                   </fieldset>
                 </form>
@@ -148,6 +153,47 @@
             <textarea id="email">ania.m.pienio@gmail.com</textarea>
           </div>
         </aside>
+        <!-- MOBILE MENU -->
+        <div class="mobileMenu">
+          <ul>
+            <li>
+              <a href="../index.html">
+                <ion-icon name="home-outline"></ion-icon>
+                <h3>home</h3>
+              </a>
+            </li>
+            <li>
+              <a href="about.html">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <h3>about</h3>
+              </a>
+            </li>
+            <li>
+              <a href="skills.html">
+                <ion-icon name="construct-outline"></ion-icon>
+                <h3>skills</h3>
+              </a>
+            </li>
+            <li>
+              <a href="portfolio.html">
+                <ion-icon name="color-palette-outline"></ion-icon>
+                <h3>portfolio</h3>
+              </a>
+            </li>
+            <li>
+              <a href="next.html">
+                <ion-icon name="calendar-outline"></ion-icon>
+                <h3>next</h3>
+              </a>
+            </li>
+            <li class="selected">
+              <a href="contact.html" class="selected">
+                <ion-icon name="at-outline"></ion-icon>
+                <h3>contact</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
         <!-- PAGINATION -->
         <div class="pagination left">
           <a href="portfolio.html">

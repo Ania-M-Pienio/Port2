@@ -32,6 +32,14 @@ html {
   scroll-behavior: smooth;
   overflow-y: hidden;
   overflow-x: hidden;
+  @include tablet-landXS {
+    // 1070
+    height: 100vh;
+    background-image: url(../assets/home/wood.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   @include mobile-land-v {
     // 950v
     overflow-y: visible;
@@ -41,6 +49,10 @@ html {
 body {
   background-color: $dark-grey;
   padding: 40px 0;
+  @include tablet-landXS {
+    // 1070w
+    background-color: $transparent;
+  }
   @include mobile-land-vw {
     // 1070w x 1000v
     padding: 0px;
@@ -109,6 +121,10 @@ header {
   background: #777;
   box-shadow: 0 20px 10px #777;
   transform: rotate(3deg);
+    @include tablet-landXS {
+    // 1070w
+    display: none;
+  }
 }
 
 // headings
@@ -244,7 +260,6 @@ aside {
   }
 }
 
-
 .social {
   margin: 20px 0 0;
   ul {
@@ -267,7 +282,6 @@ aside {
     }
   }
 }
-
 
 .splash {
   height: 100%;

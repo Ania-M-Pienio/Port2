@@ -17,7 +17,10 @@ app.$menuLinks = $("nav a");
 
 // carousel
 app.amount = 3;
+app.menuAmount = 5;
+app.half = 2;
 app.stage = [];
+app.mobileMenu = ["nutrinav", "bridem8", "clickfly", "roboguild", "mintynews"];
 app.que = [
   {
     id: "roboguild",
@@ -348,22 +351,35 @@ app.handleCarousel = function () {
   // rotate forward
   $("#forwards").on("click", () => {
     app.cycleForward();
+    app.cycleMobileForward();
   });
 
   // rotate back
   $("#backwards").on("click", (e) => {
     app.cycleBackward();
+    app.cycleMobileBackward();
   });
 
-  $("button.project").on("click", async function () {
+  $(".projects ul").on("click", ".project", function () {
     let selectedId = $(this).attr("id");
     app.updateMenu(selectedId);
     app.multiCycleBy(app.getCyclesQty(selectedId));
-
+    app.multiMenuCycleBy(app.getCyclesMobileQty(selectedId));
+    app.loadMobileProjects();
     try {
       app.loadProjectInfo(app.stage[1]);
     } catch (err) {}
   });
+};
+
+app.cycleMobileForward = function () {
+  app.rotateMenuForwards();
+  app.loadMobileProjects();
+};
+
+app.cycleMobileBackward = function () {
+  app.rotateMenuBackwards();
+  app.loadMobileProjects();
 };
 
 /****************************************************************/
@@ -425,13 +441,26 @@ app.multiCycleBy = function (qty) {
     app.rotateBoardsFwd();
   }
 };
+app.multiMenuCycleBy = function (qty) {
+  for (let i = 0; i < qty; i++) {
+    app.rotateMenuForwards();
+  }
+}
+
+app.getCyclesMobileQty = function (projectId) {
+
+  const indx = app.mobileMenu.indexOf(projectId);
+  const diff = 2 - indx;
+  return diff < 0 
+  ? ((app.half + 1) + ((app.mobileMenu.length - 1) - indx))
+  : app.half - indx; 
+}
 
 app.getCyclesQty = function (projectId) {
   let indx;
   app.que.forEach((project, index) => {
     project.id === projectId ? (indx = index) : "";
   });
-  console.log("cycle by: ", indx + 2);
   return indx + 2;
 };
 
@@ -456,6 +485,29 @@ app.cycleBackward = function () {
   setTimeout(() => {
     app.refreshDOM("backwards");
   }, 500);
+};
+
+app.rotateMenuForwards = function () {
+  const reverse = app.mobileMenu.pop();
+  app.mobileMenu.unshift(reverse);
+};
+
+app.rotateMenuBackwards = function () {
+  const next = app.mobileMenu.shift();
+  app.mobileMenu.push(next);
+};
+
+app.loadMobileProjects = async function () {
+  $(".projects.mobile ul").empty();
+  for (let i = 0; i < app.menuAmount; i++) {
+    const isSelected = i === 2;
+    const currentProject = app.que.find(
+      (project) => app.mobileMenu[i] == project.id
+    );
+    $(".projects.mobile ul").append(
+      app.freshProject(currentProject, isSelected)
+    );
+  }
 };
 
 // clear out the old html boards and load fresh html for the boards
@@ -496,12 +548,12 @@ app.rotateBoardsBack = function () {
 
 // does the inital loading of the boards by rotating boards until stage is filled
 // then loads the boards into the DOM
-app.initialLoad = function () {
+app.initialBoardLoad = function () {
   let $boards = $(".board").toArray();
   $boards.forEach((board, index) => {
     app.rotateBoardsFwd();
   });
-  this.loadBoards();
+  app.loadBoards();
   try {
     app.rotateProjectInfo(app.stage[1]);
   } catch (err) {}
@@ -593,6 +645,22 @@ app.freshSkill = function (skill) {
     </li>`;
 };
 
+app.freshProject = function (project, isSelected) {
+  const selectedClass = isSelected ? "selected" : "";
+  return `
+    <li aria-role="button">
+        <div
+          id="${project.id}" 
+          class="project ${selectedClass}"
+            >
+          <h3>
+            <span>| &nbsp;</span>${project.title}<span> &nbsp;|</span>
+          </h3>
+        </div>
+    </li>
+  `;
+};
+
 /****************************************************************/
 /*****************           SETUP           ********************/
 /****************************************************************/
@@ -601,7 +669,8 @@ app.init = function () {
   app.listeners();
   app.animateLogo("home");
   app.animateIntro();
-  app.initialLoad();
+  app.initialBoardLoad();
+  app.loadMobileProjects();
 };
 
 $(() => {

@@ -150,7 +150,6 @@
   opacity: 0;
   transition: all 0.5s;
   border-right: none;
-  // border: 2px soslid rgb(0, 140, 255);
   @include tablet-land {
     // 1300
     position: static;
@@ -180,6 +179,9 @@
       // 1070w x 1000+h
       font-size: 2.3rem;
     }
+
+
+
     @include mobile-land-vw {
       // 1070w x 1000v
       display: none;
@@ -213,10 +215,12 @@
         // 690w x 1000v
         height: 30px;
       }
-      button {
+      div.project {
+        cursor: pointer;
         h3 {
           width: 100%;
           text-align: center;
+          transition: all 1s;
           @include tablet-portXL {
             // 800w
             font-size: 1.8rem;
@@ -227,9 +231,18 @@
             // 520
             font-size: 1.7rem;
           }
+          span {
+            visibility: hidden;
+          }
+        }
+        &:hover h3,
+        &:focus h3 {
+          color: $season;
         }
       }
-      button.selected {
+      div.project.selected {
+        cursor: pointer;
+        pointer-events: none;
         h3 {
           font-size: 2.15rem;
           color: $season;
