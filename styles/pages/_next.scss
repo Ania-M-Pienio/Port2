@@ -5,6 +5,26 @@
   }
 }
 
+.next article {
+  @include tablet-landXS {
+    // 1070
+    height: 25%;
+  }
+  .info a.logo {
+    @include tablet-landXS {
+      // 1070
+      display: none;
+    }
+  }
+}
+
+.next aside {
+  @include tablet-landXS {
+    // 1070
+    height: 70%;
+  }
+}
+
 .next .splash {
   padding: 10px;
   background-color: white;
@@ -13,9 +33,28 @@
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1.5fr 1fr;
+    grid-template-rows: 1.2fr 0.8fr;
     grid-gap: 10px;
     @include tablet-landS {
+      // 1250
+      grid-template-rows: 1fr 1fr;
+    }
+    @include tablet-landXS {
+      // 1070
+      grid-template-rows: 1.2fr 0.8fr;
+    }
+    @include mobile-land {
+      // 690
+      grid-template-columns: 1fr;
+      grid-template-rows: 1.2fr 0.8fr;
+    }
+    @include mobile-land-vw {
+      // 1070w x 1000v
+      grid-template-rows: 1fr 1fr;
+    }
+    @include mobile-port-vw {
+      // 690w x 1000v
+      grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
     }
     li {
@@ -23,10 +62,16 @@
       h5 {
         transition: all 1s;
         @include tablet-landS {
+          // 1250
           font-size: 10rem;
         }
         @include tablet-landXS {
+          // 1070
           font-size: 9rem;
+        }
+        @include mobile-land-vw {
+          // 1070w x 1000v
+          font-size: 7rem;
         }
       }
     }
@@ -40,7 +85,22 @@ li.learn {
   background-repeat: no-repeat;
   position: relative;
   box-shadow: $shadow-inset;
+  @include mobile-land-vw {
+    // 1070w x 1000v
+    grid-row: 1 / 3;
+  }
+  @include mobile-land {
+    // 690
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
   .container {
+    @include mobile-port-vw {
+      // 690w x 1000v
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
     a.event {
       margin: 0 auto;
       margin-top: 15px;
@@ -49,6 +109,11 @@ li.learn {
       border: 2px solid $tint;
       padding: 2.5%;
       display: block;
+      @include mobile-port-vw {
+        // 690w x 1000v
+        margin: 10px;
+        width: 45%;
+      }
       &:hover,
       &:focus,
       &:active {
@@ -63,9 +128,25 @@ li.learn {
         color: $tint;
         font-size: 2.6rem;
         text-align: left;
+        @include tablet-landXS {
+          // 1070
+          font-size: 2.2rem;
+        }
+        @include mobile-port-vw {
+          // 690w x 1000v
+          font-size: 2rem;
+        }
       }
-      .date {
+      h4.date {
         font-size: 2rem;
+        @include tablet-landXS {
+          // 1070
+          font-size: 1.9rem;
+        }
+        @include mobile-port-vw {
+          // 690w x 1000v
+          font-size: 1.7rem;
+        }
       }
       ion-icon {
         position: absolute;
@@ -75,6 +156,10 @@ li.learn {
         opacity: 0;
         color: $tint;
         transition: all 0.75s;
+        @include mobile-port-vw {
+          // 690w x 1000v
+          font-size: 2rem;
+        }
       }
     }
   }
@@ -90,14 +175,24 @@ li.build {
   justify-content: flex-end;
   position: relative;
   top: -600px;
+  @include mobile-land {
+    // 690
+    display: none;
+  }
   h4 {
     font-size: 2.6rem;
     @include tablet-landS {
+      // 1250
       font-size: 2.4rem;
       padding: 2.5%;
     }
     @include tablet-landXS {
+      // 1070
       font-size: 2.2rem;
+    }
+    @include mobile-land-vw {
+      // 1070w x 1000v
+      font-size: 2rem;
     }
     a {
       display: flex;
@@ -115,6 +210,10 @@ li.build {
       h4 {
         color: $link;
         position: relative;
+        @include mobile-land-vw {
+          // 1070w x 1000v
+          width: 150px;
+        }
         ion-icon {
           color: $link;
           font-size: 3rem;
@@ -125,10 +224,8 @@ li.build {
           opacity: 0;
           transition: all 1s;
           @include tablet-landS {
+            // 1250
             font-size: 2.8rem;
-          }
-          @include tablet-landXS {
-            font-size: 2.6rem;
           }
         }
       }
@@ -143,10 +240,18 @@ li.creative {
   background-color: white;
   position: relative;
   top: 700px;
+  @include mobile-land {
+    // 690
+    display: none;
+  }
+  @include mobile-land-vw {
+    // 1070w x 1000v
+    display: none;
+  }
   .img {
     height: 100%;
     background-image: url(../assets/next/linden.jpg);
-    background-size: 65%;
+    background-size: contain;
     background-position: left bottom;
     background-repeat: no-repeat;
     opacity: 0;
@@ -162,12 +267,32 @@ li.blog {
   flex-direction: column;
   justify-content: center;
   box-shadow: $shadow-inset;
+  @include mobile-land-vw {
+    // 1070w x 1000v
+    grid-column: 2 / 3;
+  }
+  @include mobile-land {
+    // 690
+    grid-row: 2 / 2;
+    grid-column: 1 / 2;
+  }
   a {
     width: 60%;
     margin: 0 auto;
     padding: 2.5%;
     border: 2px solid $tint;
     transition: all 0.75s;
+    @include mobile-land-vw {
+      // 1070w x 1000v
+      width: 40%;
+      padding: 1.5%;
+    }
+    @include mobile-port-vw {
+      // 690w x 1000v
+      width: 90%;
+      padding: 2%;
+      margin-top: 5px;
+    }
     &:hover,
     &:focus,
     &:active {
@@ -180,6 +305,14 @@ li.blog {
     }
     h3 {
       color: $tint;
+      @include mobile-land-vw {
+        // 1070w x 1000v
+        font-size: 1.5rem;
+      }
+      @include mobile-port-vw {
+        // 690w x 1000v
+        font-size: 1.8rem;
+      }
     }
   }
 }
