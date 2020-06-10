@@ -26,11 +26,15 @@ fieldset {
   @include Domi(1.8rem, normal, $charcoal, 1.5, 1.6, left);
   position: relative;
   top: -600px;
+  @include mobile-land-vw {
+    // 1070w x 1000v
+    font-size: 1.5rem;
+  }
   label {
     @include Ossie(2rem, normal, $font, normal, normal, center);
     text-transform: uppercase;
     text-align: left;
-    margin-top: 20px;
+    // margin-top: 20px;
     width: 100%;
     @include tablet-landXS {
       // 1070
@@ -55,7 +59,9 @@ fieldset {
       padding: 8px 12.5px;
     }
   }
-
+ label.error {
+   color: $alert;
+ }
   textarea {
     width: 100%;
     padding: 15px 20px;
@@ -148,16 +154,24 @@ textarea:focus::placeholder {
 }
 
 .formBox {
-  height: 115px;
+  height: 130px;
   border: 2px solid lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   @include mobile-land-vw {
     // 1070w x 1000v
-    height: 90px;
+    height: 85px;
+    position: relative;
   }
 }
 
 .formBox.theMessage {
-  height: 185px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
   @include tablet-landXS {
     // 1070
     height: 160px;
@@ -192,7 +206,7 @@ textarea:focus::placeholder {
   }
 }
 
-.error {
+label.error:not(input.error) {
   margin-top: 0;
   font-size: 1.6rem;
   color: $alert;
@@ -202,6 +216,9 @@ textarea:focus::placeholder {
   }
   @include mobile-land-vw {
     // 1070w x 1000v
-    font-size: 1.2rem;
+    font-size: 1.15rem;
+    position: absolute;
+    bottom: 0;
+    left: 2px;
   }
 }
