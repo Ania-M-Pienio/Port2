@@ -61,6 +61,10 @@ fieldset {
   }
  label.error {
    color: $alert;
+    @include mobile-land-vw {
+    // 1070w x 1000v
+    font-size: 1.15rem;
+  }
  }
   textarea {
     width: 100%;
@@ -155,7 +159,6 @@ textarea:focus::placeholder {
 
 .formBox {
   height: 130px;
-  border: 2px solid lightblue;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -216,7 +219,6 @@ label.error:not(input.error) {
   }
   @include mobile-land-vw {
     // 1070w x 1000v
-    font-size: 1.15rem;
     position: absolute;
     bottom: 0;
     left: 2px;
