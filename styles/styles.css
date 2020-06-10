@@ -1458,9 +1458,9 @@ fieldset {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   font-family: "Domine", serif;
   font-size: 1.8rem;
   font-weight: normal;
@@ -1478,6 +1478,9 @@ fieldset {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1498,6 +1501,12 @@ fieldset label {
 @media (max-width: 1070px) {
   fieldset label {
     font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 1070px) and (max-height: 1050px) {
+  fieldset label {
+    font-size: 1.7rem;
   }
 }
 
@@ -1528,6 +1537,12 @@ fieldset textarea {
 @media (max-width: 1070px) {
   fieldset textarea {
     height: 6em;
+  }
+}
+
+@media (max-width: 1070px) and (max-height: 1050px) {
+  fieldset textarea {
+    height: 55px;
   }
 }
 
@@ -1649,6 +1664,12 @@ textarea:focus::placeholder {
   height: 115px;
 }
 
+@media (max-width: 1070px) and (max-height: 1050px) {
+  .formBox {
+    height: 100px;
+  }
+}
+
 .formBox.theMessage {
   height: 185px;
 }
@@ -1656,6 +1677,12 @@ textarea:focus::placeholder {
 @media (max-width: 1070px) {
   .formBox.theMessage {
     height: 160px;
+  }
+}
+
+@media (max-width: 1070px) and (max-height: 1050px) {
+  .formBox.theMessage {
+    height: 120px;
   }
 }
 
@@ -1668,11 +1695,12 @@ textarea:focus::placeholder {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-right: 20px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-right: 30px;
     width: 50%;
+    height: 100%;
   }
   .nameBox .formBox {
     width: 100%;
@@ -1684,10 +1712,11 @@ textarea:focus::placeholder {
 
 @media (max-width: 1070px) and (max-height: 1050px) {
   .messageBox {
+    height: 100%;
     width: 50%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -5169,6 +5198,12 @@ li.blog a h3 {
   }
 }
 
+@media (max-width: 1070px) and (max-height: 1050px) {
+  .contact article {
+    height: 43%;
+  }
+}
+
 @media (max-width: 1070px) {
   .contact article .info {
     padding-top: 0;
@@ -5202,6 +5237,12 @@ li.blog a h3 {
   }
 }
 
+@media (max-width: 1070px) and (max-height: 1050px) {
+  .contact aside {
+    height: 52%;
+  }
+}
+
 .contact .splash {
   background-color: #F7F7F7;
   padding: 50px 90px;
@@ -5220,15 +5261,33 @@ li.blog a h3 {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 520px) {
   .contact .splash {
     padding: 20px 40px;
+  }
+}
+
+@media (max-width: 1070px) and (max-height: 1050px) {
+  .contact .splash {
+    padding: 10px 30px;
   }
 }
 
 .messageTitle {
   width: 100%;
   opacity: 0;
+}
+
+@media (max-width: 520px) {
+  .messageTitle {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1070px) and (max-height: 1050px) {
+  .messageTitle {
+    margin-bottom: 15px;
+  }
 }
 
 .messageTitle h5 {
@@ -5240,6 +5299,18 @@ li.blog a h3 {
 @media (max-width: 1070px) {
   .messageTitle h5 {
     font-size: 5rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .messageTitle h5 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 1070px) and (max-height: 1050px) {
+  .messageTitle h5 {
+    font-size: 4rem;
   }
 }
 
@@ -5278,6 +5349,12 @@ li.blog a h3 {
 @media (max-width: 1070px) {
   .messageTitle a.email p {
     font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 1070px) and (max-height: 1050px) {
+  .messageTitle a.email p {
+    font-size: 1.5rem;
   }
 }
 

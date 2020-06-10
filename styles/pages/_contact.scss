@@ -14,6 +14,10 @@
     // 1070
     height: 30%;
   }
+  @include mobile-land-vw {
+    // 1070w x 1000v
+    height: 43%;
+  }
   .info {
     @include tablet-landXS {
       padding-top: 0;
@@ -47,6 +51,10 @@
     // 1070
     height: 65%;
   }
+  @include mobile-land-vw {
+    // 1070w x 1000v
+    height: 52%;
+  }
 }
 
 .contact .splash {
@@ -58,15 +66,27 @@
     // 1070
     padding: 20px 80px;
   }
+  @include mobile-port {
+    // 520
+    padding: 20px 40px;
+  }
   @include mobile-land-vw {
     // 1070w x 1000v
-    padding: 20px 40px;
+    padding: 10px 30px;
   }
 }
 
 .messageTitle {
   width: 100%;
   opacity: 0;
+  @include mobile-port {
+    // 520
+    margin-bottom: 20px;
+  }
+  @include mobile-land-vw {
+    // 1070w x 1000v
+    margin-bottom: 15px;
+  }
   h5 {
     color: $season;
     opacity: 0.8;
@@ -74,6 +94,14 @@
     @include tablet-landXS {
       // 1070
       font-size: 5rem;
+    }
+    @include mobile-port {
+      // 520
+      font-size: 4rem;
+    }
+    @include mobile-land-vw {
+      // 1070w x 1000v
+      font-size: 4rem;
     }
   }
   a.email {
@@ -101,6 +129,10 @@
         // 1070
         font-size: 1.8rem;
       }
+      @include mobile-land-vw {
+        // 1070w x 1000v
+        font-size: 1.5rem;
+      }
     }
     ion-icon {
       font-size: 2rem;
@@ -113,5 +145,3 @@
   position: absolute;
   left: -2000px;
 }
-
-

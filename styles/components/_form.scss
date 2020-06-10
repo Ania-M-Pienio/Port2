@@ -22,13 +22,14 @@ fieldset {
   padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   @include Domi(1.8rem, normal, $charcoal, 1.5, 1.6, left);
   position: relative;
   top: -600px;
   @include mobile-land-vw {
     // 1070w x 1000v
     flex-direction: row;
+    justify-content: center;
   }
   label {
     @include Ossie(2rem, normal, $font, normal, normal, center);
@@ -39,6 +40,10 @@ fieldset {
     @include tablet-landXS {
       // 1070
       font-size: 1.8rem;
+    }
+    @include mobile-land-vw {
+      // 1070w x 1000v
+      font-size: 1.7rem;
     }
     span {
       color: $alert;
@@ -63,6 +68,10 @@ fieldset {
     @include tablet-landXS {
       // 1070
       height: 6em;
+    }
+    @include mobile-land-vw {
+      // 1070w x 1000v
+      height: 55px;
     }
   }
   button {
@@ -126,6 +135,10 @@ textarea:focus::placeholder {
 
 .formBox {
   height: 115px;
+  @include mobile-land-vw {
+    // 1070w x 1000v
+    height: 100px;
+  }
 }
 
 .formBox.theMessage {
@@ -134,6 +147,10 @@ textarea:focus::placeholder {
     // 1070
     height: 160px;
   }
+  @include mobile-land-vw {
+    // 1070w x 1000v
+    height: 120px;
+  }
 }
 
 .nameBox {
@@ -141,9 +158,10 @@ textarea:focus::placeholder {
     // 1070w x 1000v
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding-right: 20px;
+    justify-content: flex-start;
+    padding-right: 30px;
     width: 50%;
+    height: 100%;
     .formBox {
       width: 100%;
     }
@@ -156,8 +174,9 @@ textarea:focus::placeholder {
 .messageBox {
   @include mobile-land-vw {
     // 1070w x 1000v
+    height: 100%;
     width: 50%;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 }
 

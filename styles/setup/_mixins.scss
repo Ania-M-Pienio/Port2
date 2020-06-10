@@ -90,7 +90,7 @@
 
 //////////////// both x and y axis
 
-@mixin mobile-landL-vw {
+@mixin mobile-landL-Vw {
   @media (max-width: 1070px) and (min-height: 1001px) {
     @content;
   }

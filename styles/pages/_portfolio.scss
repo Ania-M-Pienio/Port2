@@ -175,7 +175,7 @@
       // 1070
       font-size: 2.1rem;
     }
-    @include mobile-landL-vw {
+    @include mobile-landL-Vw {
       // 1070w x 1000+h
       font-size: 2.3rem;
     }
@@ -298,7 +298,7 @@
     // 1070
     width: 400px;
   }
-  @include mobile-landL-vw {
+  @include mobile-landL-Vw {
     // 1070w x 1000+h
     height: 200px;
   }
@@ -481,7 +481,7 @@
       // 1070w x 1000v
       margin-top: 0px;
     }
-    @include mobile-landL-vw {
+    @include mobile-landL-Vw {
       // 1070w x 1001+v
       height: 160px;
     }
