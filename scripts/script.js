@@ -372,19 +372,19 @@ app.handleCarousel = function () {
   });
 };
 
-app.cycleMobileForward = function () {
-  app.rotateMenuForwards();
-  app.loadMobileProjects();
-};
-
-app.cycleMobileBackward = function () {
-  app.rotateMenuBackwards();
-  app.loadMobileProjects();
-};
-
 /****************************************************************/
 /*****************           HELPERS         ********************/
 /****************************************************************/
+
+app.pause = function (miliseconds) {
+  return new Promise((res, rej) => {
+    setTimeout(() => {
+      res();
+    }, miliseconds);
+  });
+};
+
+/*****************      CONTACTS     ********************/
 
 // copy email to user's cliboard
 app.copyEmail = function () {
@@ -428,42 +428,11 @@ app.resetForm = function () {
   app.form.$message.val("");
 };
 
-app.pause = function (miliseconds) {
-  return new Promise((res, rej) => {
-    setTimeout(() => {
-      res();
-    }, miliseconds);
-  });
-};
+/*****************      PORTFOLIO     ********************/
 
-app.multiCycleBy = function (qty) {
-  for (let i = 0; i < qty; i++) {
-    app.rotateBoardsFwd();
-  }
-};
-app.multiMenuCycleBy = function (qty) {
-  for (let i = 0; i < qty; i++) {
-    app.rotateMenuForwards();
-  }
-}
+/******** MENU **********/
 
-app.getCyclesMobileQty = function (projectId) {
-
-  const indx = app.mobileMenu.indexOf(projectId);
-  const diff = 2 - indx;
-  return diff < 0 
-  ? ((app.half + 1) + ((app.mobileMenu.length - 1) - indx))
-  : app.half - indx; 
-}
-
-app.getCyclesQty = function (projectId) {
-  let indx;
-  app.que.forEach((project, index) => {
-    project.id === projectId ? (indx = index) : "";
-  });
-  return indx + 2;
-};
-
+// update the side menu for the selected project
 app.updateMenu = function (id) {
   $("button.project").removeClass("selected");
   $("button.project").attr("disabled", false);
@@ -471,32 +440,47 @@ app.updateMenu = function (id) {
   $(`button#${id}`).attr("disabled", true);
 };
 
-// goes through one complete cycle of forward
-app.cycleForward = function () {
-  app.animateRotation();
-  setTimeout(() => {
-    app.refreshDOM("forwards");
-  }, 500);
+// gets the number of cycle forwards needed to center the selected project
+app.getCyclesMobileQty = function (projectId) {
+  const indx = app.mobileMenu.indexOf(projectId);
+  const diff = 2 - indx;
+  return diff < 0
+    ? app.half + 1 + (app.mobileMenu.length - 1 - indx)
+    : app.half - indx;
 };
 
-// goes through one complete cycle of backward
-app.cycleBackward = function () {
-  app.animateRotationRev();
-  setTimeout(() => {
-    app.refreshDOM("backwards");
-  }, 500);
+// cycles the arrays forward and reloads DOM by as many cycles as specified by qty
+app.multiMenuCycleBy = function (qty) {
+  for (let i = 0; i < qty; i++) {
+    app.rotateMenuForwards();
+  }
 };
 
+// adjust the project menu array and then load into the DOM
+app.cycleMobileForward = function () {
+  app.rotateMenuForwards();
+  app.loadMobileProjects();
+};
+
+// adjust the project menu array and then load into the DOM
+app.cycleMobileBackward = function () {
+  app.rotateMenuBackwards();
+  app.loadMobileProjects();
+};
+
+// shifts array to move forward
 app.rotateMenuForwards = function () {
   const reverse = app.mobileMenu.pop();
   app.mobileMenu.unshift(reverse);
 };
 
+// shifts array to move backward
 app.rotateMenuBackwards = function () {
   const next = app.mobileMenu.shift();
   app.mobileMenu.push(next);
 };
 
+// loads from menu array into the DOM
 app.loadMobileProjects = async function () {
   $(".projects.mobile ul").empty();
   for (let i = 0; i < app.menuAmount; i++) {
@@ -508,6 +492,40 @@ app.loadMobileProjects = async function () {
       app.freshProject(currentProject, isSelected)
     );
   }
+};
+
+/******** BOARDS **********/
+
+// adjust the project menu array and then load into the DOM
+app.multiCycleBy = function (qty) {
+  for (let i = 0; i < qty; i++) {
+    app.rotateBoardsFwd();
+  }
+};
+
+// gets the number of cycle forwards needed to place selected project into the center board
+app.getCyclesQty = function (projectId) {
+  let indx;
+  app.que.forEach((project, index) => {
+    project.id === projectId ? (indx = index) : "";
+  });
+  return indx + 2;
+};
+
+// goes through one complete cycle of PROJECTS forward
+app.cycleForward = function () {
+  app.animateRotation();
+  setTimeout(() => {
+    app.refreshDOM("forwards");
+  }, 500);
+};
+
+// goes through one complete cycle of PROJECTS backward
+app.cycleBackward = function () {
+  app.animateRotationRev();
+  setTimeout(() => {
+    app.refreshDOM("backwards");
+  }, 500);
 };
 
 // clear out the old html boards and load fresh html for the boards
@@ -569,6 +587,9 @@ app.loadBoards = function () {
   });
 };
 
+/******** PROJECTS **********/
+
+// loads project info into DOM when menu clicked
 app.loadProjectInfo = async function (project) {
   $(".board").css({
     "background-image": "none",
@@ -592,6 +613,7 @@ app.loadProjectInfo = async function (project) {
   });
 };
 
+// loads project info into DOM when rotation control is clicked
 app.rotateProjectInfo = function (project) {
   $(".projectInfo .title").text(project.title);
   $(".projectInfo .description").text(`${project.description}`);
@@ -601,6 +623,7 @@ app.rotateProjectInfo = function (project) {
   app.loadSkills(project.skills);
 };
 
+// loads skills into the dom
 app.loadSkills = function (skills) {
   let completedSkills = app.completeSkills(skills);
   $(".projectInfo .skills").empty();
@@ -609,6 +632,7 @@ app.loadSkills = function (skills) {
   });
 };
 
+// completes skills
 app.completeSkills = function (skills) {
   let completed = skills.map((skill) => {
     return app.skills[skill];
@@ -661,11 +685,33 @@ app.freshProject = function (project, isSelected) {
   `;
 };
 
+// unsleeps heroku dynos
+app.unsleep = function () {
+  $.ajax({
+    url: "https://robo-g-serve.herokuapp.com/awake",
+    method: "GET",
+    contentType: "json",
+  }).then((data) => {});
+  $.ajax({
+    url: "https://teams-new-api.herokuapp.com/employees",
+    method: "GET",
+    contentType: "json",
+  }).then((data) => {});
+  $.ajax({
+    url: "https://team-g-serve.herokuapp.com/awake",
+    method: "GET",
+    contentType: "json",
+  }).then((data) => {
+    console.log("hit succeeded");
+  });
+};
+
 /****************************************************************/
 /*****************           SETUP           ********************/
 /****************************************************************/
 
 app.init = function () {
+  app.unsleep();
   app.listeners();
   app.animateLogo("home");
   app.animateIntro();
