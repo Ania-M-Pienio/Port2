@@ -2038,6 +2038,12 @@ label.error:not(input.error) {
   }
 }
 
+@media (max-width: 1070px) and (max-height: 1000px) {
+  .about aside {
+    height: 68%;
+  }
+}
+
 .meContainer {
   height: 100%;
   display: -ms-grid;
@@ -2341,6 +2347,12 @@ label.error:not(input.error) {
   }
 }
 
+@media (max-width: 1070px) and (max-height: 1000px) {
+  .skills aside {
+    height: 68%;
+  }
+}
+
 .skills .splash {
   background-color: #F7F7F7;
   background-image: none;
@@ -2566,6 +2578,12 @@ label.error:not(input.error) {
 @media (max-width: 690px) {
   .portfolio aside {
     height: 75%;
+  }
+}
+
+@media (max-width: 1070px) and (max-height: 1000px) {
+  .portfolio aside {
+    height: 72.5%;
   }
 }
 
@@ -3569,6 +3587,12 @@ label.error:not(input.error) {
   }
 }
 
+@media (max-width: 1070px) and (max-height: 1000px) {
+  .skills aside {
+    height: 68%;
+  }
+}
+
 .skills .splash {
   background-color: #F7F7F7;
   background-image: none;
@@ -3794,6 +3818,12 @@ label.error:not(input.error) {
 @media (max-width: 690px) {
   .portfolio aside {
     height: 75%;
+  }
+}
+
+@media (max-width: 1070px) and (max-height: 1000px) {
+  .portfolio aside {
+    height: 72.5%;
   }
 }
 
@@ -4798,6 +4828,12 @@ label.error:not(input.error) {
 @media (max-width: 1070px) {
   .next aside {
     height: 70%;
+  }
+}
+
+@media (max-width: 1070px) and (max-height: 1000px) {
+  .next aside {
+    height: 68%;
   }
 }
 

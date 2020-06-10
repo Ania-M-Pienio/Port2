@@ -25,6 +25,10 @@
     // 1070
     height: 70%;
   }
+  @include mobile-land-vw {
+    // 1070w x 1000v
+    height: 68%;
+  }
 }
 
 .meContainer {
