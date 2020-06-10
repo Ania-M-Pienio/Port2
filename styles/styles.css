@@ -5461,8 +5461,8 @@ header {
 @media (max-width: 1070px) and (max-height: 1000px) {
   .wrapper {
     height: 730px;
-    min-height: 750px;
-    max-height: 750px;
+    min-height: 730px;
+    max-height: 730px;
   }
 }
 
@@ -5658,7 +5658,6 @@ article {
   article .info {
     width: 100%;
     padding-top: 10px;
-    padding-top: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
