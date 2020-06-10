@@ -5429,6 +5429,14 @@ header {
   }
 }
 
+@media (max-width: 690px) and (max-height: 1000px) {
+  header {
+    height: 730px;
+    min-height: 730px;
+    max-height: 730px;
+  }
+}
+
 .wrapper {
   max-width: 1480px;
   height: 92%;
