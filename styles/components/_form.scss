@@ -59,13 +59,13 @@ fieldset {
       padding: 8px 12.5px;
     }
   }
- label.error {
-   color: $alert;
+  label.error {
+    color: $alert;
     @include mobile-land-vw {
-    // 1070w x 1000v
-    font-size: 1.15rem;
+      // 1070w x 1000v
+      font-size: 1.15rem;
+    }
   }
- }
   textarea {
     width: 100%;
     padding: 15px 20px;
@@ -162,6 +162,10 @@ textarea:focus::placeholder {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  @include tablet-landXS {
+    // 1070
+    height: 100px;
+  }
   @include mobile-land-vw {
     // 1070w x 1000v
     height: 85px;

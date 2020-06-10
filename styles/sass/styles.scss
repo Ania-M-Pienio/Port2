@@ -245,17 +245,17 @@ article {
     padding-right: 0px;
     width: 100%;
     height: 25%;
-    .info {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      p {
-        text-align: center;
-      }
-    }
     .menu {
       display: none;
+    }
+  }
+  .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    p {
+      text-align: center;
     }
   }
 }
@@ -270,7 +270,6 @@ aside {
     z-index: 900;
   }
 }
-
 
 .social {
   margin: 20px 0 0;
