@@ -9,6 +9,18 @@
   }
 }
 
+
+.contact aside {
+  @include tablet-landXS {
+    // 1070
+    height: 65%;
+  }
+  @include mobile-land-vw {
+    // 1070w x 1000v
+    height: 55%;
+  }
+}
+
 .contact article {
   @include tablet-landXS {
     // 1070
@@ -16,11 +28,33 @@
   }
   @include mobile-land-vw {
     // 1070w x 1000v
-    height: 43%;
+    height: 40%;
   }
   .info {
     @include tablet-landXS {
-      padding-top: 0;
+      // 1070
+      padding-top: 15px;
+    }
+    @include mobile-land-vw {
+      // 1070w x 1000v
+    }
+    h1 {
+      @include mobile-land-vw {
+        // 1070w x 1000v
+        font-size: 3rem;
+      }
+      p {
+        @include mobile-land-vw {
+          // 1070w x 1000v
+          font-size: 1.1rem;
+        }
+      }
+    }
+    .social {
+      @include mobile-land-vw {
+        // 1070w x 1000v
+        margin-top: 10px;
+      }
     }
     a.logo {
       @include tablet-landXS {
@@ -46,16 +80,6 @@
   }
 }
 
-.contact aside {
-  @include tablet-landXS {
-    // 1070
-    height: 65%;
-  }
-  @include mobile-land-vw {
-    // 1070w x 1000v
-    height: 52%;
-  }
-}
 
 .contact .splash {
   background-color: $tint;
@@ -101,7 +125,7 @@
     }
     @include mobile-land-vw {
       // 1070w x 1000v
-      font-size: 4rem;
+      font-size: 3.5rem;
     }
   }
   a.email {

@@ -61,6 +61,7 @@
       background-position: right center;
     }
     @include tablet-portXL {
+      // 1070
       background-image: none;
     }
     @include tablet-port {
@@ -105,15 +106,7 @@
   }
 }
 
-.info {
-  padding-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-content: flex-end;
-  p {
-    text-align: center;
-  }
-}
+
 
 
 

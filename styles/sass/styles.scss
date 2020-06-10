@@ -96,8 +96,8 @@ header {
   @include mobile-land-vw {
     // 1070w x 1000v
     height: 730px;
-    min-height: 730px;
-    max-height: 730px;
+    min-height: 750px;
+    max-height: 750px;
   }
   @include tablet-landXS {
     // 1070w
@@ -248,6 +248,13 @@ article {
     .info {
       width: 100%;
       padding-top: 10px;
+      padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      p {
+        text-align: center;
+      }
     }
     .menu {
       display: none;
@@ -265,6 +272,7 @@ aside {
     z-index: 900;
   }
 }
+
 
 .social {
   margin: 20px 0 0;

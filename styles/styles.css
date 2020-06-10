@@ -1472,18 +1472,6 @@ fieldset {
   top: -600px;
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
-  fieldset {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 fieldset label {
   font-family: "Oswald", sans-serif;
   font-size: 2rem;
@@ -1504,7 +1492,7 @@ fieldset label {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   fieldset label {
     font-size: 1.7rem;
   }
@@ -1540,9 +1528,9 @@ fieldset textarea {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   fieldset textarea {
-    height: 55px;
+    height: 5em;
   }
 }
 
@@ -1561,6 +1549,13 @@ fieldset button {
 @media (max-width: 1070px) {
   fieldset button {
     height: 40px;
+  }
+}
+
+@media (max-width: 1070px) and (max-height: 1000px) {
+  fieldset button {
+    width: 30%;
+    margin-left: 15px;
   }
 }
 
@@ -1660,13 +1655,25 @@ textarea:focus::placeholder {
           justify-content: space-between;
 }
 
+@media (max-width: 1070px) and (max-height: 1000px) {
+  .formButtons {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
 .formBox {
   height: 115px;
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .formBox {
-    height: 100px;
+    height: 90px;
   }
 }
 
@@ -1680,27 +1687,19 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .formBox.theMessage {
-    height: 120px;
+    height: 190px;
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .nameBox {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    padding-right: 30px;
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: 30%;
   }
   .nameBox .formBox {
     width: 100%;
@@ -1710,10 +1709,10 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .messageBox {
-    height: 100%;
-    width: 50%;
+    height: 70%;
+    width: 100%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1729,7 +1728,12 @@ textarea:focus::placeholder {
 @media (max-width: 1070px) {
   .error {
     font-size: 1.3rem;
-    width: 100%;
+  }
+}
+
+@media (max-width: 1070px) and (max-height: 1000px) {
+  .error {
+    font-size: 1.2rem;
   }
 }
 
@@ -1872,23 +1876,6 @@ textarea:focus::placeholder {
   .home .splash h5 {
     display: none;
   }
-}
-
-.info {
-  padding-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
-}
-
-.info p {
-  text-align: center;
 }
 
 .splash a.mobile {
@@ -2091,7 +2078,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .meContainer li.today {
     overflow-y: scroll;
     scrollbar-color: #FF8585 rgba(0, 128, 0, 0);
@@ -2128,7 +2115,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .meContainer li.today .spacer {
     display: block;
   }
@@ -2355,7 +2342,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .skills .splash .skillset h3 {
     display: none;
   }
@@ -2386,7 +2373,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .skills .splash .skillset ul {
     height: 90%;
     padding: 10px;
@@ -2659,7 +2646,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .projects.mobile {
     height: 55px;
   }
@@ -2694,7 +2681,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .projects.mobile h2 {
     display: none;
   }
@@ -2859,7 +2846,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .rotationContainer {
     height: 180px;
   }
@@ -3091,7 +3078,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .projectInfo .descriptionContainer {
     margin-top: 0px;
   }
@@ -3133,7 +3120,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .projectInfo .descriptionContainer p {
     margin-top: 10px;
     font-size: 1.35rem;
@@ -3242,7 +3229,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .projectInfo .skillsContainer {
     position: absolute;
     bottom: 0;
@@ -3291,7 +3278,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .projectInfo .skillsContainer ul.skills {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -3313,7 +3300,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .projectInfo .skillsContainer ul.skills li {
     margin: 0 12.5px;
   }
@@ -3353,7 +3340,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .projectInfo .skillsContainer ul.skills li .icon {
     width: 25px;
   }
@@ -3381,7 +3368,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .projectInfo .skillsContainer ul.skills li .iconImage {
     width: 25px;
   }
@@ -3397,7 +3384,7 @@ textarea:focus::placeholder {
   font-size: 1.5rem;
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .projectInfo .skillsContainer ul.skills li h4 {
     font-size: 1.3rem;
   }
@@ -3583,7 +3570,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .skills .splash .skillset h3 {
     display: none;
   }
@@ -3614,7 +3601,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .skills .splash .skillset ul {
     height: 90%;
     padding: 10px;
@@ -3887,7 +3874,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .projects.mobile {
     height: 55px;
   }
@@ -3922,7 +3909,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .projects.mobile h2 {
     display: none;
   }
@@ -4087,7 +4074,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .rotationContainer {
     height: 180px;
   }
@@ -4319,7 +4306,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .projectInfo .descriptionContainer {
     margin-top: 0px;
   }
@@ -4361,7 +4348,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .projectInfo .descriptionContainer p {
     margin-top: 10px;
     font-size: 1.35rem;
@@ -4470,7 +4457,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .projectInfo .skillsContainer {
     position: absolute;
     bottom: 0;
@@ -4519,7 +4506,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .projectInfo .skillsContainer ul.skills {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -4541,7 +4528,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .projectInfo .skillsContainer ul.skills li {
     margin: 0 12.5px;
   }
@@ -4581,7 +4568,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .projectInfo .skillsContainer ul.skills li .icon {
     width: 25px;
   }
@@ -4609,7 +4596,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .projectInfo .skillsContainer ul.skills li .iconImage {
     width: 25px;
   }
@@ -4625,7 +4612,7 @@ textarea:focus::placeholder {
   font-size: 1.5rem;
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .projectInfo .skillsContainer ul.skills li h4 {
     font-size: 1.3rem;
   }
@@ -4799,7 +4786,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .next .splash ul {
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -4836,7 +4823,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .next .splash ul li h5 {
     font-size: 7rem;
   }
@@ -4852,7 +4839,7 @@ li.learn {
           box-shadow: inset 0px -1px 22px 8px rgba(0, 0, 0, 0.75);
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   li.learn {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
@@ -5006,7 +4993,7 @@ li.build h4 {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   li.build h4 {
     font-size: 2rem;
   }
@@ -5038,7 +5025,7 @@ li.build h4 a h4 {
   position: relative;
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   li.build h4 a h4 {
     width: 150px;
   }
@@ -5080,7 +5067,7 @@ li.creative {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   li.creative {
     display: none;
   }
@@ -5114,7 +5101,7 @@ li.blog {
           box-shadow: inset 0px -1px 22px 8px rgba(0, 0, 0, 0.75);
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   li.blog {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
@@ -5141,7 +5128,7 @@ li.blog a {
   transition: all 0.75s;
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   li.blog a {
     width: 40%;
     padding: 1.5%;
@@ -5170,7 +5157,7 @@ li.blog a h3 {
   color: #F7F7F7;
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   li.blog a h3 {
     font-size: 1.5rem;
   }
@@ -5193,20 +5180,50 @@ li.blog a h3 {
 }
 
 @media (max-width: 1070px) {
+  .contact aside {
+    height: 65%;
+  }
+}
+
+@media (max-width: 1070px) and (max-height: 1000px) {
+  .contact aside {
+    height: 55%;
+  }
+}
+
+@media (max-width: 1070px) {
   .contact article {
     height: 30%;
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .contact article {
-    height: 43%;
+    height: 40%;
   }
 }
 
 @media (max-width: 1070px) {
   .contact article .info {
-    padding-top: 0;
+    padding-top: 15px;
+  }
+}
+
+@media (max-width: 1070px) and (max-height: 1000px) {
+  .contact article .info h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1070px) and (max-height: 1000px) {
+  .contact article .info h1 p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1070px) and (max-height: 1000px) {
+  .contact article .info .social {
+    margin-top: 10px;
   }
 }
 
@@ -5228,18 +5245,6 @@ li.blog a h3 {
     font-size: 1.5rem;
     position: relative;
     z-index: 3000;
-  }
-}
-
-@media (max-width: 1070px) {
-  .contact aside {
-    height: 65%;
-  }
-}
-
-@media (max-width: 1070px) and (max-height: 1050px) {
-  .contact aside {
-    height: 52%;
   }
 }
 
@@ -5267,7 +5272,7 @@ li.blog a h3 {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .contact .splash {
     padding: 10px 30px;
   }
@@ -5284,7 +5289,7 @@ li.blog a h3 {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .messageTitle {
     margin-bottom: 15px;
   }
@@ -5308,9 +5313,9 @@ li.blog a h3 {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .messageTitle h5 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -5352,7 +5357,7 @@ li.blog a h3 {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .messageTitle a.email p {
     font-size: 1.5rem;
   }
@@ -5403,7 +5408,7 @@ body {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   body {
     padding: 0px;
   }
@@ -5421,7 +5426,7 @@ header {
   transition: all 1s;
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   header {
     height: 750px;
     min-height: 750px;
@@ -5453,11 +5458,11 @@ header {
   transition: all 1s;
 }
 
-@media (max-width: 1070px) and (max-height: 1050px) {
+@media (max-width: 1070px) and (max-height: 1000px) {
   .wrapper {
     height: 730px;
-    min-height: 730px;
-    max-height: 730px;
+    min-height: 750px;
+    max-height: 750px;
   }
 }
 
@@ -5653,6 +5658,19 @@ article {
   article .info {
     width: 100%;
     padding-top: 10px;
+    padding-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  article .info p {
+    text-align: center;
   }
   article .menu {
     display: none;
