@@ -702,7 +702,12 @@ app.unsleep = function () {
     method: "GET",
     contentType: "json",
   }).then((data) => {
-    console.log("hit succeeded");
+  });
+  $.ajax({
+    url: "https://t4minty.herokuapp.com/",
+    method: "GET",
+    contentType: "json",
+  }).then((data) => {
   });
 };
 
