@@ -1551,6 +1551,12 @@ fieldset label.error {
   }
 }
 
+@media (max-width: 365px) and (max-height: 800px) {
+  fieldset label.error {
+    font-size: 1rem;
+  }
+}
+
 fieldset textarea {
   width: 100%;
   padding: 15px 20px;
@@ -5857,7 +5863,7 @@ aside {
   font-size: 2.2rem;
   -webkit-transition: all 1s;
   transition: all 1s;
-  color: fuchsia;
+  color: #006eff;
 }
 
 .splash {

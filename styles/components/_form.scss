@@ -65,6 +65,10 @@ fieldset {
       // 1070w x 1000v
       font-size: 1.15rem;
     }
+    @include mobile-portS-vw {
+      // 365w x 800v
+      font-size: 1rem;
+    }
   }
   textarea {
     width: 100%;
