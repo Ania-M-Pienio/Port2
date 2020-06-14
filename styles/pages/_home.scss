@@ -28,7 +28,7 @@ header#home {
   }
   @include mobile-port {
     // 520
-    height: 50%;
+    height: 45%;
   }
 }
 
@@ -39,7 +39,7 @@ header#home {
   }
   @include mobile-port {
     // 520
-    height: 50%;
+    height: 55%;
   }
   @include mobile-portXS-vw {
     // 365w x 580v
@@ -49,6 +49,7 @@ header#home {
 
 .home .splash {
   background-color: white;
+  height: 80%;
   ul {
     height: 100%;
     display: grid;
