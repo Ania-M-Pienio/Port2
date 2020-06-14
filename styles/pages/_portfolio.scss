@@ -368,6 +368,7 @@
       margin: 0 auto;
     }
     @include mobile-portS-vw {
+      // 380w x 800v
       height: 160px;
     }
     @include mobile-portXS-vw {

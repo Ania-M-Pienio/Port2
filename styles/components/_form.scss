@@ -132,6 +132,10 @@ textarea::placeholder {
     // 1070
     font-size: 1.5rem;
   }
+  @include mobile-portS-vw {
+    // 365w x 800v
+    font-size: 1.2rem;
+  }
 }
 
 input:focus,
@@ -158,6 +162,7 @@ textarea:focus::placeholder {
     right: 0;
     width: 100%;
     justify-content: flex-start;
+    align-content: center;
   }
 }
 
@@ -203,7 +208,11 @@ textarea:focus::placeholder {
       width: 100%;
     }
     .formBox:first-of-type {
-      margin-right: 30px;
+      margin-right: 30x;
+      @include mobile-portS-vw {
+        // 365w x 800v
+        margin-right: 15px;
+      }
     }
   }
 }

@@ -1666,6 +1666,25 @@ textarea::placeholder {
   }
 }
 
+@media (max-width: 380px) and (max-height: 800px) {
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    font-size: 1.2rem;
+  }
+  input:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    font-size: 1.2rem;
+  }
+  input::-ms-input-placeholder,
+  textarea::-ms-input-placeholder {
+    font-size: 1.2rem;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 1.2rem;
+  }
+}
+
 input:focus,
 input:active,
 textarea:focus,
@@ -1713,6 +1732,8 @@ textarea:focus::placeholder {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
 }
 
@@ -1782,7 +1803,13 @@ textarea:focus::placeholder {
     width: 100%;
   }
   .nameBox .formBox:first-of-type {
-    margin-right: 30px;
+    margin-right: 30x;
+  }
+}
+
+@media (max-width: 1070px) and (max-height: 1000px) and (max-width: 380px) and (max-height: 800px) {
+  .nameBox .formBox:first-of-type {
+    margin-right: 15px;
   }
 }
 
@@ -5545,6 +5572,7 @@ li.blog a h3 {
 @media (max-width: 380px) and (max-height: 800px) {
   .contact .splash {
     width: 100%;
+    padding: 10px;
   }
 }
 
@@ -5589,6 +5617,12 @@ li.blog a h3 {
   }
 }
 
+@media (max-width: 380px) and (max-height: 800px) {
+  .messageTitle h5 {
+    font-size: 3rem;
+  }
+}
+
 .messageTitle a.email {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5630,6 +5664,12 @@ li.blog a h3 {
 @media (max-width: 1070px) and (max-height: 1000px) {
   .messageTitle a.email p {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 380px) and (max-height: 800px) {
+  .messageTitle a.email p {
+    font-size: 1.4rem;
   }
 }
 
