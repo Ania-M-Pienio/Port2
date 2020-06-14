@@ -110,6 +110,13 @@
   }
 }
 
+
+@mixin mobile-portXS-vw {
+  @media (max-width: 365px) and (max-height: 580px) {
+    @content;
+  }
+}
+
 // reduced motion option ON for accessibility
 
 @mixin reduce {

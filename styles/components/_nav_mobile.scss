@@ -83,3 +83,12 @@
     }
   }
 }
+
+
+.wrapper.home .mobileMenu {
+  transform: scale(0);
+  @include mobile-portXS-vw {
+    // 365w x 580v
+    transform: scale(1);
+  }
+}

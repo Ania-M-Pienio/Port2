@@ -26,6 +26,10 @@
     // 520
     height: 50%;
   }
+  @include mobile-portXS-vw {
+    // 365w x 580v
+    display: none;
+  }
 }
 
 .home .splash {
@@ -105,10 +109,6 @@
     }
   }
 }
-
-
-
-
 
 .splash {
   a.mobile {

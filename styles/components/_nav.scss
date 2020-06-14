@@ -7,10 +7,15 @@
   position: relative;
   display: flex;
   @include tablet-landXS {
+    // 1070
     position: absolute;
     top: 30px;
     right: 0px;
     z-index: 2500;
+  }
+  @include mobile-portXS-vw {
+    // 365w x 580v
+    display: none;
   }
   button {
     position: absolute;
@@ -57,6 +62,7 @@ nav {
   position: relative;
   z-index: 500;
   @include tablet-landXS {
+    // 1070
     opacity: 0;
   }
   ul {
@@ -95,7 +101,7 @@ nav.collapse:not(.show) {
 
 nav.show {
   @include tablet-landXS {
+    // 1070
     opacity: 1;
-    
   }
 }
