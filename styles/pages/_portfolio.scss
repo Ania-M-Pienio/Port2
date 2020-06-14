@@ -78,6 +78,10 @@
     // 690
     margin-top: 10px;
   }
+  @include mobile-portS-vw {
+    // 380w x 800v
+    padding: 10px 10px 0px 10px;
+  }
 }
 
 .projects {
@@ -313,15 +317,17 @@
     width: 100%;
   }
   .board {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5%;
     border: 2px solid $dark-grey;
     background-color: white;
     box-shadow: $shadow;
     display: flex;
     justify-content: center;
     position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+
     transition: all 1s;
   }
   .side {
@@ -329,7 +335,6 @@
     height: 200px;
     z-index: 500;
     top: 60px;
-    background-size: 85%;
     opacity: 0.2;
     @include tablet-landXS {
       // 1070
@@ -344,7 +349,6 @@
   }
   .center {
     background-image: url(../assets/portfolio/2.png);
-    background-size: 85%;
     z-index: 1000;
     width: 400px;
     height: 310px;
@@ -359,6 +363,9 @@
       // 690
       position: static;
       margin: 0 auto;
+    }
+    @include mobile-portS-vw {
+      height: 160px;
     }
   }
 
@@ -495,6 +502,9 @@
       // 690w x 1000v
       height: 120px;
     }
+    @include mobile-portS-vw {
+      height: 130px;
+    }
 
     p {
       font-size: 1.55rem;
@@ -531,12 +541,12 @@
     @include tablet-land {
       // 1300
       margin-top: 0px;
-      padding: 0px;
       padding-left: 10px;
     }
+
     @include tablet-landXS {
       // 1070
-      padding: 0px;
+      padding-left: 0px;
     }
   }
   .linkContainer a:first-child {
@@ -550,6 +560,9 @@
     @include tablet-landXS {
       // 1070
       width: 90px;
+    }
+    @include mobile-portS-vw {
+      padding: 0px;
     }
     &:focus,
     &:hover,
@@ -605,6 +618,11 @@
       order: 4;
       height: 50px;
     }
+    @include mobile-portS-vw {
+      // 380w x 800v
+      margin-top: 15px;
+      width: 100%;
+    }
     ul.skills {
       // border: 2px solid blue;
       width: 100%;
@@ -647,6 +665,10 @@
         @include mobile-port-vw {
           // 690w x 1000v
           margin: 0px 15px;
+        }
+        @include mobile-portS-vw {
+          // 380w x 800v
+          padding-left: 0px 5px;
         }
         .icon {
           width: 30px;

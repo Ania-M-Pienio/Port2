@@ -375,7 +375,7 @@ a.logo h3 {
   }
 }
 
-@media (max-width: 365px) and (max-height: 580px) {
+@media (max-width: 380px) and (max-height: 580px) {
   .menu {
     display: none;
   }
@@ -617,7 +617,7 @@ nav.collapse:not(.show) {
           transform: scale(0);
 }
 
-@media (max-width: 365px) and (max-height: 580px) {
+@media (max-width: 380px) and (max-height: 580px) {
   .wrapper.home .mobileMenu {
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -1551,7 +1551,7 @@ fieldset label.error {
   }
 }
 
-@media (max-width: 365px) and (max-height: 800px) {
+@media (max-width: 380px) and (max-height: 800px) {
   fieldset label.error {
     font-size: 1rem;
   }
@@ -1826,7 +1826,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 365px) and (max-height: 580px) {
+@media (max-width: 380px) and (max-height: 580px) {
   .wrapper.home {
     height: 85%;
     min-height: 85%;
@@ -1834,7 +1834,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 365px) and (max-height: 580px) {
+@media (max-width: 380px) and (max-height: 580px) {
   header#home {
     height: 100vh;
     min-height: 500px;
@@ -1866,7 +1866,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 365px) and (max-height: 580px) {
+@media (max-width: 380px) and (max-height: 580px) {
   .home aside {
     display: none;
   }
@@ -2666,6 +2666,12 @@ label.error:not(input.error) {
   }
 }
 
+@media (max-width: 380px) and (max-height: 800px) {
+  .portfolio .splash {
+    padding: 10px 10px 0px 10px;
+  }
+}
+
 .projects {
   width: 20%;
   height: 350px;
@@ -2979,6 +2985,10 @@ label.error:not(input.error) {
 }
 
 .rotationContainer .board {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5%;
   border: 2px solid #979696;
   background-color: white;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -2990,9 +3000,6 @@ label.error:not(input.error) {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -3002,7 +3009,6 @@ label.error:not(input.error) {
   height: 200px;
   z-index: 500;
   top: 60px;
-  background-size: 85%;
   opacity: 0.2;
 }
 
@@ -3022,7 +3028,6 @@ label.error:not(input.error) {
 
 .rotationContainer .center {
   background-image: url(../assets/portfolio/2.png);
-  background-size: 85%;
   z-index: 1000;
   width: 400px;
   height: 310px;
@@ -3041,6 +3046,12 @@ label.error:not(input.error) {
   .rotationContainer .center {
     position: static;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 380px) and (max-height: 800px) {
+  .rotationContainer .center {
+    height: 160px;
   }
 }
 
@@ -3222,6 +3233,12 @@ label.error:not(input.error) {
   }
 }
 
+@media (max-width: 380px) and (max-height: 800px) {
+  .projectInfo .descriptionContainer {
+    height: 130px;
+  }
+}
+
 .projectInfo .descriptionContainer p {
   font-size: 1.55rem;
   color: #191919;
@@ -3270,14 +3287,13 @@ label.error:not(input.error) {
 @media (max-width: 1300px) {
   .projectInfo .linkContainer {
     margin-top: 0px;
-    padding: 0px;
     padding-left: 10px;
   }
 }
 
 @media (max-width: 1070px) {
   .projectInfo .linkContainer {
-    padding: 0px;
+    padding-left: 0px;
   }
 }
 
@@ -3295,6 +3311,12 @@ label.error:not(input.error) {
 @media (max-width: 1070px) {
   .projectInfo a.linkButton {
     width: 90px;
+  }
+}
+
+@media (max-width: 380px) and (max-height: 800px) {
+  .projectInfo a.linkButton {
+    padding: 0px;
   }
 }
 
@@ -3368,6 +3390,13 @@ label.error:not(input.error) {
   }
 }
 
+@media (max-width: 380px) and (max-height: 800px) {
+  .projectInfo .skillsContainer {
+    margin-top: 15px;
+    width: 100%;
+  }
+}
+
 .projectInfo .skillsContainer ul.skills {
   width: 100%;
   height: 100%;
@@ -3435,6 +3464,12 @@ label.error:not(input.error) {
 @media (max-width: 690px) and (max-height: 1000px) {
   .projectInfo .skillsContainer ul.skills li {
     margin: 0px 15px;
+  }
+}
+
+@media (max-width: 380px) and (max-height: 800px) {
+  .projectInfo .skillsContainer ul.skills li {
+    padding-left: 0px 5px;
   }
 }
 
@@ -3906,6 +3941,12 @@ label.error:not(input.error) {
   }
 }
 
+@media (max-width: 380px) and (max-height: 800px) {
+  .portfolio .splash {
+    padding: 10px 10px 0px 10px;
+  }
+}
+
 .projects {
   width: 20%;
   height: 350px;
@@ -4219,6 +4260,10 @@ label.error:not(input.error) {
 }
 
 .rotationContainer .board {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5%;
   border: 2px solid #979696;
   background-color: white;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -4230,9 +4275,6 @@ label.error:not(input.error) {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -4242,7 +4284,6 @@ label.error:not(input.error) {
   height: 200px;
   z-index: 500;
   top: 60px;
-  background-size: 85%;
   opacity: 0.2;
 }
 
@@ -4262,7 +4303,6 @@ label.error:not(input.error) {
 
 .rotationContainer .center {
   background-image: url(../assets/portfolio/2.png);
-  background-size: 85%;
   z-index: 1000;
   width: 400px;
   height: 310px;
@@ -4281,6 +4321,12 @@ label.error:not(input.error) {
   .rotationContainer .center {
     position: static;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 380px) and (max-height: 800px) {
+  .rotationContainer .center {
+    height: 160px;
   }
 }
 
@@ -4462,6 +4508,12 @@ label.error:not(input.error) {
   }
 }
 
+@media (max-width: 380px) and (max-height: 800px) {
+  .projectInfo .descriptionContainer {
+    height: 130px;
+  }
+}
+
 .projectInfo .descriptionContainer p {
   font-size: 1.55rem;
   color: #191919;
@@ -4510,14 +4562,13 @@ label.error:not(input.error) {
 @media (max-width: 1300px) {
   .projectInfo .linkContainer {
     margin-top: 0px;
-    padding: 0px;
     padding-left: 10px;
   }
 }
 
 @media (max-width: 1070px) {
   .projectInfo .linkContainer {
-    padding: 0px;
+    padding-left: 0px;
   }
 }
 
@@ -4535,6 +4586,12 @@ label.error:not(input.error) {
 @media (max-width: 1070px) {
   .projectInfo a.linkButton {
     width: 90px;
+  }
+}
+
+@media (max-width: 380px) and (max-height: 800px) {
+  .projectInfo a.linkButton {
+    padding: 0px;
   }
 }
 
@@ -4608,6 +4665,13 @@ label.error:not(input.error) {
   }
 }
 
+@media (max-width: 380px) and (max-height: 800px) {
+  .projectInfo .skillsContainer {
+    margin-top: 15px;
+    width: 100%;
+  }
+}
+
 .projectInfo .skillsContainer ul.skills {
   width: 100%;
   height: 100%;
@@ -4675,6 +4739,12 @@ label.error:not(input.error) {
 @media (max-width: 690px) and (max-height: 1000px) {
   .projectInfo .skillsContainer ul.skills li {
     margin: 0px 15px;
+  }
+}
+
+@media (max-width: 380px) and (max-height: 800px) {
+  .projectInfo .skillsContainer ul.skills li {
+    padding-left: 0px 5px;
   }
 }
 
@@ -5317,6 +5387,12 @@ li.blog a h3 {
   }
 }
 
+@media (max-width: 380px) and (max-height: 800px) {
+  .wrapper.contact {
+    padding: 15px 0px 80px 0px;
+  }
+}
+
 @media (max-width: 1070px) {
   .wrapper.contact:after {
     display: none;
@@ -5332,6 +5408,12 @@ li.blog a h3 {
 @media (max-width: 1070px) and (max-height: 1000px) {
   .contact aside {
     height: 55%;
+  }
+}
+
+@media (max-width: 380px) and (max-height: 800px) {
+  .contact aside {
+    width: 100%;
   }
 }
 
@@ -5419,6 +5501,12 @@ li.blog a h3 {
 @media (max-width: 1070px) and (max-height: 1000px) {
   .contact .splash {
     padding: 10px 30px;
+  }
+}
+
+@media (max-width: 380px) and (max-height: 800px) {
+  .contact .splash {
+    width: 100%;
   }
 }
 
@@ -5863,7 +5951,7 @@ aside {
   font-size: 2.2rem;
   -webkit-transition: all 1s;
   transition: all 1s;
-  color: #006eff;
+  color: #00ffdd;
 }
 
 .splash {

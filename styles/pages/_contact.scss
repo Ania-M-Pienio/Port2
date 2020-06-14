@@ -4,6 +4,10 @@
     // 1070w x 1000v
     padding: 15px 15px 80px 15px;
   }
+  @include mobile-portS-vw {
+    // 365w x 800v
+    padding: 15px 0px 80px 0px;
+  }
 }
 
 .wrapper.contact:after {
@@ -21,6 +25,10 @@
   @include mobile-land-vw {
     // 1070w x 1000v
     height: 55%;
+  }
+  @include mobile-portS-vw {
+    // 365w x 800v
+    width: 100%;
   }
 }
 
@@ -99,6 +107,10 @@
   @include mobile-land-vw {
     // 1070w x 1000v
     padding: 10px 30px;
+  }
+  @include mobile-portS-vw {
+    // 365w x 800v
+    width: 100%;
   }
 }
 
