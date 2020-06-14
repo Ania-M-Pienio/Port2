@@ -272,14 +272,14 @@ app.handleForm = function () {
     // messages to appear when invalid
     messages: {
       name: {
-        required: "Please provide your name",
+        required: "Name Required",
       },
       _replyto: {
-        email: "This is not a valid email address",
-        required: "Please provide your email",
+        email: "Valid Email Required",
+        required: "Email Required",
       },
       message: {
-        required: "Please write a message",
+        required: "Message Required",
       },
     },
     // submits once all validation clears
@@ -674,6 +674,7 @@ app.freshProject = function (project, isSelected) {
   return `
     <li aria-role="button">
         <div
+          aria-role="button"
           id="${project.id}" 
           class="project ${selectedClass}"
             >

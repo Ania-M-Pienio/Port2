@@ -277,7 +277,7 @@ a.logo .logo1.expand {
 a.logo:focus h3,
 a.logo:hover h3,
 a.logo:active h3 {
-  background-color: #FF8585;
+  background-color: #ff0040;
   color: white;
 }
 
@@ -290,7 +290,7 @@ a.logo:focus .logo1 {
 a.logo h3 {
   padding: 3% 3%;
   margin-top: -30px;
-  border: 2px solid #FF8585;
+  border: 2px solid #ff0040;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   background-color: white;
@@ -399,7 +399,7 @@ a.logo h3 {
 .menu button ion-icon {
   -webkit-transition: all 1s;
   transition: all 1s;
-  color: #FF8585;
+  color: #ff0040;
 }
 
 .menu button.desk {
@@ -433,7 +433,7 @@ nav {
   padding-top: 80px;
   -webkit-transition: all 1s;
   transition: all 1s;
-  border-right: 2px solid #FF8585;
+  border-right: 2px solid #ff0040;
   opacity: 1;
   position: relative;
   z-index: 500;
@@ -538,12 +538,12 @@ nav.collapse:not(.show) {
 }
 
 .mobileMenu ul li.selected {
-  background-color: #FF8585;
+  background-color: #ff0040;
   z-index: 1000;
 }
 
 .mobileMenu ul li {
-  border: 2px solid #FF8585;
+  border: 2px solid #ff0040;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: relative;
@@ -551,7 +551,7 @@ nav.collapse:not(.show) {
 }
 
 .mobileMenu ul li a.selected {
-  background-color: #FF8585;
+  background-color: #ff0040;
 }
 
 .mobileMenu ul li a.selected h3,
@@ -576,7 +576,7 @@ nav.collapse:not(.show) {
 }
 
 .mobileMenu ul li a:hover, .mobileMenu ul li a:focus, .mobileMenu ul li a:active {
-  background-color: #FF8585;
+  background-color: #ff0040;
 }
 
 .mobileMenu ul li a:hover h3,
@@ -1578,7 +1578,7 @@ fieldset textarea {
 
 fieldset button {
   width: 47%;
-  border: 2px solid #FF8585;
+  border: 2px solid #ff0040;
   background-color: white;
   text-transform: uppercase;
   margin-top: 10px;
@@ -1603,7 +1603,7 @@ fieldset button {
 }
 
 fieldset button:hover, fieldset button:focus {
-  background-color: #FF8585;
+  background-color: #ff0040;
 }
 
 fieldset button:hover h3,
@@ -1923,7 +1923,7 @@ label.error:not(input.error) {
 }
 
 .home .splash ul li {
-  border: 2px solid #FF8585;
+  border: 2px solid #ff0040;
   position: relative;
 }
 
@@ -2039,7 +2039,7 @@ label.error:not(input.error) {
 }
 
 .splash a.mobile:hover, .splash a.mobile:focus, .splash a.mobile:active {
-  background-color: #FF8585;
+  background-color: #ff0040;
 }
 
 .splash a.mobile:hover h3,
@@ -2055,7 +2055,7 @@ label.error:not(input.error) {
 }
 
 .splash a.mobile ion-icon {
-  color: #FF8585;
+  color: #ff0040;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -2160,7 +2160,7 @@ label.error:not(input.error) {
 
 .meContainer li {
   padding: 30px 30px 0 30px;
-  border: 2px solid #FF8585;
+  border: 2px solid #ff0040;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -2208,7 +2208,7 @@ label.error:not(input.error) {
 @media (max-width: 1070px) {
   .meContainer li.today {
     overflow-y: scroll;
-    scrollbar-color: #FF8585 rgba(0, 128, 0, 0);
+    scrollbar-color: #ff0040 rgba(0, 128, 0, 0);
     scrollbar-width: thin;
   }
 }
@@ -2216,7 +2216,7 @@ label.error:not(input.error) {
 @media (max-width: 1070px) and (max-height: 1000px) {
   .meContainer li.today {
     overflow-y: scroll;
-    scrollbar-color: #FF8585 rgba(0, 128, 0, 0);
+    scrollbar-color: #ff0040 rgba(0, 128, 0, 0);
     scrollbar-width: thin;
   }
 }
@@ -2292,7 +2292,7 @@ label.error:not(input.error) {
 
 .meContainer li.hello h5 {
   width: 100%;
-  color: #FF8585;
+  color: #ff0040;
   opacity: 0;
   position: relative;
   text-align: left;
@@ -2502,7 +2502,7 @@ label.error:not(input.error) {
   grid-auto-flow: row;
   grid-gap: 20px;
   padding: 30px;
-  border: 2px solid #FF8585;
+  border: 2px solid #ff0040;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -2748,7 +2748,7 @@ label.error:not(input.error) {
 
 .projects ul li button:hover h3,
 .projects ul li button:focus h3 {
-  color: #FF8585;
+  color: #ff0040;
 }
 
 .projects ul li button h3 {
@@ -2773,7 +2773,7 @@ label.error:not(input.error) {
 
 .projects ul li button.selected h3 {
   font-size: 2.3rem;
-  color: #FF8585;
+  color: #ff0040;
 }
 
 .projects ul li button.selected h3 span {
@@ -2918,7 +2918,7 @@ label.error:not(input.error) {
 
 .projects.mobile ul li div.project:hover h3,
 .projects.mobile ul li div.project:focus h3 {
-  color: #FF8585;
+  color: #ff0040;
 }
 
 .projects.mobile ul li div.project.selected {
@@ -2928,7 +2928,7 @@ label.error:not(input.error) {
 
 .projects.mobile ul li div.project.selected h3 {
   font-size: 2.15rem;
-  color: #FF8585;
+  color: #ff0040;
 }
 
 @media (max-width: 800px) {
@@ -3158,8 +3158,8 @@ label.error:not(input.error) {
 }
 
 .rotationControl button:hover, .rotationControl button:focus, .rotationControl button:active {
-  background-color: #FF8585;
-  border: 2px solid #FF8585;
+  background-color: #ff0040;
+  border: 2px solid #ff0040;
 }
 
 .rotationControl button:hover ion-icon,
@@ -3351,7 +3351,7 @@ label.error:not(input.error) {
   width: 120px;
   padding: 5px 0;
   background-color: white;
-  border: 2px solid #FF8585;
+  border: 2px solid #ff0040;
 }
 
 @media (max-width: 1070px) {
@@ -3367,7 +3367,7 @@ label.error:not(input.error) {
 }
 
 .projectInfo a.linkButton:focus, .projectInfo a.linkButton:hover, .projectInfo a.linkButton:active {
-  background-color: #FF8585;
+  background-color: #ff0040;
   color: white;
 }
 
@@ -3796,7 +3796,7 @@ label.error:not(input.error) {
   grid-auto-flow: row;
   grid-gap: 20px;
   padding: 30px;
-  border: 2px solid #FF8585;
+  border: 2px solid #ff0040;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -4042,7 +4042,7 @@ label.error:not(input.error) {
 
 .projects ul li button:hover h3,
 .projects ul li button:focus h3 {
-  color: #FF8585;
+  color: #ff0040;
 }
 
 .projects ul li button h3 {
@@ -4067,7 +4067,7 @@ label.error:not(input.error) {
 
 .projects ul li button.selected h3 {
   font-size: 2.3rem;
-  color: #FF8585;
+  color: #ff0040;
 }
 
 .projects ul li button.selected h3 span {
@@ -4212,7 +4212,7 @@ label.error:not(input.error) {
 
 .projects.mobile ul li div.project:hover h3,
 .projects.mobile ul li div.project:focus h3 {
-  color: #FF8585;
+  color: #ff0040;
 }
 
 .projects.mobile ul li div.project.selected {
@@ -4222,7 +4222,7 @@ label.error:not(input.error) {
 
 .projects.mobile ul li div.project.selected h3 {
   font-size: 2.15rem;
-  color: #FF8585;
+  color: #ff0040;
 }
 
 @media (max-width: 800px) {
@@ -4452,8 +4452,8 @@ label.error:not(input.error) {
 }
 
 .rotationControl button:hover, .rotationControl button:focus, .rotationControl button:active {
-  background-color: #FF8585;
-  border: 2px solid #FF8585;
+  background-color: #ff0040;
+  border: 2px solid #ff0040;
 }
 
 .rotationControl button:hover ion-icon,
@@ -4645,7 +4645,7 @@ label.error:not(input.error) {
   width: 120px;
   padding: 5px 0;
   background-color: white;
-  border: 2px solid #FF8585;
+  border: 2px solid #ff0040;
 }
 
 @media (max-width: 1070px) {
@@ -4661,7 +4661,7 @@ label.error:not(input.error) {
 }
 
 .projectInfo a.linkButton:focus, .projectInfo a.linkButton:hover, .projectInfo a.linkButton:active {
-  background-color: #FF8585;
+  background-color: #ff0040;
   color: white;
 }
 
@@ -5076,7 +5076,7 @@ label.error:not(input.error) {
 }
 
 .next .splash ul li {
-  border: 2px solid #FF8585;
+  border: 2px solid #ff0040;
 }
 
 .next .splash ul li h5 {
@@ -5594,7 +5594,7 @@ li.blog a h3 {
 }
 
 .messageTitle h5 {
-  color: #FF8585;
+  color: #ff0040;
   opacity: 0.8;
   font-size: 8rem;
 }
@@ -5639,13 +5639,13 @@ li.blog a h3 {
           transform: scale(1.2);
   position: relative;
   left: 1px;
-  color: #FF8585;
+  color: #ff0040;
 }
 
 .messageTitle a.email:hover p,
 .messageTitle a.email:focus p,
 .messageTitle a.email:active p {
-  color: #FF8585;
+  color: #ff0040;
 }
 
 .messageTitle a.email p {
@@ -5865,7 +5865,7 @@ a:focus, a:hover {
 }
 
 a.selected {
-  color: #FF8585;
+  color: #ff0040;
   cursor: auto;
   font-size: 4rem;
 }
@@ -6022,7 +6022,7 @@ aside {
 .social ul li a:active ion-icon {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
-  color: #FF8585;
+  color: #ff0040;
 }
 
 .social ul li a ion-icon {
@@ -6071,7 +6071,7 @@ aside {
 }
 
 .pagination a ion-icon {
-  color: #FF8585;
+  color: #ff0040;
   font-size: 3.9rem;
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -6128,7 +6128,7 @@ aside {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #FF8585;
+  background: #ff0040;
 }
 
 /* Handle on hover */
