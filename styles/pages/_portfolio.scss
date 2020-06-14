@@ -175,6 +175,10 @@
     // 690w x 1000v
     height: 50px;
   }
+  @include mobile-portS-vw {
+    // 380w x 800v
+    height: 35px;
+  }
 
   h2 {
     margin-top: 0px;
@@ -327,7 +331,6 @@
     display: flex;
     justify-content: center;
     position: absolute;
-
     transition: all 1s;
   }
   .side {
@@ -366,6 +369,11 @@
     }
     @include mobile-portS-vw {
       height: 160px;
+    }
+    @include mobile-portXS-vw {
+      // 380w x 580v
+      width: 200px;
+      height: 140px;
     }
   }
 
@@ -526,6 +534,10 @@
       @include mobile-port-vw {
         // 690w x 1000v
         font-size: 1.15rem;
+      }
+      @include mobile-portXS-vw {
+        // 380w x 580v
+        font-size: 1rem;
       }
     }
   }
