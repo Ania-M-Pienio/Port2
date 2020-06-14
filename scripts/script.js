@@ -140,7 +140,7 @@ app.skills = {
     asset: "../assets/icons/colour/5.png",
   },
   javascript: {
-    title: "JaveScript",
+    title: "JavaScript",
     asset: "../assets/icons/colour/8.png",
   },
   typescript: {

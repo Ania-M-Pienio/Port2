@@ -277,7 +277,7 @@ a.logo .logo1.expand {
 a.logo:focus h3,
 a.logo:hover h3,
 a.logo:active h3 {
-  background-color: #ff0040;
+  background-color: #FF8585;
   color: white;
 }
 
@@ -290,7 +290,7 @@ a.logo:focus .logo1 {
 a.logo h3 {
   padding: 3% 3%;
   margin-top: -30px;
-  border: 2px solid #ff0040;
+  border: 2px solid #FF8585;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   background-color: white;
@@ -399,7 +399,7 @@ a.logo h3 {
 .menu button ion-icon {
   -webkit-transition: all 1s;
   transition: all 1s;
-  color: #ff0040;
+  color: #FF8585;
 }
 
 .menu button.desk {
@@ -433,7 +433,7 @@ nav {
   padding-top: 80px;
   -webkit-transition: all 1s;
   transition: all 1s;
-  border-right: 2px solid #ff0040;
+  border-right: 2px solid #FF8585;
   opacity: 1;
   position: relative;
   z-index: 500;
@@ -538,12 +538,12 @@ nav.collapse:not(.show) {
 }
 
 .mobileMenu ul li.selected {
-  background-color: #ff0040;
+  background-color: #FF8585;
   z-index: 1000;
 }
 
 .mobileMenu ul li {
-  border: 2px solid #ff0040;
+  border: 2px solid #FF8585;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: relative;
@@ -551,7 +551,7 @@ nav.collapse:not(.show) {
 }
 
 .mobileMenu ul li a.selected {
-  background-color: #ff0040;
+  background-color: #FF8585;
 }
 
 .mobileMenu ul li a.selected h3,
@@ -576,7 +576,7 @@ nav.collapse:not(.show) {
 }
 
 .mobileMenu ul li a:hover, .mobileMenu ul li a:focus, .mobileMenu ul li a:active {
-  background-color: #ff0040;
+  background-color: #FF8585;
 }
 
 .mobileMenu ul li a:hover h3,
@@ -1537,7 +1537,7 @@ fieldset label span {
 fieldset input {
   padding: 15px 20px;
   width: 100%;
-  border: 2px solid #979696;
+  border: 2px solid #7c7b7b;
   background-color: white;
 }
 
@@ -1567,7 +1567,7 @@ fieldset textarea {
   width: 100%;
   padding: 15px 20px;
   resize: vertical;
-  border: 2px solid #979696;
+  border: 2px solid #7c7b7b;
 }
 
 @media (max-width: 1070px) {
@@ -1584,7 +1584,7 @@ fieldset textarea {
 
 fieldset button {
   width: 47%;
-  border: 2px solid #ff0040;
+  border: 2px solid #FF8585;
   background-color: white;
   text-transform: uppercase;
   margin-top: 10px;
@@ -1609,7 +1609,7 @@ fieldset button {
 }
 
 fieldset button:hover, fieldset button:focus {
-  background-color: #ff0040;
+  background-color: #FF8585;
 }
 
 fieldset button:hover h3,
@@ -1929,7 +1929,7 @@ label.error:not(input.error) {
 }
 
 .home .splash ul li {
-  border: 2px solid #ff0040;
+  border: 2px solid #FF8585;
   position: relative;
 }
 
@@ -2045,7 +2045,7 @@ label.error:not(input.error) {
 }
 
 .splash a.mobile:hover, .splash a.mobile:focus, .splash a.mobile:active {
-  background-color: #ff0040;
+  background-color: #FF8585;
 }
 
 .splash a.mobile:hover h3,
@@ -2061,7 +2061,7 @@ label.error:not(input.error) {
 }
 
 .splash a.mobile ion-icon {
-  color: #ff0040;
+  color: #FF8585;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -2072,7 +2072,7 @@ label.error:not(input.error) {
 }
 
 .splash ul li:nth-of-type(odd) a.mobile ion-icon {
-  color: #979696;
+  color: #7c7b7b;
 }
 
 .splash ul li:nth-of-type(odd) a.mobile:hover, .splash ul li:nth-of-type(odd) a.mobile:focus, .splash ul li:nth-of-type(odd) a.mobile:active {
@@ -2166,7 +2166,7 @@ label.error:not(input.error) {
 
 .meContainer li {
   padding: 30px 30px 0 30px;
-  border: 2px solid #ff0040;
+  border: 2px solid #FF8585;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -2214,7 +2214,7 @@ label.error:not(input.error) {
 @media (max-width: 1070px) {
   .meContainer li.today {
     overflow-y: scroll;
-    scrollbar-color: #ff0040 rgba(0, 128, 0, 0);
+    scrollbar-color: #FF8585 rgba(0, 128, 0, 0);
     scrollbar-width: thin;
   }
 }
@@ -2222,7 +2222,7 @@ label.error:not(input.error) {
 @media (max-width: 1070px) and (max-height: 1000px) {
   .meContainer li.today {
     overflow-y: scroll;
-    scrollbar-color: #ff0040 rgba(0, 128, 0, 0);
+    scrollbar-color: #FF8585 rgba(0, 128, 0, 0);
     scrollbar-width: thin;
   }
 }
@@ -2298,7 +2298,7 @@ label.error:not(input.error) {
 
 .meContainer li.hello h5 {
   width: 100%;
-  color: #ff0040;
+  color: #FF8585;
   opacity: 0;
   position: relative;
   text-align: left;
@@ -2400,7 +2400,7 @@ label.error:not(input.error) {
   display: block;
   margin: 0 auto;
   font-size: 2.2rem;
-  color: #979696;
+  color: #7c7b7b;
   opacity: 0.75;
   margin-top: 70px;
 }
@@ -2508,7 +2508,7 @@ label.error:not(input.error) {
   grid-auto-flow: row;
   grid-gap: 20px;
   padding: 30px;
-  border: 2px solid #ff0040;
+  border: 2px solid #FF8585;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -2754,7 +2754,7 @@ label.error:not(input.error) {
 
 .projects ul li button:hover h3,
 .projects ul li button:focus h3 {
-  color: #ff0040;
+  color: #FF8585;
 }
 
 .projects ul li button h3 {
@@ -2779,7 +2779,7 @@ label.error:not(input.error) {
 
 .projects ul li button.selected h3 {
   font-size: 2.3rem;
-  color: #ff0040;
+  color: #FF8585;
 }
 
 .projects ul li button.selected h3 span {
@@ -2924,7 +2924,7 @@ label.error:not(input.error) {
 
 .projects.mobile ul li div.project:hover h3,
 .projects.mobile ul li div.project:focus h3 {
-  color: #ff0040;
+  color: #FF8585;
 }
 
 .projects.mobile ul li div.project.selected {
@@ -2934,7 +2934,7 @@ label.error:not(input.error) {
 
 .projects.mobile ul li div.project.selected h3 {
   font-size: 2.15rem;
-  color: #ff0040;
+  color: #FF8585;
 }
 
 @media (max-width: 800px) {
@@ -3028,7 +3028,7 @@ label.error:not(input.error) {
   background-repeat: no-repeat;
   background-position: center;
   padding: 5%;
-  border: 2px solid #979696;
+  border: 2px solid #7c7b7b;
   background-color: white;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -3164,8 +3164,8 @@ label.error:not(input.error) {
 }
 
 .rotationControl button:hover, .rotationControl button:focus, .rotationControl button:active {
-  background-color: #ff0040;
-  border: 2px solid #ff0040;
+  background-color: #FF8585;
+  border: 2px solid #FF8585;
 }
 
 .rotationControl button:hover ion-icon,
@@ -3357,7 +3357,7 @@ label.error:not(input.error) {
   width: 120px;
   padding: 5px 0;
   background-color: white;
-  border: 2px solid #ff0040;
+  border: 2px solid #FF8585;
 }
 
 @media (max-width: 1070px) {
@@ -3373,7 +3373,7 @@ label.error:not(input.error) {
 }
 
 .projectInfo a.linkButton:focus, .projectInfo a.linkButton:hover, .projectInfo a.linkButton:active {
-  background-color: #ff0040;
+  background-color: #FF8585;
   color: white;
 }
 
@@ -3802,7 +3802,7 @@ label.error:not(input.error) {
   grid-auto-flow: row;
   grid-gap: 20px;
   padding: 30px;
-  border: 2px solid #ff0040;
+  border: 2px solid #FF8585;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -4048,7 +4048,7 @@ label.error:not(input.error) {
 
 .projects ul li button:hover h3,
 .projects ul li button:focus h3 {
-  color: #ff0040;
+  color: #FF8585;
 }
 
 .projects ul li button h3 {
@@ -4073,7 +4073,7 @@ label.error:not(input.error) {
 
 .projects ul li button.selected h3 {
   font-size: 2.3rem;
-  color: #ff0040;
+  color: #FF8585;
 }
 
 .projects ul li button.selected h3 span {
@@ -4218,7 +4218,7 @@ label.error:not(input.error) {
 
 .projects.mobile ul li div.project:hover h3,
 .projects.mobile ul li div.project:focus h3 {
-  color: #ff0040;
+  color: #FF8585;
 }
 
 .projects.mobile ul li div.project.selected {
@@ -4228,7 +4228,7 @@ label.error:not(input.error) {
 
 .projects.mobile ul li div.project.selected h3 {
   font-size: 2.15rem;
-  color: #ff0040;
+  color: #FF8585;
 }
 
 @media (max-width: 800px) {
@@ -4322,7 +4322,7 @@ label.error:not(input.error) {
   background-repeat: no-repeat;
   background-position: center;
   padding: 5%;
-  border: 2px solid #979696;
+  border: 2px solid #7c7b7b;
   background-color: white;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -4458,8 +4458,8 @@ label.error:not(input.error) {
 }
 
 .rotationControl button:hover, .rotationControl button:focus, .rotationControl button:active {
-  background-color: #ff0040;
-  border: 2px solid #ff0040;
+  background-color: #FF8585;
+  border: 2px solid #FF8585;
 }
 
 .rotationControl button:hover ion-icon,
@@ -4651,7 +4651,7 @@ label.error:not(input.error) {
   width: 120px;
   padding: 5px 0;
   background-color: white;
-  border: 2px solid #ff0040;
+  border: 2px solid #FF8585;
 }
 
 @media (max-width: 1070px) {
@@ -4667,7 +4667,7 @@ label.error:not(input.error) {
 }
 
 .projectInfo a.linkButton:focus, .projectInfo a.linkButton:hover, .projectInfo a.linkButton:active {
-  background-color: #ff0040;
+  background-color: #FF8585;
   color: white;
 }
 
@@ -5082,7 +5082,7 @@ label.error:not(input.error) {
 }
 
 .next .splash ul li {
-  border: 2px solid #ff0040;
+  border: 2px solid #FF8585;
 }
 
 .next .splash ul li h5 {
@@ -5331,7 +5331,7 @@ li.build h4 a h4 ion-icon {
 }
 
 li.build h5 {
-  color: #979696;
+  color: #7c7b7b;
 }
 
 li.creative {
@@ -5600,7 +5600,7 @@ li.blog a h3 {
 }
 
 .messageTitle h5 {
-  color: #ff0040;
+  color: #FF8585;
   opacity: 0.8;
   font-size: 8rem;
 }
@@ -5645,13 +5645,13 @@ li.blog a h3 {
           transform: scale(1.2);
   position: relative;
   left: 1px;
-  color: #ff0040;
+  color: #FF8585;
 }
 
 .messageTitle a.email:hover p,
 .messageTitle a.email:focus p,
 .messageTitle a.email:active p {
-  color: #ff0040;
+  color: #FF8585;
 }
 
 .messageTitle a.email p {
@@ -5714,7 +5714,7 @@ html {
 }
 
 body {
-  background-color: #979696;
+  background-color: #7c7b7b;
   padding: 40px 0;
 }
 
@@ -5848,7 +5848,7 @@ img {
 
 ion-icon {
   font-size: 5rem;
-  color: #4a4a4a;
+  color: #2f2f2f;
 }
 
 a {
@@ -5871,7 +5871,7 @@ a:focus, a:hover {
 }
 
 a.selected {
-  color: #ff0040;
+  color: #FF8585;
   cursor: auto;
   font-size: 4rem;
 }
@@ -5953,7 +5953,7 @@ p {
   font-family: "Domine", serif;
   font-size: 1.6rem;
   font-weight: normal;
-  color: #979696;
+  color: #7c7b7b;
   letter-spacing: 1.5;
   line-height: 1.6;
   text-align: left;
@@ -6028,14 +6028,13 @@ aside {
 .social ul li a:active ion-icon {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
-  color: #ff0040;
+  color: #FF8585;
 }
 
 .social ul li a ion-icon {
   font-size: 2.2rem;
   -webkit-transition: all 1s;
   transition: all 1s;
-  color: #ff0040;
 }
 
 .splash {
@@ -6077,7 +6076,7 @@ aside {
 }
 
 .pagination a ion-icon {
-  color: #ff0040;
+  color: #FF8585;
   font-size: 3.9rem;
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -6134,7 +6133,7 @@ aside {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ff0040;
+  background: #FF8585;
 }
 
 /* Handle on hover */
