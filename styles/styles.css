@@ -1742,7 +1742,7 @@ textarea:focus::placeholder {
 
 @media (max-width: 1070px) and (max-height: 1000px) {
   .formBox.theMessage {
-    height: 150px;
+    height: 110px;
   }
 }
 
@@ -1816,7 +1816,7 @@ label.error:not(input.error) {
 
 @media (max-width: 1070px) {
   .home aside {
-    height: 60%;
+    height: 50%;
   }
 }
 
@@ -3223,14 +3223,14 @@ label.error:not(input.error) {
 @media (max-width: 1300px) {
   .projectInfo .linkContainer {
     margin-top: 0px;
-    padding: 15px 0;
+    padding: 0px;
     padding-left: 10px;
   }
 }
 
 @media (max-width: 1070px) {
   .projectInfo .linkContainer {
-    padding: 10px 0;
+    padding: 0px;
   }
 }
 
@@ -4463,14 +4463,14 @@ label.error:not(input.error) {
 @media (max-width: 1300px) {
   .projectInfo .linkContainer {
     margin-top: 0px;
-    padding: 15px 0;
+    padding: 0px;
     padding-left: 10px;
   }
 }
 
 @media (max-width: 1070px) {
   .projectInfo .linkContainer {
-    padding: 10px 0;
+    padding: 0px;
   }
 }
 
