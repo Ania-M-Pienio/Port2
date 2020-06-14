@@ -1820,6 +1820,22 @@ label.error:not(input.error) {
   }
 }
 
+@media (max-width: 365px) and (max-height: 580px) {
+  .wrapper.home {
+    height: 85%;
+    min-height: 85%;
+    max-height: 85%;
+  }
+}
+
+@media (max-width: 365px) and (max-height: 580px) {
+  header#home {
+    height: 100vh;
+    min-height: 500px;
+    max-height: 500px;
+  }
+}
+
 @media (max-width: 1070px) {
   .home article {
     height: 50%;
@@ -5563,14 +5579,6 @@ header {
   }
 }
 
-@media (max-width: 365px) and (max-height: 580px) {
-  header {
-    height: 100vh;
-    min-height: 500px;
-    max-height: 500px;
-  }
-}
-
 .wrapper {
   max-width: 1480px;
   height: 92%;
@@ -5612,14 +5620,6 @@ header {
 @media (max-width: 800px) {
   .wrapper {
     padding: 0 0 60px;
-  }
-}
-
-@media (max-width: 365px) and (max-height: 580px) {
-  .wrapper {
-    height: 100%;
-    min-height: 100%;
-    max-height: 100%;
   }
 }
 
