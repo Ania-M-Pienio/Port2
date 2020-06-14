@@ -1496,6 +1496,12 @@ fieldset {
   }
 }
 
+@media (max-width: 380px) and (max-height: 800px) {
+  fieldset {
+    font-size: 1.2rem;
+  }
+}
+
 fieldset label {
   font-family: "Oswald", sans-serif;
   font-size: 2rem;

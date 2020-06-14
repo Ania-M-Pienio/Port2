@@ -30,6 +30,10 @@ fieldset {
     // 1070w x 1000v
     font-size: 1.5rem;
   }
+  @include mobile-portS-vw {
+    // 380w x 800v
+    font-size: 1.2rem;
+  }
   label {
     @include Ossie(2rem, normal, $font, normal, normal, center);
     text-transform: uppercase;
