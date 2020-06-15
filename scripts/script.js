@@ -688,28 +688,28 @@ app.freshProject = function (project, isSelected) {
 
 // unsleeps heroku dynos
 app.unsleep = function () {
-  // $.ajax({
-  //   url: "https://robo-g-serve.herokuapp.com/awake",
-  //   method: "GET",
-  //   contentType: "json",
-  // }).then((data) => {});
-  // $.ajax({
-  //   url: "https://teams-new-api.herokuapp.com/employees",
-  //   method: "GET",
-  //   contentType: "json",
-  // }).then((data) => {});
-  // $.ajax({
-  //   url: "https://team-g-serve.herokuapp.com/awake",
-  //   method: "GET",
-  //   contentType: "json",
-  // }).then((data) => {
-  // });
-  // $.ajax({
-  //   url: "https://t4minty.herokuapp.com/",
-  //   method: "GET",
-  //   contentType: "json",
-  // }).then((data) => {
-  // });
+  $.ajax({
+    url: "https://robo-g-serve.herokuapp.com/awake",
+    method: "GET",
+    contentType: "json",
+  }).then((data) => {});
+  $.ajax({
+    url: "https://teams-new-api.herokuapp.com/employees",
+    method: "GET",
+    contentType: "json",
+  }).then((data) => {});
+  $.ajax({
+    url: "https://team-g-serve.herokuapp.com/awake",
+    method: "GET",
+    contentType: "json",
+  }).then((data) => {
+  });
+  $.ajax({
+    url: "https://t4minty.herokuapp.com/",
+    method: "GET",
+    contentType: "json",
+  }).then((data) => {
+  });
 };
 
 /****************************************************************/
