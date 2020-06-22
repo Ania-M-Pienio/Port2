@@ -69,7 +69,8 @@ app.que = [
     liveLink: "https://ania-m-pienio.github.io/Flickist/",
     codeLink: "https://github.com/Ania-M-Pienio/Flickist",
     asset: "../assets/portfolio/6.png",
-    description: `An application that allows users to search for movies or tv shows and add them to a personal watch list. Media is made available via an external API to which the app makes ajax calls.`,
+    description: `An application that allows users to search for movies or tv shows and add them to a personal  
+                  watch list. Media is made available via an external API (MovieDB).  Users can also view detailed information about each media and access previous searches for quick recall.`,
     skills: ["javascript", "sass", "jquery", "html5", "css3"],
   },
   {
@@ -718,14 +719,12 @@ app.unsleep = function () {
     url: "https://team-g-serve.herokuapp.com/awake",
     method: "GET",
     contentType: "json",
-  }).then((data) => {
-  });
+  }).then((data) => {});
   $.ajax({
     url: "https://t4minty.herokuapp.com/",
     method: "GET",
     contentType: "json",
-  }).then((data) => {
-  });
+  }).then((data) => {});
 };
 
 /****************************************************************/
