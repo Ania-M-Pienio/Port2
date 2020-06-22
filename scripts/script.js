@@ -20,7 +20,14 @@ app.amount = 3;
 app.menuAmount = 5;
 app.half = 2;
 app.stage = [];
-app.mobileMenu = ["nutrinav", "bridem8", "clickfly", "roboguild", "mintynews"];
+app.mobileMenu = [
+  "bridem8",
+  "flickist",
+  "clickfly",
+  "roboguild",
+  "mintynews",
+  "nutrinav",
+];
 app.que = [
   {
     id: "roboguild",
@@ -54,6 +61,15 @@ app.que = [
                   and then copy the CSS code for that style onto their
                   clipboard. Users can choose the overall style of the button
                   and then customize its text, colours, outline and fill.`,
+    skills: ["javascript", "sass", "jquery", "html5", "css3"],
+  },
+  {
+    id: "flickist",
+    title: "Flickist",
+    liveLink: "https://ania-m-pienio.github.io/Flickist/",
+    codeLink: "https://github.com/Ania-M-Pienio/Flickist",
+    asset: "../assets/portfolio/6.png",
+    description: `An application that allows users to search for movies or tv shows and add them to a personal watch list. Media is made available via an external API to which the app makes ajax calls.`,
     skills: ["javascript", "sass", "jquery", "html5", "css3"],
   },
   {
