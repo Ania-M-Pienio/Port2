@@ -314,14 +314,14 @@ a.logo h3 {
   }
 }
 
-@media (max-width: 380px) and (max-height: 680px) {
+@media (max-width: 400px) and (max-height: 680px) {
   a.logo {
     cursor: pointer;
     pointer-events: visible;
   }
 }
 
-@media (max-width: 380px) and (max-height: 680px) {
+@media (max-width: 400px) and (max-height: 680px) {
   #home.logo h3 {
     display: block;
   }
@@ -390,7 +390,7 @@ a.logo h3 {
   }
 }
 
-@media (max-width: 380px) and (max-height: 680px) {
+@media (max-width: 400px) and (max-height: 680px) {
   .menu {
     display: none;
   }
@@ -523,7 +523,7 @@ nav.collapse:not(.show) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 680px) {
+@media (max-width: 400px) and (max-height: 680px) {
   .mobileMenu {
     padding: 10px 0px;
     position: absolute;
@@ -635,7 +635,7 @@ nav.collapse:not(.show) {
           transform: scale(0);
 }
 
-@media (max-width: 380px) and (max-height: 680px) {
+@media (max-width: 400px) and (max-height: 680px) {
   .wrapper.home .mobileMenu {
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -1514,7 +1514,7 @@ fieldset {
   }
 }
 
-@media (max-width: 380px) and (max-height: 800px) {
+@media (max-width: 400px) and (max-height: 800px) {
   fieldset {
     font-size: 1.2rem;
   }
@@ -1575,7 +1575,7 @@ fieldset label.error {
   }
 }
 
-@media (max-width: 380px) and (max-height: 800px) {
+@media (max-width: 400px) and (max-height: 800px) {
   fieldset label.error {
     font-size: 1rem;
   }
@@ -1690,7 +1690,7 @@ textarea::placeholder {
   }
 }
 
-@media (max-width: 380px) and (max-height: 800px) {
+@media (max-width: 400px) and (max-height: 800px) {
   input::-webkit-input-placeholder,
   textarea::-webkit-input-placeholder {
     font-size: 1.2rem;
@@ -1831,7 +1831,7 @@ textarea:focus::placeholder {
   }
 }
 
-@media (max-width: 1070px) and (max-height: 1000px) and (max-width: 380px) and (max-height: 800px) {
+@media (max-width: 1070px) and (max-height: 1000px) and (max-width: 400px) and (max-height: 800px) {
   .nameBox .formBox:first-of-type {
     margin-right: 15px;
   }
@@ -1877,7 +1877,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 680px) {
+@media (max-width: 400px) and (max-height: 680px) {
   .wrapper.home {
     height: 85%;
     min-height: 85%;
@@ -1885,7 +1885,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 680px) {
+@media (max-width: 400px) and (max-height: 680px) {
   header#home {
     height: 100vh;
     min-height: 500px;
@@ -1917,7 +1917,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 680px) {
+@media (max-width: 400px) and (max-height: 680px) {
   .home aside {
     display: none;
   }
@@ -2451,7 +2451,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 680px) {
+@media (max-width: 400px) and (max-height: 680px) {
   .skills aside {
     height: 65%;
   }
@@ -2639,7 +2639,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 680px) {
+@media (max-width: 400px) and (max-height: 680px) {
   .portfolio article {
     height: 18%;
   }
@@ -2697,7 +2697,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 680px) {
+@media (max-width: 400px) and (max-height: 680px) {
   .portfolio aside {
     height: 68%;
   }
@@ -2735,7 +2735,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 800px) {
+@media (max-width: 400px) and (max-height: 800px) {
   .portfolio .splash {
     padding: 10px 10px 0px 10px;
   }
@@ -2859,7 +2859,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 800px) {
+@media (max-width: 400px) and (max-height: 800px) {
   .projects.mobile {
     height: 35px;
   }
@@ -3124,13 +3124,13 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 800px) {
+@media (max-width: 400px) and (max-height: 800px) {
   .rotationContainer .center {
     height: 160px;
   }
 }
 
-@media (max-width: 380px) and (max-height: 680px) {
+@media (max-width: 400px) and (max-height: 680px) {
   .rotationContainer .center {
     width: 200px;
     height: 140px;
@@ -3316,7 +3316,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 800px) {
+@media (max-width: 400px) and (max-height: 800px) {
   .projectInfo .descriptionContainer {
     height: 130px;
   }
@@ -3353,7 +3353,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 680px) {
+@media (max-width: 400px) and (max-height: 680px) {
   .projectInfo .descriptionContainer p {
     font-size: 1rem;
   }
@@ -3403,7 +3403,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 800px) {
+@media (max-width: 400px) and (max-height: 800px) {
   .projectInfo a.linkButton {
     padding: 0px;
   }
@@ -3479,7 +3479,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 800px) {
+@media (max-width: 400px) and (max-height: 800px) {
   .projectInfo .skillsContainer {
     margin-top: 15px;
     width: 100%;
@@ -3556,7 +3556,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 800px) {
+@media (max-width: 400px) and (max-height: 800px) {
   .projectInfo .skillsContainer ul.skills li {
     padding-left: 0px 5px;
   }
@@ -3764,7 +3764,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 680px) {
+@media (max-width: 400px) and (max-height: 680px) {
   .skills aside {
     height: 65%;
   }
@@ -3952,7 +3952,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 680px) {
+@media (max-width: 400px) and (max-height: 680px) {
   .portfolio article {
     height: 18%;
   }
@@ -4010,7 +4010,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 680px) {
+@media (max-width: 400px) and (max-height: 680px) {
   .portfolio aside {
     height: 68%;
   }
@@ -4048,7 +4048,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 800px) {
+@media (max-width: 400px) and (max-height: 800px) {
   .portfolio .splash {
     padding: 10px 10px 0px 10px;
   }
@@ -4172,7 +4172,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 800px) {
+@media (max-width: 400px) and (max-height: 800px) {
   .projects.mobile {
     height: 35px;
   }
@@ -4437,13 +4437,13 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 800px) {
+@media (max-width: 400px) and (max-height: 800px) {
   .rotationContainer .center {
     height: 160px;
   }
 }
 
-@media (max-width: 380px) and (max-height: 680px) {
+@media (max-width: 400px) and (max-height: 680px) {
   .rotationContainer .center {
     width: 200px;
     height: 140px;
@@ -4629,7 +4629,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 800px) {
+@media (max-width: 400px) and (max-height: 800px) {
   .projectInfo .descriptionContainer {
     height: 130px;
   }
@@ -4666,7 +4666,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 680px) {
+@media (max-width: 400px) and (max-height: 680px) {
   .projectInfo .descriptionContainer p {
     font-size: 1rem;
   }
@@ -4716,7 +4716,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 800px) {
+@media (max-width: 400px) and (max-height: 800px) {
   .projectInfo a.linkButton {
     padding: 0px;
   }
@@ -4792,7 +4792,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 800px) {
+@media (max-width: 400px) and (max-height: 800px) {
   .projectInfo .skillsContainer {
     margin-top: 15px;
     width: 100%;
@@ -4869,7 +4869,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 800px) {
+@media (max-width: 400px) and (max-height: 800px) {
   .projectInfo .skillsContainer ul.skills li {
     padding-left: 0px 5px;
   }
@@ -5081,7 +5081,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 680px) {
+@media (max-width: 400px) and (max-height: 680px) {
   .next aside {
     height: 65%;
   }
@@ -5170,7 +5170,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 680px) {
+@media (max-width: 400px) and (max-height: 680px) {
   .next .splash ul li h5 {
     font-size: 5rem;
   }
@@ -5526,7 +5526,7 @@ li.blog a h3 {
   }
 }
 
-@media (max-width: 380px) and (max-height: 800px) {
+@media (max-width: 400px) and (max-height: 800px) {
   .wrapper.contact {
     padding: 15px 0px 80px 0px;
   }
@@ -5550,13 +5550,13 @@ li.blog a h3 {
   }
 }
 
-@media (max-width: 380px) and (max-height: 800px) {
+@media (max-width: 400px) and (max-height: 800px) {
   .contact aside {
     width: 100%;
   }
 }
 
-@media (max-width: 380px) and (max-height: 680px) {
+@media (max-width: 400px) and (max-height: 680px) {
   .contact aside {
     height: 60%;
   }
@@ -5649,7 +5649,7 @@ li.blog a h3 {
   }
 }
 
-@media (max-width: 380px) and (max-height: 800px) {
+@media (max-width: 400px) and (max-height: 800px) {
   .contact .splash {
     width: 100%;
     padding: 10px;
@@ -5697,7 +5697,7 @@ li.blog a h3 {
   }
 }
 
-@media (max-width: 380px) and (max-height: 800px) {
+@media (max-width: 400px) and (max-height: 800px) {
   .messageTitle h5 {
     font-size: 3rem;
   }
@@ -5747,7 +5747,7 @@ li.blog a h3 {
   }
 }
 
-@media (max-width: 380px) and (max-height: 800px) {
+@media (max-width: 400px) and (max-height: 800px) {
   .messageTitle a.email p {
     font-size: 1.4rem;
   }
@@ -5787,7 +5787,7 @@ html {
   }
 }
 
-@media (max-width: 380px) and (max-height: 680px) {
+@media (max-width: 400px) and (max-height: 680px) {
   html {
     height: 100vh;
     max-height: 100vh;
@@ -5819,7 +5819,7 @@ body {
   }
 }
 
-@media (max-width: 380px) and (max-height: 680px) {
+@media (max-width: 400px) and (max-height: 680px) {
   body {
     height: 100vh;
     max-height: 100vh;
@@ -5850,7 +5850,7 @@ header {
   }
 }
 
-@media (max-width: 380px) and (max-height: 680px) {
+@media (max-width: 400px) and (max-height: 680px) {
   header {
     height: 100vh;
     max-height: 100vh;
@@ -5903,7 +5903,7 @@ header {
   }
 }
 
-@media (max-width: 380px) and (max-height: 680px) {
+@media (max-width: 400px) and (max-height: 680px) {
   .wrapper {
     height: 100vh;
     max-height: 100vh;
