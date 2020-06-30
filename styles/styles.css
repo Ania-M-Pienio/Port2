@@ -5789,9 +5789,9 @@ html {
 
 @media (max-width: 400px) and (max-height: 680px) {
   html {
-    height: 100vh;
-    max-height: 100vh;
-    min-height: 100vh;
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
     padding: 0;
   }
 }
@@ -5821,9 +5821,9 @@ body {
 
 @media (max-width: 400px) and (max-height: 680px) {
   body {
-    height: 100vh;
-    max-height: 100vh;
-    min-height: 100vh;
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
     padding: 0;
   }
 }
@@ -5852,9 +5852,9 @@ header {
 
 @media (max-width: 400px) and (max-height: 680px) {
   header {
-    height: 100vh;
-    max-height: 100vh;
-    min-height: 100vh;
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
     padding: 0;
   }
 }
@@ -5905,9 +5905,9 @@ header {
 
 @media (max-width: 400px) and (max-height: 680px) {
   .wrapper {
-    height: 100vh;
-    max-height: 100vh;
-    min-height: 100vh;
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
     position: static;
     padding: 0;
   }
