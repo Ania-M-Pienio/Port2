@@ -27,6 +27,10 @@
     // 1070w x 1000v
     height: 68%;
   }
+  @include mobile-portXS-vw {
+    // 380w x 580h
+    height: 65%;
+  }
 }
 
 .next .splash {
@@ -76,6 +80,10 @@
         @include mobile-land-vw {
           // 1070w x 1000v
           font-size: 7rem;
+        }
+        @include mobile-portXS-vw {
+          // 380w x 580h
+          font-size: 5rem;
         }
       }
     }

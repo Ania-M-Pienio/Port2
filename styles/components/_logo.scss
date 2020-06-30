@@ -47,7 +47,6 @@ a.logo {
   }
 }
 
-
 // VIEW PORTFOLIO BUTTON
 a.logo {
   &:focus h3,
@@ -69,7 +68,6 @@ a.logo {
   }
 }
 
-
 // MOBILE VERSION
 a.logo {
   @include tablet-landXS {
@@ -78,13 +76,28 @@ a.logo {
     cursor: default;
     width: 200px;
     height: 200px;
-    .logo1, .logo2, .logo3 {
+    .logo1,
+    .logo2,
+    .logo3 {
       width: 200px;
       height: 200px;
     }
     h3 {
       display: none;
     }
-  }  
+  }
+  @include mobile-portXS-vw {
+    // 380w x 580h
+    cursor: pointer;
+    pointer-events: visible;
+  }
 }
 
+#home.logo {
+  h3 {
+    @include mobile-portXS-vw {
+      // 380w x 580h
+      display: block;
+    }
+  }
+}

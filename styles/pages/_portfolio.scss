@@ -13,6 +13,10 @@
     // 690
     height: 18%;
   }
+  @include mobile-portXS-vw {
+    // 380w x 580h
+    height: 18%;
+  }
   .info p span.break {
     display: block;
     @include tablet-landXS {
@@ -55,6 +59,10 @@
   @include mobile-land-vw {
     // 1070w x 1000v
     height: 72.5%;
+  }
+  @include mobile-portXS-vw {
+    // 380w x 580h
+    height: 68%;
   }
 }
 
@@ -410,6 +418,7 @@
   }
   button {
     height: 70px;
+    width: 70px;
     border: 2px solid $charcoal;
     background-color: $charcoal;
     box-shadow: $shadow;

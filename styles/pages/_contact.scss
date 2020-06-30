@@ -30,6 +30,10 @@
     // 365w x 800v
     width: 100%;
   }
+  @include mobile-portXS-vw {
+    // 380w x 580h
+    height: 60%;
+  }
 }
 
 .contact article {

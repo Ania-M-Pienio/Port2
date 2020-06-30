@@ -10,10 +10,14 @@
     // 1070w
     transform: scale(1);
   }
-  @include tablet-portXL {
-    // 800w
+  @include mobile-portXS-vw {
+    // 380px
     padding: 10px 0px;
+    position: absolute;
+    bottom: 0;
+    z-index: 5000;
   }
+
   ul {
     background-color: white;
     width: 100%;

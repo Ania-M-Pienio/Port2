@@ -23,6 +23,10 @@
     // 1070w x 1000v
     height: 68%;
   }
+  @include mobile-portXS-vw {
+    // 380w x 580h
+    height: 65%;
+  }
 }
 
 .skills .splash {

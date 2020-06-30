@@ -44,6 +44,13 @@ html {
     // 950v
     overflow-y: visible;
   }
+  @include mobile-portXS-vw {
+    // 380w x 580h
+    height: 100vh;
+    max-height: 100vh;
+    min-height: 100vh;
+    padding: 0;
+  }
 }
 
 body {
@@ -60,6 +67,13 @@ body {
   @include mobile-land {
     // 690w
     padding: 0px;
+  }
+  @include mobile-portXS-vw {
+    // 380w x 580h
+    height: 100vh;
+    max-height: 100vh;
+    min-height: 100vh;
+    padding: 0;
   }
 }
 
@@ -78,6 +92,13 @@ header {
     height: 730px;
     min-height: 730px;
     max-height: 730px;
+  }
+  @include mobile-portXS-vw {
+    // 380w x 580h
+    height: 100vh;
+    max-height: 100vh;
+    min-height: 100vh;
+    padding: 0;
   }
 }
 
@@ -111,6 +132,14 @@ header {
   @include tablet-portXL {
     // 800w
     padding: 0 0 60px;
+  }
+  @include mobile-portXS-vw {
+    // 380w x 580h
+    height: 100vh;
+    max-height: 100vh;
+    min-height: 100vh;
+    position: static;
+    padding: 0;
   }
 }
 

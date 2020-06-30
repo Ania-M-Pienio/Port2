@@ -303,12 +303,27 @@ a.logo h3 {
     width: 200px;
     height: 200px;
   }
-  a.logo .logo1, a.logo .logo2, a.logo .logo3 {
+  a.logo .logo1,
+  a.logo .logo2,
+  a.logo .logo3 {
     width: 200px;
     height: 200px;
   }
   a.logo h3 {
     display: none;
+  }
+}
+
+@media (max-width: 380px) and (max-height: 680px) {
+  a.logo {
+    cursor: pointer;
+    pointer-events: visible;
+  }
+}
+
+@media (max-width: 380px) and (max-height: 680px) {
+  #home.logo h3 {
+    display: block;
   }
 }
 
@@ -375,7 +390,7 @@ a.logo h3 {
   }
 }
 
-@media (max-width: 380px) and (max-height: 580px) {
+@media (max-width: 380px) and (max-height: 680px) {
   .menu {
     display: none;
   }
@@ -508,9 +523,12 @@ nav.collapse:not(.show) {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 380px) and (max-height: 680px) {
   .mobileMenu {
     padding: 10px 0px;
+    position: absolute;
+    bottom: 0;
+    z-index: 5000;
   }
 }
 
@@ -617,7 +635,7 @@ nav.collapse:not(.show) {
           transform: scale(0);
 }
 
-@media (max-width: 380px) and (max-height: 580px) {
+@media (max-width: 380px) and (max-height: 680px) {
   .wrapper.home .mobileMenu {
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -1859,7 +1877,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 580px) {
+@media (max-width: 380px) and (max-height: 680px) {
   .wrapper.home {
     height: 85%;
     min-height: 85%;
@@ -1867,7 +1885,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 580px) {
+@media (max-width: 380px) and (max-height: 680px) {
   header#home {
     height: 100vh;
     min-height: 500px;
@@ -1899,7 +1917,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 580px) {
+@media (max-width: 380px) and (max-height: 680px) {
   .home aside {
     display: none;
   }
@@ -2433,6 +2451,12 @@ label.error:not(input.error) {
   }
 }
 
+@media (max-width: 380px) and (max-height: 680px) {
+  .skills aside {
+    height: 65%;
+  }
+}
+
 .skills .splash {
   background-color: #F7F7F7;
   background-image: none;
@@ -2615,6 +2639,12 @@ label.error:not(input.error) {
   }
 }
 
+@media (max-width: 380px) and (max-height: 680px) {
+  .portfolio article {
+    height: 18%;
+  }
+}
+
 .portfolio article .info p span.break {
   display: block;
 }
@@ -2664,6 +2694,12 @@ label.error:not(input.error) {
 @media (max-width: 1070px) and (max-height: 1000px) {
   .portfolio aside {
     height: 72.5%;
+  }
+}
+
+@media (max-width: 380px) and (max-height: 680px) {
+  .portfolio aside {
+    height: 68%;
   }
 }
 
@@ -3094,7 +3130,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 580px) {
+@media (max-width: 380px) and (max-height: 680px) {
   .rotationContainer .center {
     width: 200px;
     height: 140px;
@@ -3141,6 +3177,7 @@ label.error:not(input.error) {
 
 .rotationControl button {
   height: 70px;
+  width: 70px;
   border: 2px solid #212121;
   background-color: #212121;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -3316,7 +3353,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 580px) {
+@media (max-width: 380px) and (max-height: 680px) {
   .projectInfo .descriptionContainer p {
     font-size: 1rem;
   }
@@ -3727,6 +3764,12 @@ label.error:not(input.error) {
   }
 }
 
+@media (max-width: 380px) and (max-height: 680px) {
+  .skills aside {
+    height: 65%;
+  }
+}
+
 .skills .splash {
   background-color: #F7F7F7;
   background-image: none;
@@ -3909,6 +3952,12 @@ label.error:not(input.error) {
   }
 }
 
+@media (max-width: 380px) and (max-height: 680px) {
+  .portfolio article {
+    height: 18%;
+  }
+}
+
 .portfolio article .info p span.break {
   display: block;
 }
@@ -3958,6 +4007,12 @@ label.error:not(input.error) {
 @media (max-width: 1070px) and (max-height: 1000px) {
   .portfolio aside {
     height: 72.5%;
+  }
+}
+
+@media (max-width: 380px) and (max-height: 680px) {
+  .portfolio aside {
+    height: 68%;
   }
 }
 
@@ -4388,7 +4443,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 580px) {
+@media (max-width: 380px) and (max-height: 680px) {
   .rotationContainer .center {
     width: 200px;
     height: 140px;
@@ -4435,6 +4490,7 @@ label.error:not(input.error) {
 
 .rotationControl button {
   height: 70px;
+  width: 70px;
   border: 2px solid #212121;
   background-color: #212121;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -4610,7 +4666,7 @@ label.error:not(input.error) {
   }
 }
 
-@media (max-width: 380px) and (max-height: 580px) {
+@media (max-width: 380px) and (max-height: 680px) {
   .projectInfo .descriptionContainer p {
     font-size: 1rem;
   }
@@ -5025,6 +5081,12 @@ label.error:not(input.error) {
   }
 }
 
+@media (max-width: 380px) and (max-height: 680px) {
+  .next aside {
+    height: 65%;
+  }
+}
+
 .next .splash {
   padding: 10px;
   background-color: white;
@@ -5105,6 +5167,12 @@ label.error:not(input.error) {
 @media (max-width: 1070px) and (max-height: 1000px) {
   .next .splash ul li h5 {
     font-size: 7rem;
+  }
+}
+
+@media (max-width: 380px) and (max-height: 680px) {
+  .next .splash ul li h5 {
+    font-size: 5rem;
   }
 }
 
@@ -5488,6 +5556,12 @@ li.blog a h3 {
   }
 }
 
+@media (max-width: 380px) and (max-height: 680px) {
+  .contact aside {
+    height: 60%;
+  }
+}
+
 @media (max-width: 1070px) {
   .contact article {
     height: 30%;
@@ -5713,6 +5787,15 @@ html {
   }
 }
 
+@media (max-width: 380px) and (max-height: 680px) {
+  html {
+    height: 100vh;
+    max-height: 100vh;
+    min-height: 100vh;
+    padding: 0;
+  }
+}
+
 body {
   background-color: #7c7b7b;
   padding: 40px 0;
@@ -5736,6 +5819,15 @@ body {
   }
 }
 
+@media (max-width: 380px) and (max-height: 680px) {
+  body {
+    height: 100vh;
+    max-height: 100vh;
+    min-height: 100vh;
+    padding: 0;
+  }
+}
+
 header {
   height: 100vh;
   -webkit-transition: all 1s;
@@ -5755,6 +5847,15 @@ header {
     height: 730px;
     min-height: 730px;
     max-height: 730px;
+  }
+}
+
+@media (max-width: 380px) and (max-height: 680px) {
+  header {
+    height: 100vh;
+    max-height: 100vh;
+    min-height: 100vh;
+    padding: 0;
   }
 }
 
@@ -5799,6 +5900,16 @@ header {
 @media (max-width: 800px) {
   .wrapper {
     padding: 0 0 60px;
+  }
+}
+
+@media (max-width: 380px) and (max-height: 680px) {
+  .wrapper {
+    height: 100vh;
+    max-height: 100vh;
+    min-height: 100vh;
+    position: static;
+    padding: 0;
   }
 }
 
